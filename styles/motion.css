@@ -1,0 +1,56 @@
+/* Shared motion for every area. Only transform and opacity animate, so it stays smooth.
+   Everything here is off when the visitor asks the system for reduced motion. */
+
+:root {
+  --ease-out: cubic-bezier(.22, 1, .36, 1);
+  --ease-spring: cubic-bezier(.34, 1.56, .64, 1);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes cs-rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+  @keyframes cs-fade { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes cs-pop { 0% { transform: scale(1); } 40% { transform: scale(1.06); } 100% { transform: scale(1); } }
+  @keyframes cs-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+  @keyframes cs-underline { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+  @keyframes cs-fill { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+
+  /* Page enter: children rise in one after another. */
+  .page > *, .hero-copy > *, .choose > .choice, .home > *, .grid > *, .plan-grid > *, .stack > *, .chat-layout > * {
+    animation: cs-rise .5s var(--ease-out) both;
+  }
+  .page > :nth-child(2), .hero-copy > :nth-child(2), .choose > .choice:nth-child(2), .home > :nth-child(2), .grid > :nth-child(2), .plan-grid > :nth-child(2), .stack > :nth-child(2), .chat-layout > :nth-child(2) { animation-delay: 60ms; }
+  .page > :nth-child(3), .hero-copy > :nth-child(3), .home > :nth-child(3), .grid > :nth-child(3), .plan-grid > :nth-child(3), .stack > :nth-child(3) { animation-delay: 120ms; }
+  .page > :nth-child(4), .hero-copy > :nth-child(4), .home > :nth-child(4), .grid > :nth-child(4), .plan-grid > :nth-child(4), .stack > :nth-child(4) { animation-delay: 180ms; }
+  .page > :nth-child(n+5), .hero-copy > :nth-child(n+5), .home > :nth-child(n+5), .grid > :nth-child(n+5), .plan-grid > :nth-child(n+5), .stack > :nth-child(n+5) { animation-delay: 240ms; }
+  .hero-visual { animation: cs-fade .7s var(--ease-out) .15s both; }
+
+  /* Floating cards on the landing hero drift gently. */
+  .float-card { animation: cs-float 6s ease-in-out infinite; }
+  .float-pill { animation: cs-float 5s ease-in-out 1s infinite; }
+
+  /* Hover lift on cards people can pick. */
+  .choice, .plan-card, .featured, .person-card, .plan-row, .chat-row {
+    transition: transform .25s var(--ease-out), box-shadow .25s var(--ease-out), border-color .15s, background-color .15s;
+  }
+  @media (hover: hover) {
+    .choice:hover, .plan-card:hover, .person-card:hover { transform: translateY(-4px); box-shadow: 0 14px 30px -18px rgba(20, 20, 40, .35); }
+    .featured:hover { transform: translateY(-2px); box-shadow: 0 18px 40px -24px rgba(20, 20, 40, .35); }
+    .plan-row:hover, .chat-row:hover { transform: translateX(3px); }
+  }
+
+  /* Press feedback on every button and chip. */
+  .btn, .btn-main, .btn-sec, .btn-lime, .chip, .icon-btn, button {
+    transition: transform .15s var(--ease-out), background-color .2s, border-color .2s, color .2s, box-shadow .2s;
+  }
+  .btn:active, .btn-main:active, .btn-sec:active, .btn-lime:active, .chip:active, .icon-btn:active { transform: scale(.96); }
+  .chip[aria-pressed="true"], .btn-main.is-in, .person-card.added { animation: cs-pop .35s var(--ease-spring); }
+
+  /* Active nav underline draws in. */
+  .nav-links a[aria-current="page"]::after { animation: cs-underline .35s var(--ease-out) both; }
+
+  /* Progress bars fill from the left. */
+  .bar > span, .progress span { transform-origin: left center; animation: cs-fill .8s var(--ease-out) .2s both; }
+
+  /* Avatars and rings settle in. */
+  .rings .ring, .avatar { animation: cs-fade .5s var(--ease-out) both; }
+}

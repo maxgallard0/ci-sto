@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { fontVars } from "@/lib/fonts";
 import "@/styles/tokens.css";
 import "@/styles/member.css";
+import "@/styles/motion.css";
 
 export const metadata: Metadata = {
   title: { default: "Ci Sto", template: "%s · Ci Sto" },
