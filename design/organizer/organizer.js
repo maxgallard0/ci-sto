@@ -33,12 +33,12 @@ function drawNav() {
   if (!slot) return;
   slot.outerHTML = `
   <header class="nav">
-    <a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true"></span>Ci Sto</a>
+    <a class="logo" href="../../landing/home.html"><span class="logo-mark" aria-hidden="true"></span>Ci Sto</a>
     <nav class="nav-links" aria-label="Main">
-      <a href="#">Find your plans</a>
+      <a href="../../landing/home.html">Find your plans</a>
       <a href="o1-become-organizer.html" aria-current="page">Organize</a>
-      <a href="#">Chats</a>
-      <a href="#">Cerchia</a>
+      <a href="../member/m4-chats.html">Chats</a>
+      <a href="../member/m6-your-cerchia.html">Cerchia</a>
     </nav>
     <div class="nav-account">
       <button class="icon-btn" aria-label="Search"><i data-icon="search"></i></button>

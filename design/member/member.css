@@ -1,16 +1,5 @@
-/* Ci Sto · Member area mockups (web platform, desktop 1440px)
-   Mockup styles for design/member only. Base copied from design/organizer so both
-   areas look the same. Colour values copy the Ci Sto design system; they are NOT the
-   shared tokens. Shared tokens are added once, by one person, after the team agrees. */
-
-:root {
-  --blue: #2347FF; --blue-dark: #1A33C2; --blue-tint: #E3E8FF;
-  --lime: #CBEF4A; --lime-tint: #EEF9C8; --lime-ink: #3F5200;
-  --ink: #16131D; --cream: #FFF7F0; --white: #FFFFFF;
-  --ci-sto-red: #D63A24; --muted: #5E5866; --line: #E4DCE6;
-  --surface-2: #F1ECF3; --field-border: #8C8294; --success: #3F7A1F;
-  --av1: #F7B9A8; --av2: #FFD27A; --av3: #B9AEFF; --av4: #D9F27F; --av5: #9ED9C9;
-}
+/* Ci Sto · Member area mockups (Elena), desktop 1440px. Tokens come from shared/tokens.css. */
+@import url("../../shared/tokens.css");
 
 * { box-sizing: border-box; margin: 0; }
 body { background: var(--cream); color: var(--ink); font: 400 15px/1.45 "Figtree", system-ui, sans-serif; }

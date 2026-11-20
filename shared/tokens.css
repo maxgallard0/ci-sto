@@ -1,0 +1,48 @@
+/* Ci Sto · shared design tokens (web platform)
+   One source of truth for colours, type and radii. Every area imports this file
+   first: landing/styles.css, design/member/member.css, design/organizer/organizer.css.
+   Change a value here, not in the area stylesheets. */
+
+:root {
+  /* Brand */
+  --blue: #2347FF;
+  --blue-dark: #1A33C2;
+  --blue-tint: #E3E8FF;
+  --lime: #CBEF4A;
+  --lime-tint: #EEF9C8;
+  --lime-ink: #3F5200;
+  --ci-sto-red: #D63A24; /* only for the main action */
+
+  /* Neutrals */
+  --ink: #16131D;
+  --cream: #FFF7F0;
+  --white: #FFFFFF;
+  --muted: #5E5866;
+  --line: #E4DCE6;
+  --surface-2: #F1ECF3;
+  --field-border: #8C8294;
+  --success: #3F7A1F;
+
+  /* Avatars */
+  --avatar-1: #F7B9A8;
+  --avatar-2: #FFD27A;
+  --avatar-3: #B9AEFF;
+  --avatar-4: #D9F27F;
+  --avatar-5: #9ED9C9;
+  /* Short aliases used by the member and organizer mockups */
+  --av1: var(--avatar-1);
+  --av2: var(--avatar-2);
+  --av3: var(--avatar-3);
+  --av4: var(--avatar-4);
+  --av5: var(--avatar-5);
+
+  /* Type */
+  --font-title: "Bricolage Grotesque", system-ui, sans-serif;
+  --font-ui: "Figtree", system-ui, sans-serif;
+
+  /* Radii */
+  --radius-pill: 999px;
+  --radius-lg: 22px;
+  --radius-md: 20px;
+  --radius-sm: 16px;
+}
