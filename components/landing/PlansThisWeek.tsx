@@ -9,6 +9,7 @@ import { featuredPlan, kindBadge, plansThisWeek, type PlanTag } from "@/lib/plan
 import { routes } from "@/lib/routes";
 
 import { LogoMark, Sprite, Use } from "./Sprite";
+import { HandMark } from "@/components/Logo";
 import { useToast } from "./Toast";
 
 type Filter = "all" | PlanTag;
@@ -113,7 +114,7 @@ export function PlansThisWeek() {
                   <Use id="i-info" />
                 </button>
                 <button className={`btn btn-main${joined ? " is-in" : ""}`} id="cisto" aria-pressed={joined} onClick={toggle}>
-                  <Use id="i-check" />
+                  <HandMark closed={joined} />
                   <span>{joined ? "You're in" : "Ci sto"}</span>
                 </button>
               </div>

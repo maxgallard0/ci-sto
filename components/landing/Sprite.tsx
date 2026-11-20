@@ -1,16 +1,10 @@
+import { HandMark } from "@/components/Logo";
 import type { CSSProperties } from "react";
 
 // SVG symbols used by the landing pages. Render once per page, reference with <Use id="i-star" />.
 export function Sprite() {
   return (
     <svg width="0" height="0" style={{ position: "absolute" }} aria-hidden="true">
-      <symbol id="logo" viewBox="0 0 48 48">
-        <g fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round">
-          <path d="M39.32 11.14 A20 20 0 1 0 39.32 36.86" />
-          <path d="M35.11 14.68 A14.5 14.5 0 1 0 35.11 33.32" />
-          <path d="M30.89 18.21 A9 9 0 1 0 30.89 29.79" />
-        </g>
-      </symbol>
       <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" /></symbol>
       <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z" /></symbol>
       <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 2" /></symbol>
@@ -36,11 +30,7 @@ export function Use({ id, size = "", style }: { id: string; size?: Size; style?:
   );
 }
 
-/** Logo mark from the sprite, sized by the parent's CSS. */
+/** Small Ci Sto hand mark, sized by the parent's CSS. */
 export function LogoMark({ color }: { color: string }) {
-  return (
-    <svg style={{ color }} aria-hidden="true">
-      <use href="#logo" />
-    </svg>
-  );
+  return <HandMark className="logo-mark-icon" style={{ color }} />;
 }

@@ -34,3 +34,21 @@ export function Logo({ className = "" }: { className?: string }) {
     </svg>
   );
 }
+
+/** Hand mark on its own, for small icons. `closed` folds the little finger
+ *  and brings the thumb up to the index finger (the "ci sto" gesture). */
+export function HandMark({ closed = false, className = "", style }: { closed?: boolean; className?: string; style?: CSSProperties }) {
+  return (
+    <svg className={`hand-mark${closed ? " is-closed" : ""} ${className}`.trim()} style={style} viewBox="110 350 480 640" aria-hidden="true">
+      <g fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round">
+        <path stroke="none" d="M137 600 L265 600 L268 950 Q268 978 242 978 L160 978 Q132 978 134 950 Z" />
+        <path stroke="none" d="M140 612 L188 574 L205 545 L258 512 L300 515 L262 650 Z" />
+        <line className="hm-pinky" strokeWidth="54" x1="161" y1="468" x2="161" y2="640" />
+        <line strokeWidth="56" x1="243" y1="392" x2="232" y2="600" />
+        <line strokeWidth="48" x1="344" y1="414" x2="282" y2="520" />
+        {/* Full circle; the dash shows only the C until the hand closes. */}
+        <path className="hm-c" fill="none" strokeWidth="62" pathLength={100} d="M430 510 A146 146 0 1 0 438 800 A146 146 0 0 0 430 510" />
+      </g>
+    </svg>
+  );
+}
