@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>O3 · Check your plan · Ci Sto</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="organizer.css">
+</head>
+<body>
+<div id="nav"></div>
+<main class="page">
+  <div class="page-head">
+    <div>
+      <a class="back" href="o2-plan-details.html"><i data-icon="chevronLeft" class="i-sm"></i>Back to details</a>
+      <p class="eyebrow">Organize a plan · step 2 of 3</p>
+      <h1 class="title">Check your plan</h1>
+    </div>
+    <div class="chips" aria-label="Steps">
+      <span class="chip" data-static style="display:inline-flex;align-items:center">1 · Details</span>
+      <span class="chip" aria-pressed="true" data-static style="display:inline-flex;align-items:center">2 · Preview</span>
+      <span class="chip" data-static style="display:inline-flex;align-items:center">3 · Publish</span>
+    </div>
+  </div>
+
+  <div class="cols" style="grid-template-columns:1fr 420px">
+    <article class="card card-line" style="padding:0;overflow:hidden;gap:0" aria-label="Your plan as members see it">
+      <div class="photo photo-hero">Cover photo · market-brunch.jpg</div>
+      <div class="stack" style="padding:28px 32px 32px">
+        <span class="badge b-ink">Social</span>
+        <h2 class="title-sm">Sunday market and brunch</h2>
+        <p class="lead" style="margin:0">Stroll the stalls together, then brunch at the market. Come hungry, leave with new friends. Italian and English welcome.</p>
+        <div>
+          <div class="detail"><span class="ic"><i data-icon="calendar"></i></span><div><small>When</small><b>Sun 30 Nov · 11:00 to 13:00</b><span>Members add it to their calendar after they join</span></div></div>
+          <div class="detail"><span class="ic"><i data-icon="pin"></i></span><div><small>Where</small><b>Mercato di Porta Genova</b><span>Public venue · exact meeting point shown after approval</span></div></div>
+          <div class="detail"><span class="ic"><i data-icon="users"></i></span><div><small>Group</small><b>0 of 8 going</b><span>Small group, one chat</span></div></div>
+          <div class="detail"><span class="ic"><i data-icon="euro"></i></span><div><small>Price</small><b>€12 · pay on site, at the stall</b><span>No deposit</span></div></div>
+        </div>
+        <p class="notice">Vibe: very mixed, practise Italian. Organized by Camila, Design.</p>
+        <div class="row"><span class="avatar">CA</span><div><b>Organized by Camila</b><p class="helper">Design · first plan</p></div></div>
+      </div>
+    </article>
+
+    <aside class="stack">
+      <div class="card">
+        <h2 class="h-card">Before you publish</h2>
+        <p class="row"><span class="ic ic-soft"><i data-icon="check" class="i-sm"></i></span><b>Public venue</b></p>
+        <p class="row"><span class="ic ic-soft"><i data-icon="check" class="i-sm"></i></span><b>Cover photo added</b></p>
+        <p class="row"><span class="ic ic-soft"><i data-icon="check" class="i-sm"></i></span><b>Price is clear: €12, pay on site</b></p>
+        <p class="row"><span class="ic ic-soft"><i data-icon="check" class="i-sm"></i></span><b>Group size: 8 people</b></p>
+      </div>
+      <div class="card">
+        <p class="row h-sec" style="gap:10px"><i data-icon="eye" style="color:var(--muted)"></i>Who can see it</p>
+        <p class="muted">All verified Polimi students. Shown first to people looking for Practise Italian and very mixed groups.</p>
+      </div>
+      <div class="card">
+        <h2 class="h-sec">What happens next</h2>
+        <p class="row" style="align-items:flex-start"><span class="num">1</span>Students ask to join. You approve each request.</p>
+        <p class="row" style="align-items:flex-start"><span class="num">2</span>The group chat opens Thu 27 Nov, 3 days before.</p>
+        <p class="row" style="align-items:flex-start"><span class="num">3</span>Everyone confirms 24 hours before the plan.</p>
+      </div>
+      <a class="btn-main btn-block" href="o4-plan-is-live.html"><i data-icon="check"></i>Publish plan</a>
+      <button class="btn-text" style="align-self:center">Save as draft</button>
+    </aside>
+  </div>
+</main>
+<script src="organizer.js"></script>
+</body>
+</html>
