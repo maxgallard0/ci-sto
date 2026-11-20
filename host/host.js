@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (step === 1) {
       stepOnboarding.classList.add('active');
       dot1.classList.add('active');
-      navBadge.textContent = '1. Onboarding Host';
+      navBadge.textContent = '1. Host Onboarding';
     } else if (step === 2) {
       stepSetup.classList.add('active');
       dot1.classList.add('active');
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
       dot1.classList.add('active');
       dot2.classList.add('active');
       dot3.classList.add('active');
-      navBadge.textContent = '3. Filtri & Dashboard';
+      navBadge.textContent = '3. Filters & Dashboard';
     }
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('btn-to-step-2').addEventListener('click', () => {
     const venueName = document.getElementById('venue-name').value.trim();
     if (!venueName) {
-      alert('Inserisci il nome del locale');
+      alert('Please enter your venue or business name');
       return;
     }
     showStep(2);
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   document.getElementById('btn-save-filters').addEventListener('click', () => {
-    alert('Preferenze filtri salvate con successo per il tuo locale!');
+    alert('Filter preferences saved successfully for your venue!');
   });
 
   // Chip selection helper (single-select per group)

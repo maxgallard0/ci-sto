@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ci Sto · Portale Host Partner</title>
+  <title>Ci Sto · Host Partner Portal</title>
   <!-- Google Fonts: Bricolage Grotesque & Figtree -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -137,65 +137,65 @@
         </svg>
         Ci Sto
       </a>
-      <span id="nav-badge" class="badge badge-blue-tint">Area Host Partner</span>
+      <span id="nav-badge" class="badge badge-blue-tint">Host Partner Portal</span>
     </header>
 
     <!-- Step Indicator -->
-    <div class="step-indicator" aria-label="Progresso onboarding">
+    <div class="step-indicator" aria-label="Onboarding progress">
       <div id="dot-1" class="step-dot active"></div>
       <div id="dot-2" class="step-dot"></div>
       <div id="dot-3" class="step-dot"></div>
     </div>
 
     <!-- ============================================== -->
-    <!-- STEP 1: ONBOARDING                             -->
+    <!-- STEP 1: HOST ONBOARDING                        -->
     <!-- ============================================== -->
     <section id="step-onboarding" class="view-section active" aria-labelledby="title-step-1">
       <h1 id="title-step-1" class="title-bricolage" style="font-size: 28px; line-height: 1.15; margin-bottom: 8px;">
-        Riempi il tuo locale nei giorni più tranquilli.
+        Fill your venue on quiet days.
       </h1>
       <p style="color: var(--color-muted); font-size: 14px; line-height: 1.45; margin-bottom: 18px;">
-        Accogli gruppi di 4–8 studenti verificati del Politecnico. Nessun costo anticipato: paghi solo a presenze confermate.
+        Host groups of 4–8 verified Politecnico students. Zero upfront costs: pay only for confirmed attendance.
       </p>
 
       <!-- Value badges -->
       <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px;">
-        <span class="badge badge-lime-tint">Gruppi da 4–8 studenti</span>
-        <span class="badge badge-lime-tint">Zero costi fissi</span>
-        <span class="badge badge-lime-tint">Solo Polimi verificati</span>
+        <span class="badge badge-lime-tint">Groups of 4–8 students</span>
+        <span class="badge badge-lime-tint">Zero upfront costs</span>
+        <span class="badge badge-lime-tint">Verified Polimi students only</span>
       </div>
 
       <!-- Form Card -->
       <div class="card">
-        <h2 style="font-size: 17px; font-weight: 800; margin-bottom: 16px;">1. Dati dell'attività</h2>
+        <h2 style="font-size: 17px; font-weight: 800; margin-bottom: 16px;">1. Venue details</h2>
 
         <div class="input-group">
-          <label for="venue-name">Nome del locale o attività</label>
-          <input type="text" id="venue-name" class="text-input" placeholder="es. Caffè Ventura, Bar Lumen..." value="Caffè Ventura">
+          <label for="venue-name">Venue or business name</label>
+          <input type="text" id="venue-name" class="text-input" placeholder="e.g. Caffè Ventura, Bar Lumen..." value="Caffè Ventura">
         </div>
 
         <div class="input-group">
-          <label>Tipologia di locale</label>
-          <div class="chips-group" id="chips-category" role="group" aria-label="Seleziona tipologia">
-            <button type="button" class="chip active" data-val="Bar & Caffè">Bar & Caffè</button>
+          <label>Venue type</label>
+          <div class="chips-group" id="chips-category" role="group" aria-label="Select venue type">
+            <button type="button" class="chip active" data-val="Bar & Café">Bar & Café</button>
             <button type="button" class="chip" data-val="Aperitivo">Aperitivo</button>
-            <button type="button" class="chip" data-val="Coworking & Studio">Coworking & Studio</button>
-            <button type="button" class="chip" data-val="Ristorante">Ristorante</button>
+            <button type="button" class="chip" data-val="Coworking & Study">Coworking & Study</button>
+            <button type="button" class="chip" data-val="Restaurant">Restaurant</button>
           </div>
         </div>
 
         <div class="input-group">
-          <label for="venue-address">Indirizzo e Quartiere a Milano</label>
-          <input type="text" id="venue-address" class="text-input" placeholder="es. Via Durando 10, Bovisa" value="Via Durando 10, Bovisa">
+          <label for="venue-address">Address & Neighborhood in Milan</label>
+          <input type="text" id="venue-address" class="text-input" placeholder="e.g. Via Durando 10, Bovisa" value="Via Durando 10, Bovisa">
         </div>
 
         <div class="input-group">
-          <label for="contact-email">Email aziendale per le conferme</label>
-          <input type="email" id="contact-email" class="text-input" placeholder="gestore@locale.it" value="info@caffeventura.it">
+          <label for="contact-email">Business email for confirmations</label>
+          <input type="email" id="contact-email" class="text-input" placeholder="manager@venue.com" value="info@caffeventura.it">
         </div>
 
         <button type="button" id="btn-to-step-2" class="btn-primary" style="margin-top: 8px;">
-          <span>Continua: Configura Attività</span>
+          <span>Continue: Business Setup</span>
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
             <polyline points="9 18 15 12 9 6"></polyline>
           </svg>
@@ -209,32 +209,32 @@
     <section id="step-setup" class="view-section" aria-labelledby="title-step-2">
       <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px;">
         <h1 id="title-step-2" class="title-bricolage" style="font-size: 26px;">
-          Configura disponibilità & sconti
+          Set up availability & perks
         </h1>
-        <span class="badge badge-surface">Step 2 di 3</span>
+        <span class="badge badge-surface">Step 2 of 3</span>
       </div>
       <p style="color: var(--color-muted); font-size: 14px; margin-bottom: 20px;">
-        Definisci la capienza per i gruppi di studenti e la convenzione Ci Sto Plus riservata alla community.
+        Define group capacity and the Ci Sto Plus perk offered to students.
       </p>
 
       <div class="card">
-        <!-- Capienza -->
+        <!-- Capacity -->
         <div class="input-group">
-          <label>Posti riservabili per gruppo</label>
-          <div class="chips-group" id="chips-capacity" role="group" aria-label="Capienza gruppo">
-            <button type="button" class="chip" data-val="4-6">4–6 posti</button>
-            <button type="button" class="chip active" data-val="6-8">6–8 posti (Consigliato)</button>
-            <button type="button" class="chip" data-val="8-12">8–12 posti</button>
+          <label>Reserved spots per group</label>
+          <div class="chips-group" id="chips-capacity" role="group" aria-label="Group capacity">
+            <button type="button" class="chip" data-val="4-6">4–6 spots</button>
+            <button type="button" class="chip active" data-val="6-8">6–8 spots (Recommended)</button>
+            <button type="button" class="chip" data-val="8-12">8–12 spots</button>
           </div>
         </div>
 
-        <!-- Fasce orarie preferite -->
+        <!-- Preferred time slots -->
         <div class="input-group">
-          <label>Fasce orarie ideali per il tuo locale</label>
-          <div class="chips-group" id="chips-time" role="group" aria-label="Fasce orarie">
-            <button type="button" class="chip" data-val="Pomeriggio">Pomeriggio Studio (14:00–18:00)</button>
-            <button type="button" class="chip active" data-val="Aperitivo">Aperitivo Serale (18:30–21:00)</button>
-            <button type="button" class="chip" data-val="Dopocena">Dopocena (21:30+)</button>
+          <label>Preferred time slots for your venue</label>
+          <div class="chips-group" id="chips-time" role="group" aria-label="Time slots">
+            <button type="button" class="chip" data-val="Afternoon">Afternoon Study (14:00–18:00)</button>
+            <button type="button" class="chip active" data-val="Aperitivo">Evening Aperitivo (18:30–21:00)</button>
+            <button type="button" class="chip" data-val="Late Night">Late Night (21:30+)</button>
           </div>
         </div>
 
@@ -242,25 +242,25 @@
         <div class="notice-box" role="status">
           <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
             <span class="badge badge-lime">Ci Sto Plus</span>
-            <strong style="color: var(--color-ink);">Convenzione Partner Ufficiale</strong>
+            <strong style="color: var(--color-ink);">Official Partner Deal</strong>
           </div>
-          Gli studenti del Politecnico mostrano il badge digitale dal vivo. Offri un piccolo incentivo per attirare i gruppi.
+          Polimi students show their digital badge in person. Offer a perk to attract student groups.
         </div>
 
         <div class="input-group">
-          <label for="perk-title">Formula sconto o convenzione proposta</label>
-          <input type="text" id="perk-title" class="text-input" placeholder="es. -20% su caffetteria e drink serale" value="-20% su caffetteria e drink serale">
+          <label for="perk-title">Proposed discount or group deal</label>
+          <input type="text" id="perk-title" class="text-input" placeholder="e.g. -20% on coffee & evening drinks" value="-20% on coffee & evening drinks">
         </div>
 
         <div class="input-group">
-          <label for="instagram-url">Profilo Instagram o Foto del locale</label>
-          <input type="text" id="instagram-url" class="text-input" placeholder="@tuolocale" value="@caffeventura_milano">
+          <label for="instagram-url">Instagram profile or venue link</label>
+          <input type="text" id="instagram-url" class="text-input" placeholder="@yourvenue" value="@caffeventura_milano">
         </div>
 
         <div style="display: flex; gap: 10px; margin-top: 12px;">
-          <button type="button" id="btn-back-to-1" class="btn-outline" style="width: 35%;">Indietro</button>
+          <button type="button" id="btn-back-to-1" class="btn-outline" style="width: 35%;">Back</button>
           <button type="button" id="btn-to-step-3" class="btn-primary" style="width: 65%;">
-            <span>Vai ai Filtri Host</span>
+            <span>Go to Host Filters</span>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="9 18 15 12 9 6"></polyline>
             </svg>
@@ -275,100 +275,100 @@
     <section id="step-filters" class="view-section" aria-labelledby="title-step-3">
       <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
         <h1 id="title-step-3" class="title-bricolage" style="font-size: 26px;">
-          Pannello & Filtri Host
+          Host Dashboard & Filters
         </h1>
-        <span class="badge badge-lime">● Partner Attivo</span>
+        <span class="badge badge-lime">● Active Partner</span>
       </div>
 
       <!-- Stat grid -->
       <div class="stat-grid">
         <div class="stat-card">
           <div class="stat-val">24</div>
-          <div class="stat-lbl">Studenti ospitati</div>
+          <div class="stat-lbl">Students hosted</div>
         </div>
         <div class="stat-card">
           <div class="stat-val">5</div>
-          <div class="stat-lbl">Piani confermati</div>
+          <div class="stat-lbl">Confirmed plans</div>
         </div>
         <div class="stat-card">
           <div class="stat-val">4.9 ★</div>
-          <div class="stat-lbl">Punteggio Vibe</div>
+          <div class="stat-lbl">Vibe Score</div>
         </div>
       </div>
 
-      <!-- Filtri card -->
+      <!-- Filters card -->
       <div class="card">
         <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 12px;">
-          <h2 style="font-size: 17px; font-weight: 800;">Filtri Piani Accettati</h2>
-          <span style="font-size: 12px; color: var(--color-success); font-weight: 700;">Filtri attivi</span>
+          <h2 style="font-size: 17px; font-weight: 800;">Accepted Plan Filters</h2>
+          <span style="font-size: 12px; color: var(--color-success); font-weight: 700;">Filters active</span>
         </div>
 
-        <!-- Filtro Lingua -->
+        <!-- Language Filter -->
         <div class="input-group">
-          <label>Lingua del gruppo studenti</label>
+          <label>Student group language</label>
           <div class="chips-group" id="filter-lang" role="group">
-            <button type="button" class="chip active" data-val="all">Tutte le lingue</button>
-            <button type="button" class="chip" data-val="it">Solo Italiano</button>
-            <button type="button" class="chip" data-val="en">Inglese / Internazionali</button>
+            <button type="button" class="chip active" data-val="all">All languages</button>
+            <button type="button" class="chip" data-val="it">Italian only</button>
+            <button type="button" class="chip" data-val="en">English / International</button>
           </div>
         </div>
 
-        <!-- Filtro Facoltà -->
+        <!-- Faculty Filter -->
         <div class="input-group">
-          <label>Facoltà prevalente Polimi</label>
+          <label>Polimi study field</label>
           <div class="chips-group" id="filter-faculty" role="group">
-            <button type="button" class="chip active" data-val="all">Tutte le facoltà</button>
+            <button type="button" class="chip active" data-val="all">All fields</button>
             <button type="button" class="chip" data-val="design">Design</button>
-            <button type="button" class="chip" data-val="ing">Ingegneria</button>
-            <button type="button" class="chip" data-val="arch">Architettura</button>
+            <button type="button" class="chip" data-val="ing">Engineering</button>
+            <button type="button" class="chip" data-val="arch">Architecture</button>
           </div>
         </div>
 
-        <!-- Filtro Budget -->
+        <!-- Budget Filter -->
         <div class="input-group">
-          <label>Fascia di spesa per studente</label>
+          <label>Budget bracket per student</label>
           <div class="chips-group" id="filter-budget" role="group">
-            <button type="button" class="chip active" data-val="free">Consumazione libera</button>
-            <button type="button" class="chip" data-val="under10">Sotto i 10€</button>
-            <button type="button" class="chip" data-val="10-20">10€–20€</button>
+            <button type="button" class="chip active" data-val="free">Free / Regular order</button>
+            <button type="button" class="chip" data-val="under10">Under €10</button>
+            <button type="button" class="chip" data-val="10-20">€10–€20</button>
           </div>
         </div>
 
         <button type="button" id="btn-save-filters" class="btn-secondary" style="width: 100%; margin-top: 8px;">
-          Salva Preferenze Filtri
+          Save Filter Preferences
         </button>
       </div>
 
-      <!-- Piani in arrivo -->
+      <!-- Upcoming Plans -->
       <div style="margin-top: 24px;">
         <h3 class="body-figtree" style="font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; color: var(--color-muted);">
-          Prossimi Piani Studenti in arrivo
+          Upcoming Student Plans
         </h3>
 
         <div class="plan-card">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
-            <strong style="font-size: 15px; color: var(--color-ink);">Aperitivo di Benvenuto Design</strong>
-            <span class="badge badge-lime-tint">7/8 confermati</span>
+            <strong style="font-size: 15px; color: var(--color-ink);">Welcome Design Aperitivo</strong>
+            <span class="badge badge-lime-tint">7/8 confirmed</span>
           </div>
           <p style="font-size: 13px; color: var(--color-muted); line-height: 1.4;">
-            Giovedì 20 Nov · ore 19:30 · Tavolo riservato a nome <strong>Elena</strong> (Master Polimi).
+            Thu 20 Nov · 19:30 · Reserved table under <strong>Elena</strong> (Polimi Master).
           </p>
         </div>
 
         <div class="plan-card" style="border-color: var(--color-line); margin-top: 10px;">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
             <strong style="font-size: 15px; color: var(--color-ink);">Study & Coffee Sprint</strong>
-            <span class="badge badge-blue-tint">4/6 confermati</span>
+            <span class="badge badge-blue-tint">4/6 confirmed</span>
           </div>
           <p style="font-size: 13px; color: var(--color-muted); line-height: 1.4;">
-            Venerdì 21 Nov · ore 15:00 · 4 studenti Ing. Gestionale.
+            Fri 21 Nov · 15:00 · 4 Management Engineering students.
           </p>
         </div>
       </div>
 
       <div style="margin-top: 24px; text-align: center;">
         <button type="button" id="btn-back-to-setup" class="btn-outline" style="font-size: 14px; height: 42px;">
-          ← Modifica Dati Locale
+          ← Edit Venue Details
         </button>
       </div>
     </section>
