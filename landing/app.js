@@ -37,7 +37,8 @@
     }
     if (flow === "login" && !form.password.value) { err.textContent = "Enter your password."; return; }
     save("cisto:name", nameFromEmail(email));
-    window.location.href = "home.html";
+    // New members go to profile setup (member area, Elena); returning users go to their plans.
+    window.location.href = flow === "member" ? "../design/member/m1-about-you.html" : "home.html";
   }));
 
   // ---------- Home ----------
