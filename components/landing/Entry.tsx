@@ -1,86 +1,17 @@
-"use client";
-
 import Link from "next/link";
-import { useRouter } from "next/navigation";
-import { useRef, useState, type FormEvent, type RefObject } from "react";
 
-import { save } from "@/lib/demo-store";
 import { routes } from "@/lib/routes";
 
+import { EntryHeader } from "./EntryHeader";
 import { LogoMark, Sprite, Use } from "./Sprite";
-import { Logo } from "@/components/Logo";
 
-type Flow = "member" | "host" | "login";
-
-const EMAIL_RE = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
-
-function nameFromEmail(email: string) {
-  const first = email.split("@")[0].split(/[._-]/)[0] || "";
-  return first.charAt(0).toUpperCase() + first.slice(1);
-}
-
-/** Public entry page: marketing hero plus the sign-up and log-in dialogs. */
+/** Public entry page. Sign-up and log-in live on their own pages. */
 export function Entry() {
-  const router = useRouter();
-  const dialogs: Record<Flow, RefObject<HTMLDialogElement | null>> = {
-    member: useRef<HTMLDialogElement>(null),
-    host: useRef<HTMLDialogElement>(null),
-    login: useRef<HTMLDialogElement>(null),
-  };
-  const [errors, setErrors] = useState<Record<Flow, string>>({ member: "", host: "", login: "" });
-  const [hostDone, setHostDone] = useState(false);
-
-  const open = (flow: Flow) => {
-    const d = dialogs[flow].current;
-    if (!d?.showModal) return;
-    d.showModal();
-    d.querySelector("input")?.focus();
-  };
-  const close = (flow: Flow) => dialogs[flow].current?.close();
-  const setError = (flow: Flow, msg: string) => setErrors((e) => ({ ...e, [flow]: msg }));
-
-  const submit = (flow: Flow) => (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setError(flow, "");
-    const data = new FormData(e.currentTarget);
-    const email = String(data.get("email") ?? "").trim().toLowerCase();
-    if (!EMAIL_RE.test(email)) return setError(flow, "Enter a valid email.");
-    if (flow === "member" && !email.endsWith("@mail.polimi.it")) return setError(flow, "Use your @mail.polimi.it address.");
-    if (flow === "host") {
-      if (!String(data.get("venue") ?? "").trim()) return setError(flow, "Tell us the name of your venue.");
-      setHostDone(true);
-      return;
-    }
-    if (flow === "login" && !data.get("password")) return setError(flow, "Enter your password.");
-    save("name", nameFromEmail(email));
-    // New members go to profile setup; returning users go to their plans.
-    router.push(flow === "member" ? routes.aboutYou : routes.plans);
-  };
-
-  const closeBtn = (flow: Flow) => (
-    <button className="icon-btn soft dialog-close" type="button" aria-label="Close" onClick={() => close(flow)}>
-      <Use id="i-x" size="sm" />
-    </button>
-  );
-
   return (
     <>
       <Sprite />
 
-      <header className="nav nav-entry">
-        <Link className="logo" href={routes.landing} aria-label="Ci Sto home">
-          <Logo />
-        </Link>
-        <nav className="nav-links" aria-label="Main">
-          <a href="#how">How it works</a>
-          <Link href={routes.plans}>Find your plans</Link>
-        </nav>
-        <div className="nav-actions">
-          <button className="btn btn-text" onClick={() => open("login")}>Log in</button>
-          <button className="btn btn-outline" onClick={() => open("host")}>Become a host</button>
-          <button className="btn btn-secondary" onClick={() => open("member")}>Become a member</button>
-        </div>
-      </header>
+      <EntryHeader />
 
       <main>
         <section className="hero">
@@ -97,7 +28,7 @@ export function Entry() {
                 </div>
                 <h2>Become a member</h2>
                 <p>For students with an @mail.polimi.it email. Swipe on plans, join the chat, grow your Cerchia.</p>
-                <button className="btn btn-main btn-block" onClick={() => open("member")}><Use id="i-arrow" />Become a member</button>
+                <Link className="btn btn-main btn-block" href={routes.signup}><Use id="i-arrow" />Become a member</Link>
               </article>
               <article className="choice">
                 <div className="choice-top">
@@ -106,7 +37,7 @@ export function Entry() {
                 </div>
                 <h2>Become a host</h2>
                 <p>For venues, brands and associations. Post activities, fill your slow days, see who is coming.</p>
-                <button className="btn btn-secondary btn-block" onClick={() => open("host")}><Use id="i-arrow" />Become a host</button>
+                <Link className="btn btn-secondary btn-block" href={routes.host}><Use id="i-arrow" />Become a host</Link>
               </article>
             </div>
           </div>
@@ -140,45 +71,10 @@ export function Entry() {
             <li><span className="icon-circle"><Use id="i-star" size="sm" /></span>Free for students</li>
             <li><span className="icon-circle"><Use id="i-store" size="sm" /></span>Partners always labelled</li>
           </ul>
+          <Link className="btn btn-text" href={routes.howItWorks}>See how it works<Use id="i-arrow" size="sm" /></Link>
         </section>
       </main>
 
-      {/* Sign up / log in dialogs */}
-      <dialog ref={dialogs.member} id="dlg-member" aria-labelledby="dlg-member-title">
-        {closeBtn("member")}
-        <form noValidate onSubmit={submit("member")}>
-          <h2 id="dlg-member-title">Become a member</h2>
-          <p>Use your university email. We send you a code to verify it.</p>
-          <label className="field">Polimi email<input type="email" name="email" placeholder="name.surname@mail.polimi.it" autoComplete="email" required /></label>
-          <div className="error" role="alert">{errors.member}</div>
-          <button className="btn btn-main btn-block" type="submit"><Use id="i-check" />Continue</button>
-        </form>
-      </dialog>
-
-      <dialog ref={dialogs.host} id="dlg-host" aria-labelledby="dlg-host-title">
-        {closeBtn("host")}
-        <form noValidate onSubmit={submit("host")} hidden={hostDone}>
-          <h2 id="dlg-host-title">Become a host</h2>
-          <p>Tell us where you are and we set up your partner account.</p>
-          <label className="field">Venue or organisation<input type="text" name="venue" placeholder="Bar Lumen" required /></label>
-          <label className="field">Work email<input type="email" name="email" placeholder="hello@yourvenue.it" autoComplete="email" required /></label>
-          <div className="error" role="alert">{errors.host}</div>
-          <button className="btn btn-secondary btn-block" type="submit">Create host account</button>
-        </form>
-        <div className="notice" role="status" hidden={!hostDone}>Done. Check your inbox to finish setting up your venue.</div>
-      </dialog>
-
-      <dialog ref={dialogs.login} id="dlg-login" aria-labelledby="dlg-login-title">
-        {closeBtn("login")}
-        <form noValidate onSubmit={submit("login")}>
-          <h2 id="dlg-login-title">Welcome back</h2>
-          <p>Log in with the email you signed up with.</p>
-          <label className="field">Email<input type="email" name="email" placeholder="name.surname@mail.polimi.it" autoComplete="email" required /></label>
-          <label className="field">Password<input type="password" name="password" autoComplete="current-password" required /></label>
-          <div className="error" role="alert">{errors.login}</div>
-          <button className="btn btn-secondary btn-block" type="submit">Log in</button>
-        </form>
-      </dialog>
     </>
   );
 }

@@ -258,3 +258,50 @@ dialog p { margin: 0 0 20px; color: var(--muted); }
 @media (max-width: 760px) {
   .nav-account .me .avatar { display: grid; }
 }
+
+/* ---------- Sign up, host and log in pages ---------- */
+.nav-actions .btn[aria-current="page"] { box-shadow: 0 0 0 3px var(--lime); }
+.auth {
+  display: grid; grid-template-columns: minmax(0, 520px) minmax(0, 1fr); gap: 48px; align-items: start;
+  max-width: 1180px; margin: 0 auto; padding: 56px var(--page-x) 72px;
+}
+.auth-card { background: var(--white); border: 1.5px solid var(--line); border-radius: var(--radius-lg); padding: 36px; }
+.auth-form { display: flex; flex-direction: column; gap: 4px; }
+.auth-form h1 { margin: 8px 0 6px; font: 800 40px/1.05 var(--font-title); letter-spacing: -1px; }
+.auth-form .choice-icon { margin-bottom: 8px; }
+.auth-lede { margin: 0 0 20px; color: var(--muted); font-size: 16px; }
+.auth-form .btn-text { align-self: center; margin-top: 8px; }
+.auth-switch { margin: 18px 0 0; text-align: center; color: var(--muted); font-weight: 600; }
+.auth-switch a { color: var(--blue); font-weight: 800; }
+fieldset.field { border: 0; padding: 0; margin: 0 0 16px; }
+fieldset.field legend { padding: 0; margin-bottom: 8px; }
+.segmented { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; padding: 4px; margin-bottom: 18px; border-radius: var(--radius-pill); background: var(--surface-2); }
+.segmented button { min-height: 44px; border-radius: var(--radius-pill); font-weight: 800; color: var(--muted); }
+.segmented button[aria-pressed="true"] { background: var(--white); color: var(--ink); box-shadow: 0 2px 8px rgba(22, 19, 29, .12); }
+.auth-aside { display: flex; flex-direction: column; gap: 20px; }
+.auth-aside img { width: 100%; height: 340px; object-fit: cover; border-radius: 28px; }
+.auth-aside ul { margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px; }
+.auth-aside li { display: flex; align-items: center; gap: 12px; font-weight: 700; list-style: none; }
+
+/* ---------- How it works ---------- */
+.how { max-width: 1180px; margin: 0 auto; padding: 56px var(--page-x) 0; display: flex; flex-direction: column; gap: 32px; }
+.how-head { max-width: 760px; }
+.how-block { display: flex; flex-direction: column; gap: 20px; align-items: flex-start; padding: 32px; background: var(--white); border: 1.5px solid var(--line); border-radius: var(--radius-lg); }
+.how-block-head { display: flex; align-items: center; gap: 14px; }
+.how-block-head h2 { margin: 0; font: 800 32px/1.1 var(--font-title); letter-spacing: -0.5px; }
+.steps { margin: 0; padding: 0; width: 100%; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+.step { list-style: none; position: relative; display: flex; flex-direction: column; gap: 10px; padding: 22px; border-radius: var(--radius-md); background: var(--cream); }
+.step h3 { margin: 0; font: 800 18px/1.25 var(--font-ui); }
+.step p { margin: 0; color: var(--muted); }
+.step-num { position: absolute; top: 18px; right: 20px; font: 800 28px/1 var(--font-title); color: var(--line); }
+.how .trust { margin: 0 calc(-1 * var(--page-x)); }
+
+@media (max-width: 900px) {
+  .auth { grid-template-columns: 1fr; padding-top: 32px; }
+  .auth-aside img { height: 200px; }
+}
+@media (max-width: 760px) {
+  .auth-card { padding: 24px; }
+  .auth-form h1 { font-size: 32px; }
+  .how-block { padding: 22px; }
+}
