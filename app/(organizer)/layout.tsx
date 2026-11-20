@@ -4,6 +4,7 @@ import { fontVars } from "@/lib/fonts";
 import "@/styles/tokens.css";
 import "@/styles/organizer.css";
 import "@/styles/motion.css";
+import "@/styles/logo.css";
 
 export const metadata: Metadata = {
   title: { default: "Ci Sto", template: "%s · Ci Sto" },

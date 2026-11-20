@@ -8,6 +8,7 @@ import { save } from "@/lib/demo-store";
 import { routes } from "@/lib/routes";
 
 import { LogoMark, Sprite, Use } from "./Sprite";
+import { Logo } from "@/components/Logo";
 
 type Flow = "member" | "host" | "login";
 
@@ -68,8 +69,7 @@ export function Entry() {
 
       <header className="nav nav-entry">
         <Link className="logo" href={routes.landing} aria-label="Ci Sto home">
-          <LogoMark color="var(--blue)" />
-          Ci Sto
+          <Logo />
         </Link>
         <nav className="nav-links" aria-label="Main">
           <a href="#how">How it works</a>

@@ -1,13 +1,14 @@
 import Link from "next/link";
 
 import { routes } from "@/lib/routes";
+import { Logo } from "@/components/Logo";
 
 // Header and step tabs shared by the two profile setup steps (M1, M2).
 export function OnbBar({ step }: { step: 1 | 2 }) {
   return (
     <header className="onb-bar">
-      <Link className="logo" href={routes.plans}>
-        <span className="logo-mark" aria-hidden="true"></span>Ci Sto
+      <Link className="logo" href={routes.plans} aria-label="Ci Sto home">
+        <Logo />
       </Link>
       <span className="spacer"></span>
       <div className="bar" role="progressbar" aria-valuenow={step} aria-valuemin={0} aria-valuemax={2} aria-label="Profile setup">

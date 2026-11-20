@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { Icon } from "@/components/Icon";
 import { load } from "@/lib/demo-store";
 import { routes } from "@/lib/routes";
+import { Logo } from "@/components/Logo";
 
 export type NavItem = "Find your plans" | "Organize" | "Chats" | "Cerchia";
 
@@ -26,9 +27,8 @@ export function Nav({ active }: { active?: NavItem }) {
 
   return (
     <header className="nav">
-      <Link className="logo" href={routes.plans}>
-        <span className="logo-mark" aria-hidden="true" />
-        Ci Sto
+      <Link className="logo" href={routes.plans} aria-label="Ci Sto home">
+        <Logo />
       </Link>
       <nav className="nav-links" aria-label="Main">
         {ITEMS.map(([label, href]) => (
