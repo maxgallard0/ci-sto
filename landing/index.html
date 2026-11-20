@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ci Sto · Find your plans. Find your people.</title>
+  <meta name="description" content="Ci Sto is the app for Polimi students: swipe on plans, not people. Say ci sto and meet students who like what you like.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="logo" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M39.32 11.14 A20 20 0 1 0 39.32 36.86"/><path d="M35.11 14.68 A14.5 14.5 0 1 0 35.11 33.32"/><path d="M30.89 18.21 A9 9 0 1 0 30.89 29.79"/></g></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.5-3.6 3.1-6 6.5-6s6 2.4 6.5 6"/><circle cx="17" cy="9" r="2.5"/><path d="M17 14c2.6 0 4.2 1.8 4.6 4.5"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c.8-4 4-6.5 8-6.5s7.2 2.5 8 6.5"/></symbol>
+    <symbol id="i-store" viewBox="0 0 24 24"><path d="M4 9l1.5-5h13L20 9M4 9v11h16V9M4 9h16M9 20v-6h6v6"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  </svg>
+
+  <header class="nav nav-entry">
+    <a class="logo" href="index.html" aria-label="Ci Sto home"><svg style="color:var(--blue)" aria-hidden="true"><use href="#logo"/></svg>Ci Sto</a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#how">How it works</a>
+      <a href="home.html">Find your plans</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="btn btn-text" data-open="login">Log in</button>
+      <button class="btn btn-outline" data-open="host">Become a host</button>
+      <button class="btn btn-secondary" data-open="member">Become a member</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="badge badge-lime"><svg class="icon xs" aria-hidden="true"><use href="#i-star"/></svg>Live at Politecnico di Milano</span>
+        <h1 class="hero-title">Find your plans.<br>Find your <span>people.</span></h1>
+        <p class="hero-lede">Swipe on plans, not people. From an aperitivo on the Navigli to a weekend in the Dolomites: say ci sto and meet students who like what you like.</p>
+
+        <div class="choose">
+          <article class="choice">
+            <div class="choice-top">
+              <span class="choice-icon lime"><svg class="icon" aria-hidden="true"><use href="#i-user"/></svg></span>
+              <span class="badge badge-soft">Free for students</span>
+            </div>
+            <h2>Become a member</h2>
+            <p>For students with an @mail.polimi.it email. Swipe on plans, join the chat, grow your Cerchia.</p>
+            <button class="btn btn-main btn-block" data-open="member"><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>Become a member</button>
+          </article>
+          <article class="choice">
+            <div class="choice-top">
+              <span class="choice-icon tint"><svg class="icon" aria-hidden="true"><use href="#i-store"/></svg></span>
+              <span class="badge badge-info">Partners</span>
+            </div>
+            <h2>Become a host</h2>
+            <p>For venues, brands and associations. Post activities, fill your slow days, see who is coming.</p>
+            <button class="btn btn-secondary btn-block" data-open="host"><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>Become a host</button>
+          </article>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <img class="hero-photo" src="assets/aperitivo.jpg" alt="">
+        <span class="badge badge-lime">Under €10</span>
+        <div class="float-pill"><svg style="color:var(--lime)"><use href="#logo"/></svg>Lucía joined your Cerchia</div>
+        <div class="float-card">
+          <span class="badge badge-ink">Social</span>
+          <h3>Aperitivo on the Navigli</h3>
+          <div class="row"><svg class="icon sm"><use href="#i-clock"/></svg>Today · 19:00</div>
+          <div class="row gap-12">
+            <div class="avatars"><span class="avatar a1">LU</span><span class="avatar a2">MA</span><span class="avatar a3">SO</span><span class="avatar a4">KE</span></div>
+            <span class="muted strong">7 of 10 going</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust" id="how" aria-label="How it works">
+      <ul>
+        <li><span class="icon-circle"><svg class="icon sm" aria-hidden="true"><use href="#i-check"/></svg></span>Only verified Polimi students</li>
+        <li><span class="icon-circle"><svg class="icon sm" aria-hidden="true"><use href="#i-users"/></svg></span>Small groups of 3 to 8</li>
+        <li><span class="icon-circle"><svg class="icon sm" aria-hidden="true"><use href="#i-star"/></svg></span>Free for students</li>
+        <li><span class="icon-circle"><svg class="icon sm" aria-hidden="true"><use href="#i-store"/></svg></span>Partners always labelled</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Sign up / log in dialogs -->
+  <dialog id="dlg-member" aria-labelledby="dlg-member-title">
+    <button class="icon-btn soft dialog-close" data-close aria-label="Close"><svg class="icon sm"><use href="#i-x"/></svg></button>
+    <form data-flow="member" novalidate>
+      <h2 id="dlg-member-title">Become a member</h2>
+      <p>Use your university email. We send you a code to verify it.</p>
+      <label class="field">Polimi email<input type="email" name="email" placeholder="name.surname@mail.polimi.it" autocomplete="email" required></label>
+      <div class="error" role="alert"></div>
+      <button class="btn btn-main btn-block" type="submit"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Continue</button>
+    </form>
+  </dialog>
+
+  <dialog id="dlg-host" aria-labelledby="dlg-host-title">
+    <button class="icon-btn soft dialog-close" data-close aria-label="Close"><svg class="icon sm"><use href="#i-x"/></svg></button>
+    <form data-flow="host" novalidate>
+      <h2 id="dlg-host-title">Become a host</h2>
+      <p>Tell us where you are and we set up your partner account.</p>
+      <label class="field">Venue or organisation<input type="text" name="venue" placeholder="Bar Lumen" required></label>
+      <label class="field">Work email<input type="email" name="email" placeholder="hello@yourvenue.it" autocomplete="email" required></label>
+      <div class="error" role="alert"></div>
+      <button class="btn btn-secondary btn-block" type="submit">Create host account</button>
+    </form>
+    <div class="notice" role="status" hidden>Done. Check your inbox to finish setting up your venue.</div>
+  </dialog>
+
+  <dialog id="dlg-login" aria-labelledby="dlg-login-title">
+    <button class="icon-btn soft dialog-close" data-close aria-label="Close"><svg class="icon sm"><use href="#i-x"/></svg></button>
+    <form data-flow="login" novalidate>
+      <h2 id="dlg-login-title">Welcome back</h2>
+      <p>Log in with the email you signed up with.</p>
+      <label class="field">Email<input type="email" name="email" placeholder="name.surname@mail.polimi.it" autocomplete="email" required></label>
+      <label class="field">Password<input type="password" name="password" autocomplete="current-password" required></label>
+      <div class="error" role="alert"></div>
+      <button class="btn btn-secondary btn-block" type="submit">Log in</button>
+    </form>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>

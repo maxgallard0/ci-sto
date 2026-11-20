@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plans this week · Ci Sto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="logo" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M39.32 11.14 A20 20 0 1 0 39.32 36.86"/><path d="M35.11 14.68 A14.5 14.5 0 1 0 35.11 33.32"/><path d="M30.89 18.21 A9 9 0 1 0 30.89 29.79"/></g></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0114 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.5-3.6 3.1-6 6.5-6s6 2.4 6.5 6"/><circle cx="17" cy="9" r="2.5"/><path d="M17 14c2.6 0 4.2 1.8 4.6 4.5"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 16V11a6 6 0 0112 0v5l1.5 2h-15zM10 20.5a2 2 0 004 0"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M20 12a8 8 0 01-11.6 7.1L4 20l1-4.2A8 8 0 1120 12z"/></symbol>
+  </svg>
+
+  <header class="nav">
+    <a class="logo" href="index.html" aria-label="Ci Sto home"><svg style="color:var(--blue)" aria-hidden="true"><use href="#logo"/></svg>Ci Sto</a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="index.html#how">How it works</a>
+      <a href="home.html" aria-current="page">Find your plans</a>
+      <a href="#" data-soon="Chats">Chats</a>
+      <a href="#" data-soon="Cerchia">Cerchia</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" aria-label="Search plans" data-soon="Search"><svg class="icon sm"><use href="#i-search"/></svg></button>
+      <button class="icon-btn" aria-label="Notifications" data-soon="Notifications"><svg class="icon sm"><use href="#i-bell"/></svg></button>
+      <a class="me" href="index.html" title="Log out"><span class="avatar a3" id="me-initials">CA</span><span id="me-name">Camila</span></a>
+    </div>
+  </header>
+
+  <main class="home">
+    <div class="home-head">
+      <div>
+        <p class="eyebrow">This week · 17 – 23 Nov</p>
+        <h1 class="home-title">Plans this week</h1>
+        <p class="home-sub">Picked for you from your profile: trekking, design, aperitivo, English and Italian.</p>
+      </div>
+      <div class="chips" role="group" aria-label="Filter plans">
+        <button class="chip" aria-pressed="true" data-filter="all"><svg class="icon xs" aria-hidden="true"><use href="#i-star"/></svg>For you</button>
+        <button class="chip" aria-pressed="false" data-filter="social">Social</button>
+        <button class="chip" aria-pressed="false" data-filter="pro">Pro</button>
+        <button class="chip" aria-pressed="false" data-filter="outdoor">Outdoor</button>
+        <button class="chip" aria-pressed="false" data-filter="cheap">Under €10</button>
+      </div>
+    </div>
+
+    <div class="grid">
+      <article class="featured" data-tags="outdoor" aria-labelledby="ft-title">
+        <div class="featured-media">
+          <img src="assets/dolomites.jpg" alt="Students hiking on the Seceda ridge in the Dolomites">
+          <span class="badge badge-lime tl"><svg class="icon xs" aria-hidden="true"><use href="#i-star"/></svg>For you · you like trekking</span>
+          <span class="badge badge-ink tr">Outdoor</span>
+          <span class="badge badge-white br">€95 · train + rifugio</span>
+        </div>
+        <div class="featured-body">
+          <h2 id="ft-title">Weekend in the Dolomites · Seceda</h2>
+          <div class="info">
+            <span class="row"><svg class="icon sm" aria-hidden="true"><use href="#i-clock"/></svg>Sat 22 – Sun 23 Nov</span>
+            <span class="row"><svg class="icon sm" aria-hidden="true"><use href="#i-pin"/></svg>Meet at Milano Centrale · 7:10</span>
+            <span class="row"><svg class="icon sm" aria-hidden="true"><use href="#i-users"/></svg><span id="going">5 of 8 going · 3 spots left</span></span>
+          </div>
+          <div class="progress" role="progressbar" aria-label="Spots taken" aria-valuemin="0" aria-valuemax="8" aria-valuenow="5"><span style="width:62.5%"></span></div>
+          <div class="notice">Vibe: hikers of every level, 4 nationalities, English and Italian. Hosted by Marco, Engineering.</div>
+          <div class="actions">
+            <div class="avatars" id="ft-avatars"><span class="avatar a2">MA</span><span class="avatar a5">EL</span><span class="avatar a1">JO</span><span class="avatar a4">IR</span><span class="avatar a3">+1</span></div>
+            <span class="spacer"></span>
+            <button class="icon-btn lg ring" aria-label="Skip this plan" id="skip"><svg class="icon"><use href="#i-x"/></svg></button>
+            <button class="icon-btn lg soft" aria-label="Plan details" data-soon="Plan details"><svg class="icon"><use href="#i-info"/></svg></button>
+            <button class="btn btn-main" id="cisto" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Ci sto</span></button>
+          </div>
+        </div>
+      </article>
+
+      <aside class="side" aria-labelledby="more-title">
+        <div class="side-head">
+          <h2 id="more-title">More plans this week</h2>
+          <a class="btn btn-text" href="#" data-soon="All plans">See all</a>
+        </div>
+
+        <a class="plan-row" href="#" data-tags="social cheap" data-soon="Aperitivo on the Navigli">
+          <img class="thumb" src="assets/aperitivo.jpg" alt="">
+          <div>
+            <span class="badge badge-ink">Social</span>
+            <h3>Aperitivo on the Navigli</h3>
+            <p>Today · 19:00</p>
+            <p class="muted">Under €10 · 7 of 10 going</p>
+          </div>
+        </a>
+        <a class="plan-row" href="#" data-tags="pro" data-soon="Startup pitch night">
+          <img class="thumb" src="assets/pitch-night.jpg" alt="">
+          <div>
+            <span class="badge badge-info">Pro</span>
+            <h3>Startup pitch night · PoliHub</h3>
+            <p>Fri 21 Nov · 18:30</p>
+            <p class="muted">Free · 9 of 12 going</p>
+          </div>
+        </a>
+        <a class="plan-row" href="#" data-tags="social cheap" data-soon="Language swap">
+          <span class="thumb tile" aria-hidden="true"><svg class="icon"><use href="#i-chat"/></svg></span>
+          <div>
+            <span class="badge badge-soft">Partner</span>
+            <h3>Language swap at Bar Lumen</h3>
+            <p>Sun 23 Nov · 17:00</p>
+            <p class="muted">Spritz €5 · 4 of 10 going</p>
+          </div>
+        </a>
+        <p class="empty" id="empty" hidden>No more plans with this filter this week. Try another one.</p>
+
+        <div class="plus">
+          <div class="plus-top"><svg style="color:var(--lime)" aria-hidden="true"><use href="#logo"/></svg>Plus member<span class="badge badge-lime">Active</span></div>
+          <div class="plus-stats">
+            <div><strong>€14.60</strong><span>saved this month</span></div>
+            <div><strong>23</strong><span>places near Polimi</span></div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <div class="toast" role="status" aria-live="polite" id="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
