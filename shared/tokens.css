@@ -37,8 +37,8 @@
   --av5: var(--avatar-5);
 
   /* Type */
-  --font-title: "Bricolage Grotesque", system-ui, sans-serif;
-  --font-ui: "Figtree", system-ui, sans-serif;
+  --font-title: var(--nf-title, "Bricolage Grotesque"), system-ui, sans-serif;
+  --font-ui: var(--nf-ui, "Figtree"), system-ui, sans-serif;
 
   /* Radii */
   --radius-pill: 999px;

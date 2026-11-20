@@ -26,20 +26,31 @@ Group startup concept for the Pitch & Presentation Strategies course, Strategic 
 
 ## Website structure
 
-Static HTML, CSS and JavaScript, no build step.
+Next.js app (App Router, TypeScript). Demo only: all data lives in the front end and in the browser (localStorage), no backend yet.
 
 | Path | What | Owner |
 |---|---|---|
-| `index.html` | Sends visitors to the landing | team |
-| `landing/` | Landing, sign up / log in, Plans this week | Cami |
-| `design/member/` | Become a member: onboarding, filters, chats, Cerchia | Elena |
-| `design/organizer/` | Organize a plan | Melis |
+| `app/(landing)/` | Landing (`/`), sign up / log in, Plans this week (`/plans`) | Cami |
+| `app/(member)/` | Become a member (`/join/...`), all plans with filters (`/plans/all`), chats, Cerchia | Elena |
+| `app/(organizer)/` | Organize a plan (`/organize/...`) | Melis |
+| `components/` | Shared navigation and icons | team |
+| `lib/` | Routes, mock data, fonts, demo storage | team |
+| `styles/` | `tokens.css` (shared colours, type, radii) and one stylesheet per area | team |
+| `design/`, `landing/` | Original static HTML mockups, kept as reference | team |
 
-Flow: landing → "Become a member" → `design/member/m1-about-you.html` → profile setup → Plans this week (`landing/home.html`). "Log in" goes straight to Plans this week.
+Each area is its own root layout, so an area stylesheet never affects the others. All links use `lib/routes.ts`.
+
+Terminology: a student who creates a plan is an **Organizer**. **Host** is only for partners (venues, brands, associations).
+
+## Run locally
+
+```bash
+npm install
+npm run dev
+```
+
+Open http://localhost:3000.
 
 ## Deploy on Vercel
 
-1. Merge the area pull requests into `main`.
-2. In Vercel: Add New → Project → import `melisabaci5-ui/ci-sto`.
-3. Framework preset: **Other**. Root directory: `./`. No build command, no output directory.
-4. Deploy. Every merge into `main` publishes again automatically.
+`vercel.json` sets the framework to Next.js, so Vercel runs `next build` on every push to `main`. If the Vercel project was created with the "Other" preset, open Project Settings, Build and Deployment, set Framework Preset to Next.js and clear any custom build or output settings.
