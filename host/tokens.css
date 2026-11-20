@@ -1,4 +1,4 @@
-/* Ci Sto Design System - Host Area Tokens */
+/* Ci Sto Design System - Host Web Platform Tokens & Desktop Layout */
 :root {
   /* Colour Tokens */
   --color-blue: #2347FF;
@@ -17,13 +17,6 @@
   --color-field-border: #8C8294;
   --color-success: #3F7A1F;
 
-  /* Avatar & Placeholder Palette */
-  --avatar-1: #F7B9A8;
-  --avatar-2: #FFD27A;
-  --avatar-3: #B9AEFF;
-  --avatar-4: #D9F27F;
-  --avatar-5: #9ED9C9;
-
   /* Typography */
   --font-title: 'Bricolage Grotesque', sans-serif;
   --font-body: 'Figtree', sans-serif;
@@ -33,6 +26,9 @@
   --radius-large-card: 22px;
   --radius-card: 18px;
   --radius-small-card: 14px;
+
+  /* Max Container Width for Desktop */
+  --desktop-max-width: 1240px;
 }
 
 * {
@@ -49,8 +45,6 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 24px 16px;
 }
 
 /* Accessibility Focus Ring */
@@ -88,15 +82,15 @@ select:focus-visible,
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 0 28px;
-  transition: transform 0.15s ease, opacity 0.15s ease;
+  padding: 0 32px;
+  transition: transform 0.15s ease, opacity 0.15s ease, box-shadow 0.15s ease;
   min-width: 44px;
   min-height: 44px;
-  width: 100%;
 }
 
 .btn-primary:hover {
-  opacity: 0.94;
+  opacity: 0.95;
+  box-shadow: 0 4px 14px rgba(214, 58, 36, 0.25);
 }
 
 .btn-primary:active {
@@ -116,6 +110,7 @@ select:focus-visible,
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
   padding: 0 24px;
   transition: background-color 0.15s ease;
 }
@@ -128,7 +123,7 @@ select:focus-visible,
   height: 48px;
   border-radius: var(--radius-pill);
   background-color: transparent;
-  color: var(--color-muted);
+  color: var(--color-ink);
   font-family: var(--font-body);
   font-size: 15px;
   font-weight: 700;
@@ -138,13 +133,19 @@ select:focus-visible,
   align-items: center;
   justify-content: center;
   padding: 0 20px;
+  transition: all 0.15s ease;
+}
+
+.btn-outline:hover {
+  border-color: var(--color-ink);
+  background-color: var(--color-surface-2);
 }
 
 .badge {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 6px 12px;
+  padding: 6px 14px;
   border-radius: var(--radius-pill);
   font-size: 13px;
   font-weight: 700;
@@ -173,7 +174,7 @@ select:focus-visible,
 
 .chip {
   min-height: 40px;
-  padding: 8px 16px;
+  padding: 8px 18px;
   border-radius: var(--radius-pill);
   border: 1.5px solid var(--color-field-border);
   background-color: var(--color-white);
@@ -203,7 +204,7 @@ select:focus-visible,
   background-color: var(--color-white);
   border-radius: var(--radius-card);
   border: 1.5px solid var(--color-line);
-  padding: 20px;
+  padding: 28px;
 }
 
 .card-highlight {
@@ -213,12 +214,12 @@ select:focus-visible,
 .input-group {
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  margin-bottom: 16px;
+  gap: 8px;
+  margin-bottom: 20px;
 }
 
 .input-group label {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 700;
   color: var(--color-ink);
 }
@@ -228,7 +229,7 @@ select:focus-visible,
   border-radius: 14px;
   border: 1.5px solid var(--color-field-border);
   background-color: var(--color-white);
-  padding: 0 16px;
+  padding: 0 18px;
   font-family: var(--font-body);
   font-size: 15px;
   color: var(--color-ink);
