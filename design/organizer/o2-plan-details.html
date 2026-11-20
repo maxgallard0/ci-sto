@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>O2 · Plan details · Ci Sto</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="organizer.css">
+</head>
+<body>
+<div id="nav"></div>
+<main class="page">
+  <div class="page-head">
+    <div>
+      <p class="eyebrow">Organize a plan · step 1 of 3</p>
+      <h1 class="title">Plan details</h1>
+    </div>
+    <div class="chips" aria-label="Steps">
+      <span class="chip" aria-pressed="true" data-static style="display:inline-flex;align-items:center">1 · Details</span>
+      <span class="chip" data-static style="display:inline-flex;align-items:center">2 · Preview</span>
+      <span class="chip" data-static style="display:inline-flex;align-items:center">3 · Publish</span>
+    </div>
+  </div>
+
+  <div class="cols">
+    <form class="form" onsubmit="location.href='o3-preview-and-publish.html';return false;">
+      <div class="field">
+        <span class="label">Type of plan</span>
+        <div class="chips" data-single>
+          <button type="button" class="chip" aria-pressed="true">Social</button>
+          <button type="button" class="chip" aria-pressed="false">Pro</button>
+          <button type="button" class="chip" aria-pressed="false">Both</button>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="f-title">Title</label>
+        <input id="f-title" class="input" value="Sunday market and brunch" maxlength="60">
+        <p class="helper">Short and concrete. Up to 60 characters.</p>
+      </div>
+
+      <div class="field">
+        <label for="f-desc">Description</label>
+        <textarea id="f-desc" class="input" maxlength="300">Stroll the stalls together, then brunch at the market. Come hungry, leave with new friends. Italian and English welcome.</textarea>
+        <div class="row"><p class="helper">What will you do? Who will enjoy it?</p><span class="spacer"></span><span class="helper">124 / 300</span></div>
+      </div>
+
+      <div class="field">
+        <span class="label">Cover photo</span>
+        <div class="upload">
+          <div class="photo" style="width:176px;height:110px">market-brunch.jpg</div>
+          <div class="stack" style="gap:4px">
+            <strong>market-brunch.jpg</strong>
+            <span class="ok">2.4 MB · landscape · looks good</span>
+            <div class="row" style="gap:16px"><button type="button" class="btn-text">Replace</button><button type="button" class="btn-text">Remove</button></div>
+          </div>
+        </div>
+        <div class="upload upload-empty">
+          <span class="ic"><i data-icon="upload" style="color:var(--blue)"></i></span>
+          <div class="stack" style="gap:2px;flex:1"><strong>Empty state: drag a photo here or browse</strong><span class="helper">JPG or PNG, landscape, up to 10 MB</span></div>
+          <label class="btn-sec">Browse files<input type="file" accept="image/png,image/jpeg" class="sr-only"></label>
+        </div>
+        <p class="helper">Use a photo of the place or the activity. No photos of people without their consent.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="field"><label for="f-date">Date</label><input id="f-date" class="input" value="Sun 30 Nov 2026"></div>
+        <div class="field"><label for="f-start">Starts</label><input id="f-start" class="input" value="11:00"></div>
+        <div class="field"><label for="f-end">Ends</label><input id="f-end" class="input" value="13:00"></div>
+      </div>
+
+      <div class="grid-venue">
+        <div class="field"><label for="f-venue">Public venue</label><input id="f-venue" class="input" value="Mercato di Porta Genova"><p class="helper">Only public places. Approved members see the exact meeting point.</p></div>
+        <div class="field"><label for="f-hood">Neighbourhood</label><input id="f-hood" class="input" value="Porta Genova"><p class="helper">Used by the neighbourhood filter.</p></div>
+      </div>
+
+      <div class="field">
+        <span class="label">Group size</span>
+        <div class="stepper" data-stepper>
+          <button type="button" class="round-btn" data-step="-" aria-label="Fewer people"><i data-icon="minus"></i></button>
+          <span class="big-num" data-value aria-live="polite">8 people</span>
+          <button type="button" class="round-btn" data-step="+" aria-label="More people"><i data-icon="plus"></i></button>
+        </div>
+        <p class="helper">6 to 12. Small enough to talk to everyone.</p>
+      </div>
+
+      <div class="field">
+        <span class="label">Price per person</span>
+        <p class="helper">Members filter by price, so pick the closest option.</p>
+        <div class="chips" data-single>
+          <button type="button" class="chip" aria-pressed="false">Free</button>
+          <button type="button" class="chip" aria-pressed="false">Under €10</button>
+          <button type="button" class="chip" aria-pressed="true">Set a price</button>
+        </div>
+        <div class="grid-price">
+          <div class="field"><label for="f-amount">Amount</label><input id="f-amount" class="input" value="€12"></div>
+          <div class="field"><label for="f-pay">How people pay</label><input id="f-pay" class="input" value="Pay on site, at the stall"></div>
+        </div>
+      </div>
+
+      <div class="field">
+        <span class="label">Who is it for</span>
+        <p class="helper">Pick what fits. This helps the right people find your plan.</p>
+        <div class="chips">
+          <button type="button" class="chip" aria-pressed="true">Very mixed</button>
+          <button type="button" class="chip" aria-pressed="true">Practise Italian</button>
+          <button type="button" class="chip" aria-pressed="false">English</button>
+          <button type="button" class="chip" aria-pressed="false">Design</button>
+          <button type="button" class="chip" aria-pressed="false">Engineering</button>
+          <button type="button" class="chip" aria-pressed="false">Beginners welcome</button>
+          <button type="button" class="chip" aria-pressed="false">Foodies</button>
+        </div>
+        <div class="toggle-row">
+          <button type="button" class="switch" role="switch" aria-checked="false" aria-labelledby="wo-label"></button>
+          <div><b id="wo-label">Women only</b><p class="helper">Only women can see and join this plan.</p></div>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button type="button" class="btn-text">Save draft</button>
+        <span class="spacer"></span>
+        <button type="submit" class="btn-main">Preview plan</button>
+      </div>
+    </form>
+
+    <aside class="stack" style="gap:12px;position:sticky;top:24px">
+      <p class="eyebrow">How members will see it</p>
+      <article class="card card-line" style="padding:0;overflow:hidden;gap:0">
+        <div class="photo photo-top">Cover photo</div>
+        <div class="stack" style="padding:22px;gap:14px">
+          <span class="badge b-ink">Social</span>
+          <h2 class="title-card" id="pv-title">Sunday market and brunch</h2>
+          <p class="info"><i data-icon="calendar"></i>Sun 30 Nov · 11:00 to 13:00</p>
+          <p class="info"><i data-icon="pin"></i>Mercato di Porta Genova</p>
+          <p class="info"><i data-icon="users"></i><span id="pv-size">0 of 8 going · small group</span></p>
+          <p class="info"><i data-icon="euro"></i>€12 · pay on site</p>
+          <p class="notice">Vibe: very mixed, practise Italian. Organized by Camila, Design.</p>
+        </div>
+      </article>
+      <p class="helper">Updates as you type. Women only and the exact meeting point are not shown here.</p>
+    </aside>
+  </div>
+</main>
+<script src="organizer.js"></script>
+</body>
+</html>

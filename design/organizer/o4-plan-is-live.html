@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>O4 · Your plan is live · Ci Sto</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="organizer.css">
+</head>
+<body>
+<div id="nav"></div>
+<main class="page" style="align-items:center;padding-top:72px">
+  <div class="stack" style="width:640px;max-width:100%;align-items:center;gap:24px;text-align:center">
+    <span class="ic ic-lime" style="width:88px;height:88px" role="img" aria-label="Published"><i data-icon="check" style="width:40px;height:40px"></i></span>
+    <div>
+      <p class="eyebrow">Step 3 of 3 · published</p>
+      <h1 class="title">Your plan is live</h1>
+      <p class="lead">We'll tell you when someone asks to join. The group chat opens Thu 27 Nov, 3 days before the plan.</p>
+    </div>
+
+    <div class="card" style="flex-direction:row;align-items:center;gap:16px;padding:12px;width:100%;text-align:left;border-radius:20px">
+      <div class="photo" style="width:112px;height:112px">Photo</div>
+      <div class="stack" style="gap:6px">
+        <div class="row" style="gap:6px"><span class="badge b-ink">Social</span><span class="badge b-soft">Live</span></div>
+        <b style="font-size:19px">Sunday market and brunch</b>
+        <span class="helper" style="font-size:14px">Sun 30 Nov · 11:00 · Mercato di Porta Genova</span>
+        <span class="helper">€12 · 0 of 8 going</span>
+      </div>
+    </div>
+
+    <div class="card" style="width:100%;text-align:left;gap:12px">
+      <p class="row h-sec" style="gap:10px"><i data-icon="link" style="color:var(--muted)"></i>Invite friends from Polimi</p>
+      <div class="row" style="align-items:flex-end;gap:12px">
+        <div class="field" style="flex:1"><label for="plan-link">Plan link</label><input id="plan-link" class="input" value="cisto.app/p/sunday-market-brunch" readonly></div>
+        <button class="btn-sec" id="copy-link" style="height:52px">Copy link</button>
+      </div>
+      <p class="helper">Only verified Polimi students can open the link and ask to join.</p>
+    </div>
+
+    <div class="row" style="gap:16px">
+      <a class="btn-main" href="o5-manage-plan.html">Manage your plan</a>
+      <a class="btn-text" href="o2-plan-details.html">Organize another plan</a>
+    </div>
+  </div>
+</main>
+<script src="organizer.js"></script>
+</body>
+</html>
