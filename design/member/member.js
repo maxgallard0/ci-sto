@@ -46,9 +46,9 @@ function drawNav() {
   const link = (label, href) => `<a href="${href}"${label === active ? ' aria-current="page"' : ''}>${label}</a>`;
   slot.outerHTML = `
   <header class="nav">
-    <a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true"></span>Ci Sto</a>
+    <a class="logo" href="../../landing/home.html"><span class="logo-mark" aria-hidden="true"></span>Ci Sto</a>
     <nav class="nav-links" aria-label="Main">
-      ${link('Find your plans', 'm3-find-your-plans.html')}
+      ${link('Find your plans', '../../landing/home.html')}
       ${link('Organize', '../organizer/o1-become-organizer.html')}
       ${link('Chats', 'm4-chats.html')}
       ${link('Cerchia', 'm6-your-cerchia.html')}
