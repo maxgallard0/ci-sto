@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M4 · Chats · Ci Sto</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="member.css">
+</head>
+<body>
+<div id="nav" data-active="Chats"></div>
+<main class="chat-layout">
+  <nav class="stack" style="gap:6px" aria-label="Your chats">
+    <h1 class="title-sm" style="font-size:34px">Chats</h1>
+    <p class="helper" style="font-size:14px">One group chat per plan. It opens a few days before and is archived after.</p>
+    <p class="eyebrow" style="font-size:12px;padding-top:18px">Open now</p>
+    <a class="chat-row" href="#" aria-current="true"><span class="thumb ph-pitch" style="width:52px;height:52px"></span><span class="t"><b>Startup pitch night · PoliHub</b><span>Confirm by today 18:30</span></span><span class="when">18:42</span></a><a class="chat-row" href="#"><span class="thumb ph-ap" style="width:52px;height:52px"></span><span class="t"><b>Aperitivo on the Navigli</b><span>Luca: Happy to help with the Italian</span></span><span class="when">18:20<span class="unread" aria-label="3 unread">3</span></span></a><a class="chat-row" href="#"><span class="thumb ph-dol" style="width:52px;height:52px"></span><span class="t"><b>Weekend in the Dolomites</b><span>Marco: train tickets are in the plan</span></span><span class="when">Yesterday</span></a>
+    <p class="eyebrow" style="font-size:12px;padding-top:18px">Opening soon</p>
+    <a class="chat-row" href="#"><span class="thumb " style="background:var(--av5);width:52px;height:52px" style="width:52px;height:52px"></span><span class="t"><b>Free jazz night in Isola</b><span>3 going · chat opens Mon 24 Nov</span></span><span class="when">Thu</span></a><a class="chat-row" href="#"><span class="thumb " style="background:var(--av4);width:52px;height:52px" style="width:52px;height:52px"></span><span class="t"><b>Bike ride along the Martesana</b><span>2 going · chat opens Wed 26 Nov</span></span><span class="when">Sat</span></a>
+    <p class="eyebrow" style="font-size:12px;padding-top:18px">Your Cerchia</p>
+    <a class="chat-row" href="#"><span class="thumb " style="background:var(--av2);width:52px;height:52px" style="width:52px;height:52px"></span><span class="t"><b>Ahmed K.</b><span>Met in the Dolomites</span></span><span class="when">Mon</span></a>
+    <p class="eyebrow" style="font-size:12px;padding-top:18px">Archived</p>
+    <a class="chat-row" href="m5-who-did-you-click-with.html"><span class="thumb" style="background:var(--surface-2);width:52px;height:52px"></span><span class="t"><b>Dolomites weekend · 12 Oct</b><span>Who did you click with? Pick them now</span></span><span class="when">Done</span></a>
+  </nav>
+  <section class="conv" aria-label="Startup pitch night group chat">
+    <div class="conv-head"><span class="thumb ph-pitch" style="width:48px;height:48px;border-radius:12px"></span><div class="spacer"><b style="font-size:18px">Startup pitch night · PoliHub</b><p class="muted" style="font-size:14px">9 of 12 · Fri 21 Nov, 18:30</p></div><button class="icon-btn" style="background:var(--surface-2)" aria-label="Plan info"><i data-icon="info"></i></button></div>
+    <div class="conv-body">
+      <div class="ice"><p class="eyebrow" style="color:var(--ink);font-size:12px">Ice-breaker</p><b style="font-size:17px">Introduce yourself: your idea in one line, or what you want to learn.</b></div>
+      <div class="confirm" id="confirm-box"><b style="font-size:18px">Tomorrow at 18:30. Still in?</b><p>Confirming keeps your reliability badge. Can't make it? Say so now and free your spot for someone on the waiting list.</p>
+        <div class="row"><button class="btn-lime" id="confirm-yes">Yes, I'm in</button><button class="btn-outline-dark">Can't make it</button></div></div>
+      <div class="card card-line row" style="flex-direction:row;padding:14px 18px;border-radius:16px"><i data-icon="pin"></i><b style="font-weight:600">Meet point: PoliHub, Via Durando 39, Bovisa. Doors 18:15, free entry with your Ci Sto pass.</b></div>
+      <div class="msg"><span class="avatar avatar-sm a1">GR</span><div class="bubble"><small>Giulia R. · organizer</small>Hi all! Five teams pitch, then drinks on the terrace. Bring questions, not business cards.</div></div><div class="msg"><span class="avatar avatar-sm a2">AK</span><div class="bubble"><small>Ahmed K.</small>Ahmed, Computer Engineering. I'm building a tool for student housing, happy to get feedback.</div></div><div class="msg"><span class="avatar avatar-sm a3">SC</span><div class="bubble"><small>Sofia C.</small>Sofia, Design. Here to learn how pitches work. And to practise my Italian!</div></div>
+      <div class="msg mine"><div class="bubble">Camila, Strategic Design. I want to see how design fits early-stage startups. See you tomorrow!</div></div>
+    </div>
+    <form class="composer" onsubmit="return false"><label class="sr-only" for="msg">Message</label><input id="msg" placeholder="Message the group"><button class="send" aria-label="Send"><i data-icon="arrow"></i></button></form>
+  </section>
+  <aside class="stack">
+    <div class="plan-card"><div class="photo ph-pitch" style="height:150px"></div><div class="body"><span class="badge b-blue">Pro</span><h3>Startup pitch night · PoliHub</h3>
+      <span class="info"><i data-icon="clock"></i>Fri 21 Nov · 18:30 to 21:00</span><span class="info"><i data-icon="pin"></i>PoliHub, Bovisa</span><span class="info"><i data-icon="users"></i>9 of 12 going</span><span class="info"><i data-icon="euro"></i>Free</span>
+      <a class="btn-text" href="#" style="width:fit-content">See plan details</a></div></div>
+    <div class="card card-line" style="gap:12px;padding:18px 20px"><b class="h-sec">Who's going · 9</b>
+      <div class="row" style="gap:10px"><span class="avatar a1" style="width:36px;height:36px;font-size:13px">GR</span><div class="spacer"><b style="font-size:14px">Giulia R.</b><p class="helper" style="font-size:12px">Civil Engineering · organizer</p></div><span class="badge b-soft">Confirmed</span></div><div class="row" style="gap:10px"><span class="avatar a2" style="width:36px;height:36px;font-size:13px">AK</span><div class="spacer"><b style="font-size:14px">Ahmed K.</b><p class="helper" style="font-size:12px">Computer Engineering</p></div><span class="badge b-soft">Confirmed</span></div><div class="row" style="gap:10px"><span class="avatar a3" style="width:36px;height:36px;font-size:13px">SC</span><div class="spacer"><b style="font-size:14px">Sofia C.</b><p class="helper" style="font-size:12px">Design</p></div><span class="badge b-surface">Not yet</span></div><div class="row" style="gap:10px"><span class="avatar a4" style="width:36px;height:36px;font-size:13px">LM</span><div class="spacer"><b style="font-size:14px">Luca M.</b><p class="helper" style="font-size:12px">Management</p></div><span class="badge b-soft">Confirmed</span></div>
+      <a class="btn-text" href="#" style="width:fit-content">See all 9</a></div>
+    <a class="row muted" href="#" style="font-weight:700;min-height:44px"><i data-icon="flag" class="i-sm"></i>Report a problem · Leave the chat</a>
+  </aside>
+</main>
+<script src="member.js"></script>
+</body>
+</html>

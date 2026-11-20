@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M1 · About you · Ci Sto</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="member.css">
+</head>
+<body>
+<header class="onb-bar">
+  <a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true"></span>Ci Sto</a>
+  <span class="spacer"></span>
+  <div class="bar" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="2" aria-label="Profile setup"><span style="width:50%"></span></div>
+  <b>Step 1 of 2</b>
+  <a class="btn-text" href="m3-find-your-plans.html">Finish later</a>
+</header>
+<main class="page">
+  <div class="page-head">
+    <div><p class="eyebrow">Set up your profile · step 1 of 2</p><h1 class="title">Tell us about you</h1>
+    <p class="lead">Organizers see this when you say ci sto. Like LinkedIn, but friendlier. You can change it any time.</p></div>
+    <div class="pill-tab"><a class="chip" style="display:inline-flex;align-items:center" aria-pressed="true" href="m1-about-you.html">1 · About you</a><a class="chip" style="display:inline-flex;align-items:center" aria-pressed="false" href="m2-what-youre-into.html">2 · What you're into</a></div>
+  </div>
+  <div class="cols-member">
+    <form class="form" onsubmit="return false">
+      <p class="notice row" role="status"><i data-icon="check"></i>Verified Polimi student · camila.s@mail.polimi.it. Your email is never shown to others.</p>
+      <div class="row" style="gap:20px"><span class="avatar avatar-lg a3">CA</span><div style="flex:1"><b class="h-sec">Profile photo</b><p class="helper">Optional. A clear photo of your face builds trust with organizers.</p></div><button class="btn-sec" type="button"><i data-icon="upload"></i>Upload photo</button></div>
+      <div class="grid-2">
+        <div class="field"><label for="f-name">Name</label><input class="input" id="f-name" value="Camila S."><span class="helper">Others see your first name and initial.</span></div>
+        <div class="field"><label for="f-pron">Pronouns (optional)</label><input class="input" id="f-pron" value="she/her"></div>
+      </div>
+      <div class="grid-study">
+        <div class="field"><label for="f-deg">Degree programme</label><input class="input" id="f-deg" value="MSc Strategic Design"><span class="helper">As on your Polimi enrolment.</span></div>
+        <div class="field"><label for="f-year">Year</label><input class="input" id="f-year" value="1st year"></div>
+      </div>
+      <div class="grid-2">
+        <div class="field"><label for="f-from">Where you're from</label><input class="input" id="f-from" value="Buenos Aires, Argentina"><span class="helper">Helps people find others from home, or meet locals.</span></div>
+        <div class="field"><label for="f-since">In Milan since</label><input class="input" id="f-since" value="September 2026"></div>
+      </div>
+      <div class="field"><span class="label">Languages you speak</span><span class="helper">Add a level so organizers can mix the group well.</span>
+        <div class="chips" role="group"><button class="chip" aria-pressed="true">Spanish · Native</button><button class="chip" aria-pressed="true">English · Fluent</button><button class="chip" aria-pressed="true">Italian · Learning</button><button class="chip" aria-pressed="false">Portuguese</button><button class="chip" aria-pressed="false">French</button></div>
+        <button class="btn-text" type="button" style="width:fit-content"><i data-icon="plus" class="i-sm"></i>Add a language</button></div>
+      <div class="field"><label for="f-bio">A line about you</label><textarea class="input" id="f-bio" maxlength="160">Industrial designer from Buenos Aires. Into ceramics, murals and long walks. Happy to help with Spanish.</textarea>
+        <div class="row"><span class="helper spacer">Keep it short and true. No contact details here.</span><span class="helper">104 / 160</span></div></div>
+      <div class="form-actions"><a class="btn-text" href="index.html">Back</a><span class="spacer"></span><a class="btn-main" href="m2-what-youre-into.html"><i data-icon="check"></i>Continue</a></div>
+    </form>
+    <aside class="stack">
+      <p class="eyebrow">How organizers see you</p>
+      <div class="card card-blue" style="gap:18px;padding:28px">
+        <div class="row" style="gap:16px"><span class="avatar avatar-md a3">CA</span><div><h2 class="title-card">Camila S.</h2><p class="muted" style="font-weight:600">MSc Strategic Design · 1st year</p></div></div>
+        <div class="chips"><span class="badge b-blue">Verified Polimi</span><span class="badge b-surface">From Buenos Aires</span><span class="badge b-lime">New in Milan</span></div>
+        <hr style="border:0;border-top:1px solid var(--line)">
+        <div><p class="eyebrow" style="font-size:12px">Speaks</p><b>Spanish (native) · English (fluent) · Italian (learning)</b></div>
+        <p class="muted">“Industrial designer from Buenos Aires. Into ceramics, murals and long walks. Happy to help with Spanish.”</p>
+      </div>
+      <div class="card card-line row" style="flex-direction:row;padding:16px 18px"><span style="color:var(--blue)"><i data-icon="shield"></i></span><p class="helper" style="font-size:14px">Only verified Polimi students can see your profile. You choose what to show, and you can block or report anyone.</p></div>
+    </aside>
+  </div>
+</main>
+<script src="member.js"></script>
+</body>
+</html>

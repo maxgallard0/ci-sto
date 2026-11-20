@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M2 · What you're into · Ci Sto</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="member.css">
+</head>
+<body>
+<header class="onb-bar">
+  <a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true"></span>Ci Sto</a>
+  <span class="spacer"></span>
+  <div class="bar" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="2" aria-label="Profile setup"><span style="width:100%"></span></div>
+  <b>Step 2 of 2</b>
+  <a class="btn-text" href="m3-find-your-plans.html">Finish later</a>
+</header>
+<main class="page">
+  <div class="page-head">
+    <div><p class="eyebrow">Set up your profile · step 2 of 2</p><h1 class="title">What are you here for?</h1>
+    <p class="lead">We use this to pick plans for you. Social and Pro plans sit in the same feed.</p></div>
+    <div class="pill-tab"><a class="chip" style="display:inline-flex;align-items:center" aria-pressed="false" href="m1-about-you.html">1 · About you</a><a class="chip" style="display:inline-flex;align-items:center" aria-pressed="true" href="m2-what-youre-into.html">2 · What you're into</a></div>
+  </div>
+  <div class="cols-member">
+    <form class="form" onsubmit="return false" style="gap:32px">
+      <div class="field" data-count><span class="h-sec">Goals</span><span class="helper">Pick as many as you like.</span><div class="chips" role="group"><button class="chip" aria-pressed="true">Make friends</button><button class="chip" aria-pressed="true">Networking</button><button class="chip" aria-pressed="false">Activity partners</button><button class="chip" aria-pressed="true">Practise Italian</button><button class="chip" aria-pressed="false">Meet locals</button></div></div>
+      <div class="field"><span class="h-sec">Field of study</span><span class="helper">Used for Pro plans and to mix groups.</span><div class="chips" role="group"><button class="chip" aria-pressed="true">Design</button><button class="chip" aria-pressed="false">Engineering</button><button class="chip" aria-pressed="false">Architecture</button><button class="chip" aria-pressed="false">Management</button><button class="chip" aria-pressed="false">Data Science</button></div></div>
+      <div class="field" data-count><span class="h-sec">Interests</span><div class="chips" role="group"><button class="chip" aria-pressed="true">Aperitivo</button><button class="chip" aria-pressed="true">Hikes</button><button class="chip" aria-pressed="true">Startup nights</button><button class="chip" aria-pressed="false">Sport</button><button class="chip" aria-pressed="false">Culture</button><button class="chip" aria-pressed="false">Company visits</button><button class="chip" aria-pressed="true">Food</button><button class="chip" aria-pressed="false">Music</button><button class="chip" aria-pressed="true">Ceramics</button></div></div>
+      <div class="field"><span class="h-sec">Your level</span><span class="helper">For outdoor and sport plans, so you join groups that fit you.</span>
+        <div class="level-row"><b>Hikes</b><div class="chips" data-single role="group"><button class="chip" aria-pressed="false">Beginner</button><button class="chip" aria-pressed="true">Intermediate</button><button class="chip" aria-pressed="false">Advanced</button></div></div>
+        <div class="level-row"><b>Ceramics</b><div class="chips" data-single role="group"><button class="chip" aria-pressed="false">Beginner</button><button class="chip" aria-pressed="false">Intermediate</button><button class="chip" aria-pressed="true">Advanced</button></div></div></div>
+      <div class="field"><span class="h-sec">Budget per plan</span><span class="helper">You can still see everything. We show these first.</span><div class="chips" role="group"><button class="chip" aria-pressed="true">Free</button><button class="chip" aria-pressed="true">Under €10</button><button class="chip" aria-pressed="false">Under €25</button><button class="chip" aria-pressed="false">Any price</button></div></div>
+      <div class="form-actions"><a class="btn-text" href="m1-about-you.html">Back</a><span class="spacer"></span><a class="btn-main" href="m3-find-your-plans.html"><i data-icon="check"></i><span id="picked-count">Show my plans · 8 picked</span></a></div>
+    </form>
+    <aside class="stack">
+      <p class="eyebrow">Plans that match, live</p>
+      <div class="card card-blue">
+        <div class="row" style="gap:12px;align-items:baseline"><span class="big-blue">14</span><b>plans this week match what you picked</b></div>
+        <div class="row" style="gap:14px"><span class="thumb ph-dol"></span><div class="stack" style="gap:4px"><span class="badge b-ink">Outdoor</span><b>Weekend in the Dolomites · Seceda</b><span class="helper">Sat 22 – Sun 23 Nov · €95</span></div></div>
+        <div class="row" style="gap:14px"><span class="thumb ph-ap"></span><div class="stack" style="gap:4px"><span class="badge b-ink">Social</span><b>Aperitivo on the Navigli</b><span class="helper">Today · 19:00 · under €10</span></div></div>
+        <div class="row" style="gap:14px"><span class="thumb ph-pitch"></span><div class="stack" style="gap:4px"><span class="badge b-blue">Pro</span><b>Startup pitch night · PoliHub</b><span class="helper">Fri 21 Nov · 18:30 · free</span></div></div>
+      </div>
+      <p class="notice row"><i data-icon="sparkle"></i>Your feed mixes Social and Pro plans. Filters never use nationality or appearance.</p>
+    </aside>
+  </div>
+</main>
+<script src="member.js"></script>
+</body>
+</html>

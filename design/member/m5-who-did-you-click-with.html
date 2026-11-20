@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M5 · Who did you click with · Ci Sto</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="member.css">
+</head>
+<body>
+<div id="nav" data-active="Chats"></div>
+<main class="page">
+  <a class="back" href="m4-chats.html"><i data-icon="chevronLeft"></i>Chats · Dolomites weekend · 12 Oct</a>
+  <div class="cols" style="grid-template-columns:1fr 400px">
+    <section class="stack" style="gap:20px">
+      <div><p class="eyebrow">After the plan</p><h1 class="title">Who did you click with?</h1><p class="lead">Add them to your Cerchia. They only see it if they add you too.</p></div>
+      <div class="people-grid"><div class="person-card added"><span class="avatar a2" style="width:56px;height:56px;font-size:18px">AK</span><div class="t"><b>Ahmed K.</b><p class="muted" style="font-size:14px">Computer Engineering · Cairo</p><p class="helper" style="font-size:12px;font-weight:700">Shared 3 plans</p></div>
+      <button class="toggle-add" aria-pressed="true" aria-label="Added Ahmed K."><i data-icon="check" class="i-sm"></i>Added</button></div><div class="person-card added"><span class="avatar a3" style="width:56px;height:56px;font-size:18px">SC</span><div class="t"><b>Sofia C.</b><p class="muted" style="font-size:14px">Design · Bogotá</p><p class="helper" style="font-size:12px;font-weight:700">Shared 2 plans</p></div>
+      <button class="toggle-add" aria-pressed="true" aria-label="Added Sofia C."><i data-icon="check" class="i-sm"></i>Added</button></div><div class="person-card"><span class="avatar a4" style="width:56px;height:56px;font-size:18px">LM</span><div class="t"><b>Luca M.</b><p class="muted" style="font-size:14px">Management · Palermo</p><p class="helper" style="font-size:12px;font-weight:700">First plan together</p></div>
+      <button class="toggle-add" aria-pressed="false" aria-label="Add Luca M."><i data-icon="plus" class="i-sm"></i>Add</button></div><div class="person-card"><span class="avatar a5" style="width:56px;height:56px;font-size:18px">TB</span><div class="t"><b>Tomás B.</b><p class="muted" style="font-size:14px">Architecture · Lisbon</p><p class="helper" style="font-size:12px;font-weight:700">First plan together</p></div>
+      <button class="toggle-add" aria-pressed="false" aria-label="Add Tomás B."><i data-icon="plus" class="i-sm"></i>Add</button></div><div class="person-card"><span class="avatar a1" style="width:56px;height:56px;font-size:18px">PJ</span><div class="t"><b>Priya J.</b><p class="muted" style="font-size:14px">Data Science · Pune</p><p class="helper" style="font-size:12px;font-weight:700">First plan together</p></div>
+      <button class="toggle-add" aria-pressed="false" aria-label="Add Priya J."><i data-icon="plus" class="i-sm"></i>Add</button></div><div class="person-card"><span class="avatar a5" style="width:56px;height:56px;font-size:18px">MR</span><div class="t"><b>Marco R.</b><p class="muted" style="font-size:14px">Engineering · organizer</p><p class="helper" style="font-size:12px;font-weight:700">Shared 2 plans</p></div>
+      <button class="toggle-add" aria-pressed="false" aria-label="Add Marco R."><i data-icon="plus" class="i-sm"></i>Add</button></div></div>
+      <div class="card" style="background:var(--blue-tint);color:var(--blue-dark)">
+        <div class="row"><b class="h-card spacer">Rate the plan</b><div class="stars" role="group" aria-label="Rating"><button class="on" aria-label="1 stars"><i data-icon="star"></i></button><button class="on" aria-label="2 stars"><i data-icon="star"></i></button><button class="on" aria-label="3 stars"><i data-icon="star"></i></button><button class="on" aria-label="4 stars"><i data-icon="star"></i></button><button class="" aria-label="5 stars"><i data-icon="star"></i></button></div></div>
+        <p>Anonymous. It helps organizers and partners improve. Something wrong? <a href="#" style="text-decoration:underline">Report it here.</a></p></div>
+      <div class="row" style="gap:16px"><a class="btn-main" href="m6-your-cerchia.html"><i data-icon="check"></i><span id="add-count">Add 2 to my Cerchia</span></a><a class="btn-text" href="m4-chats.html">Skip for now</a></div>
+    </section>
+    <aside class="stack">
+      <div class="plan-card"><div class="photo ph-dol" style="height:200px"></div><div class="body"><div class="row" style="gap:8px"><span class="badge b-ink">Outdoor</span><span class="badge b-soft">Done</span></div>
+        <h3 style="font-size:20px">Dolomites weekend · Seceda</h3><p class="helper" style="font-size:14px;font-weight:600">Sat 11 – Sun 12 Oct · 8 of 8 went</p>
+        <div class="row" style="gap:28px;align-items:flex-start"><div><span class="big-num" style="min-width:0">8</span><p class="helper">people met</p></div><div><span class="big-num" style="min-width:0">4</span><p class="helper">nationalities</p></div><div><span class="big-num" style="min-width:0">2</span><p class="helper">already in your Cerchia</p></div></div></div></div>
+      <div class="card card-line row" style="flex-direction:row;padding:16px 18px"><span style="color:var(--blue)"><i data-icon="lock"></i></span><p class="helper" style="font-size:14px">Your Cerchia is private. Nobody sees who you did not add.</p></div>
+    </aside>
+  </div>
+</main>
+<script src="member.js"></script>
+</body>
+</html>
