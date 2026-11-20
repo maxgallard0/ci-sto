@@ -36,6 +36,7 @@ export function ManageView() {
   const { draft } = useDraft();
   const [decisions, setDecisions] = useState<Record<string, Decision>>({});
   const [filter, setFilter] = useState<Filter>("all");
+  const [cancel, setCancel] = useState<"" | "ask" | "done">("");
 
   // Approved requests join the Going list as waiting for confirmation.
   const going: Attendee[] = [
@@ -226,9 +227,22 @@ export function ManageView() {
             </p>
           </div>
           <div style={{ padding: "4px 8px 0" }}>
-            <button type="button" className="btn-text">
-              Cancel plan
-            </button>
+            {cancel === "done" ? (
+              <p className="helper" role="status" style={{ fontWeight: 700 }}>
+                Plan cancelled. Everyone going and on the waiting list got a message.{" "}
+                <button type="button" className="btn-text" onClick={() => setCancel("")}>Undo</button>
+              </p>
+            ) : cancel === "ask" ? (
+              <div className="row" style={{ gap: 12, flexWrap: "wrap" }} role="alertdialog" aria-label="Cancel this plan?">
+                <b>Cancel this plan for everyone?</b>
+                <button type="button" className="btn-main" onClick={() => setCancel("done")}>Yes, cancel it</button>
+                <button type="button" className="btn-text" onClick={() => setCancel("")}>Keep it</button>
+              </div>
+            ) : (
+              <button type="button" className="btn-text" onClick={() => setCancel("ask")}>
+                Cancel plan
+              </button>
+            )}
             <p className="helper">Everyone is notified. Please cancel at least 24 hours before.</p>
           </div>
         </aside>

@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import { Nav } from "@/components/Nav";
 import { load, save } from "@/lib/demo-store";
 import { featuredPlan, kindBadge, plansThisWeek, type PlanTag } from "@/lib/plans";
-import { routes } from "@/lib/routes";
+import { planHref, routes } from "@/lib/routes";
 
 import { LogoMark, Sprite, Use } from "./Sprite";
 import { HandMark } from "@/components/Logo";
@@ -22,13 +22,6 @@ const chips: { filter: Filter; label: string }[] = [
   { filter: "cheap", label: "Under €10" },
 ];
 
-// Labels used in the "X opens in the app" toast, as in the mockup.
-const soonLabel: Record<string, string> = {
-  "aperitivo-navigli": "Aperitivo on the Navigli",
-  "pitch-night-polihub": "Startup pitch night",
-  "language-swap-lumen": "Language swap",
-};
-
 /** "Plans this week": featured plan with the Ci sto toggle, plus a filterable list. */
 export function PlansThisWeek() {
   const { toast, el: toastEl } = useToast();
@@ -42,8 +35,6 @@ export function PlansThisWeek() {
     const name = load("name");
     if (name) setInitials(name.slice(0, 2).toUpperCase());
   }, []);
-
-  const soon = (label: string) => toast(`${label} opens in the app`);
 
   const visible = plansThisWeek.filter((p) => filter === "all" || p.tags.includes(filter));
   const n = featuredPlan.going + (joined ? 1 : 0);
@@ -110,9 +101,9 @@ export function PlansThisWeek() {
                 <button className="icon-btn lg ring" aria-label="Skip this plan" id="skip" onClick={() => toast("Skipped. We'll show you fewer plans like this.")}>
                   <Use id="i-x" />
                 </button>
-                <button className="icon-btn lg soft" aria-label="Plan details" onClick={() => soon("Plan details")}>
+                <Link className="icon-btn lg soft" aria-label="Plan details" href={planHref(featuredPlan.id)}>
                   <Use id="i-info" />
-                </button>
+                </Link>
                 <button className={`btn btn-main${joined ? " is-in" : ""}`} id="cisto" aria-pressed={joined} onClick={toggle}>
                   <HandMark closed={joined} />
                   <span>{joined ? "You're in" : "Ci sto"}</span>
@@ -128,15 +119,7 @@ export function PlansThisWeek() {
             </div>
 
             {visible.map((p) => (
-              <a
-                key={p.id}
-                className="plan-row"
-                href="#"
-                onClick={(e) => {
-                  e.preventDefault();
-                  soon(soonLabel[p.id] ?? p.title);
-                }}
-              >
+              <Link key={p.id} className="plan-row" href={planHref(p.id)}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img className="thumb" src={p.image} alt="" />
                 <div>
@@ -145,7 +128,7 @@ export function PlansThisWeek() {
                   <p>{p.when}</p>
                   <p className="muted">{`${p.price} · ${p.going} of ${p.capacity} going`}</p>
                 </div>
-              </a>
+              </Link>
             ))}
             <p className="empty" id="empty" hidden={visible.length > 0}>No more plans with this filter this week. Try another one.</p>
 

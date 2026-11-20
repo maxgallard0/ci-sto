@@ -64,9 +64,9 @@ export function WhoYouMet() {
         </div>
         <p>
           Anonymous. It helps organizers and partners improve. Something wrong?{" "}
-          <a href="#" style={{ textDecoration: "underline" }}>
+          <Link href={`${routes.report}?plan=dolomites-seceda`} style={{ textDecoration: "underline" }}>
             Report it here.
-          </a>
+          </Link>
         </p>
       </div>
       <div className="row" style={{ gap: 16 }}>

@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import { Icon } from "@/components/Icon";
 import { AddBack, Seg } from "@/components/member/controls";
+import { OuterRing } from "@/components/member/OuterRing";
 import { Nav } from "@/components/Nav";
 import { addedYou, innerRing, ringAvatars } from "@/lib/member-data";
 import { routes } from "@/lib/routes";
@@ -89,9 +90,7 @@ export default function CerchiaPage() {
                   </Link>
                 </div>
               ))}
-              <a className="btn-text" href="#" style={{ width: "fit-content" }}>
-                See outer ring · 9
-              </a>
+              <OuterRing />
             </div>
             <div className="card" style={{ background: "var(--blue-tint)", color: "var(--blue-dark)", gap: 8 }}>
               <b className="h-sec">Ahmed and Sofia said ci sto to Free jazz night in Isola</b>

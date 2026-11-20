@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { Icon } from "@/components/Icon";
-import { Chips, StaticForm } from "@/components/member/controls";
+import { StaticForm } from "@/components/member/controls";
+import { LanguageChips, PhotoUpload } from "@/components/member/ProfileBits";
 import { OnbBar, StepTabs } from "@/components/member/Onboarding";
 import { languages } from "@/lib/member-data";
 import { routes } from "@/lib/routes";
@@ -30,17 +31,7 @@ export default function AboutYouPage() {
               <Icon name="check" />
               Verified Polimi student · camila.s@mail.polimi.it. Your email is never shown to others.
             </p>
-            <div className="row" style={{ gap: 20 }}>
-              <span className="avatar avatar-lg a3">CA</span>
-              <div style={{ flex: 1 }}>
-                <b className="h-sec">Profile photo</b>
-                <p className="helper">Optional. A clear photo of your face builds trust with organizers.</p>
-              </div>
-              <button className="btn-sec" type="button">
-                <Icon name="upload" />
-                Upload photo
-              </button>
-            </div>
+            <PhotoUpload initials="CA" />
             <div className="grid-2">
               <div className="field">
                 <label htmlFor="f-name">Name</label>
@@ -77,11 +68,7 @@ export default function AboutYouPage() {
             <div className="field">
               <span className="label">Languages you speak</span>
               <span className="helper">Add a level so organizers can mix the group well.</span>
-              <Chips initial={languages} />
-              <button className="btn-text" type="button" style={{ width: "fit-content" }}>
-                <Icon name="plus" className="i-sm" />
-                Add a language
-              </button>
+              <LanguageChips initial={languages} />
             </div>
             <div className="field">
               <label htmlFor="f-bio">A line about you</label>

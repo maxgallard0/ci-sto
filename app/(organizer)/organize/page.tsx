@@ -56,9 +56,9 @@ export default function BecomeOrganizerPage() {
                 <input type="checkbox" defaultChecked /> I agree to the Ci Sto community rules
               </label>
               <span className="spacer"></span>
-              <a className="btn-text" href="#">
+              <Link className="btn-text" href={routes.rules}>
                 Read the rules
-              </a>
+              </Link>
             </div>
 
             <div className="row" style={{ gap: 16 }}>

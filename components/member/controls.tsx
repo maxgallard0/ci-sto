@@ -99,13 +99,20 @@ export function AddBack() {
 }
 
 export function ConfirmBox() {
-  const [confirmed, setConfirmed] = useState(false);
+  const [answer, setAnswer] = useState<"" | "in" | "out">("");
   return (
     <div className="confirm" id="confirm-box">
-      {confirmed ? (
-        <p role="status" style={{ color: "var(--lime)", fontWeight: 800, fontSize: 17 }}>
-          You&apos;re in. See you tomorrow at 18:30.
-        </p>
+      {answer ? (
+        <div className="row" style={{ gap: 12 }}>
+          <p role="status" className="spacer" style={{ color: answer === "in" ? "var(--lime)" : "var(--white)", fontWeight: 800, fontSize: 17 }}>
+            {answer === "in"
+              ? "You're in. See you tomorrow at 18:30."
+              : "Spot freed. The next person on the waiting list gets it. Thanks for saying so early."}
+          </p>
+          <button type="button" className="btn-outline-dark" onClick={() => setAnswer("")}>
+            Undo
+          </button>
+        </div>
       ) : (
         <>
           <b style={{ fontSize: 18 }}>Tomorrow at 18:30. Still in?</b>
@@ -113,10 +120,12 @@ export function ConfirmBox() {
             Confirming keeps your reliability badge. Can&apos;t make it? Say so now and free your spot for someone on the waiting list.
           </p>
           <div className="row">
-            <button className="btn-lime" id="confirm-yes" onClick={() => setConfirmed(true)}>
+            <button type="button" className="btn-lime" id="confirm-yes" onClick={() => setAnswer("in")}>
               Yes, I&apos;m in
             </button>
-            <button className="btn-outline-dark">Can&apos;t make it</button>
+            <button type="button" className="btn-outline-dark" onClick={() => setAnswer("out")}>
+              Can&apos;t make it
+            </button>
           </div>
         </>
       )}

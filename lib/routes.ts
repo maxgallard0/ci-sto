@@ -13,6 +13,8 @@ export const routes = {
   chats: "/chats",
   whoYouMet: "/chats/who-you-met",
   cerchia: "/cerchia",
+  report: "/report", // Report a problem with a plan or a person
+  rules: "/rules", // Community rules
   // Organizer area (Melis)
   organize: "/organize",
   planDetails: "/organize/details",
@@ -20,3 +22,6 @@ export const routes = {
   planLive: "/organize/live",
   managePlan: "/organize/manage",
 } as const;
+
+/** Detail page of one plan, by its id in lib/member-data.ts. */
+export const planHref = (id: string) => `/plan/${id}`;
