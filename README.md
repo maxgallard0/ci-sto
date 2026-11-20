@@ -23,3 +23,23 @@ Free for students. Partners pay through sponsored activity cards, guaranteed att
 ## Project
 
 Group startup concept for the Pitch & Presentation Strategies course, Strategic Design Master, POLI.design (2026).
+
+## Website structure
+
+Static HTML, CSS and JavaScript, no build step.
+
+| Path | What | Owner |
+|---|---|---|
+| `index.html` | Sends visitors to the landing | team |
+| `landing/` | Landing, sign up / log in, Plans this week | Cami |
+| `design/member/` | Become a member: onboarding, filters, chats, Cerchia | Elena |
+| `design/organizer/` | Organize a plan | Melis |
+
+Flow: landing → "Become a member" → `design/member/m1-about-you.html` → profile setup → Plans this week (`landing/home.html`). "Log in" goes straight to Plans this week.
+
+## Deploy on Vercel
+
+1. Merge the area pull requests into `main`.
+2. In Vercel: Add New → Project → import `melisabaci5-ui/ci-sto`.
+3. Framework preset: **Other**. Root directory: `./`. No build command, no output directory.
+4. Deploy. Every merge into `main` publishes again automatically.
