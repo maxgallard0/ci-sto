@@ -6,11 +6,11 @@ How to use this template:
 4. The rules are in AGENTS.md and deliverables/README.md. The story format is in skills/user-stories/SKILL.md.
 -->
 
-# Deliverable: <First name Last name>
+# Deliverable: <Your public name>
 
 | | |
 |---|---|
-| **Author** | <First name Last name> |
+| **Author** | <Your public name> |
 | **Role** | Student, Organizer, Partner |
 | **Date** | <YYYY-MM-DD> |
 | **Type** | User stories and mockups |

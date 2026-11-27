@@ -200,7 +200,7 @@ You can do everything on the GitHub website. The repository is https://github.co
 2. Click **Add file**, then **Upload files**. Drag your images in. Each name must match its frame, for example `STU-ELE-01-A.png`.
 3. Commit directly to the `team/elena` branch.
 
-### D. Open a pull request (once)
+### D. Open a pull request
 
 1. Click **Pull requests**, then **New pull request**.
 2. Set **base** to `main` and **compare** to `team/elena`.
@@ -208,11 +208,13 @@ You can do everything on the GitHub website. The repository is https://github.co
 4. Click **Create pull request** again.
 5. Do not merge it yourself. Max merges it.
 
-When you add or change files on your branch later, the pull request updates by itself. You do not need a new one.
+While your pull request is open, it updates by itself when you add or change files on your branch.
 
 ### E. Change your file later
 
 Switch to your branch in the branch menu. Open your file, click the pencil icon, make your changes and commit directly to your branch.
+
+If Max already merged your pull request, open a new pull request from your branch. Follow step D again.
 
 ### Common problems
 

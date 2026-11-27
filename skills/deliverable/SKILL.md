@@ -21,7 +21,7 @@ Read [AGENTS.md](../../AGENTS.md) and [deliverables/_template.md](../../delivera
 
 | Field | What to write |
 |---|---|
-| Author | First name and last name. |
+| Author | Use the name you want to show in this public repository. You can use your first name, a chosen name or your GitHub username. A last name is optional. |
 | Role | The user types this deliverable covers. For now everyone covers all three: Student, Organizer, Partner. |
 | Date | The delivery date, as `YYYY-MM-DD`. |
 | Type | `User stories and mockups` for team deliverables. `Synthesis` for the merged version. Otherwise `Other:` and what it is. |
@@ -41,8 +41,8 @@ Keep these five sections, in this order, with these titles. If a section has not
 1. Ask the person to paste or attach their stories, mockup list or images, links and notes.
 2. Ask for the header fields one at a time, if you do not have them.
 3. Check the work before you build the file:
-   - Every story has all fields, and at least two acceptance criteria.
-   - There are stories for all three users.
+   - Every story has all fields and 2 to 5 acceptance criteria.
+   - There are at least three stories for each user type (Student, Organizer and Partner).
    - IDs follow the format in AGENTS.md and are not repeated.
    - Every story has a screen, and every frame name matches a story ID.
    - New ideas have the status `New idea`.
