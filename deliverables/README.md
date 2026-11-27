@@ -95,10 +95,10 @@ so that I can decide to join even if I do not know the Organizer.
 2. **Create your branch** `team/<firstname>`, for example `team/elena`. See section 10, step A.
 3. **Learn the basics.** If user stories, acceptance criteria or mockups are new to you, read [learn.md](learn.md). It takes about 20 minutes. Your AI can also teach it to you in step 5.
 4. **Think on your own first.** Spend 20 minutes with the questions in section 8. Write short notes in any language.
-5. **Talk with your AI.** Send it the coach prompt in section 9. Write your stories for all three users together with the AI.
-6. **Draw your mockups.** One frame or more for each story. Your AI can help you describe each screen first, with [skills/mockup-brief/SKILL.md](../skills/mockup-brief/SKILL.md).
+5. **Talk with your AI.** Send it the coach prompt in section 9. Write your stories for all three users together. For each story, write its acceptance criteria and set its priority and status before you start the next story.
+6. **Draw your mockups.** Use [the mockup brief skill](../skills/mockup-brief/SKILL.md) to write a brief for each story. Draw at least one frame for each story. Check each frame against its brief, the acceptance criteria and the design system. Collect your images or links.
 7. **Build your file.** Ask your AI to build your deliverable with [skills/deliverable/SKILL.md](../skills/deliverable/SKILL.md), or fill in [the template](_template.md) yourself.
-8. **Upload and open a pull request** before Wednesday 2 December 2026. See section 10, steps B to D.
+8. **Upload and open a pull request** before Wednesday 2 December 2026. See section 10, steps B to D. Use the checklist in section 11.
 
 ## 8. Questions to start with
 
@@ -180,10 +180,17 @@ How to coach me:
 - Teach before we write. When a concept is new to me, explain it in a few lines
   with an example from deliverables/learn.md. Then give me one short exercise,
   check my answer, and continue only when I understand.
-- Guide me in this order: my notes from the questions in section 8 of
-  deliverables/README.md, my stories (at least 3 for each user: Student, Organizer
-  and Partner), the acceptance criteria of each story, a mockup brief for each story,
-  my deliverable file from the template, and the checklist in section 11.
+- Guide me in this order.
+  1. Start with my notes from the questions in section 8 of deliverables/README.md.
+  2. Write one story at a time. Write its acceptance criteria and set its priority
+     and status before we start the next story. Write at least 3 stories for each
+     user (Student, Organizer and Partner).
+  3. Write a mockup brief for each story.
+  4. Help me draw the frames on paper, in Figma or with an AI tool. Check each
+     frame against its brief, the acceptance criteria and the design system.
+  5. Collect my images or links.
+  6. Build my deliverable file from the template.
+  7. Go through the checklist in section 11 of deliverables/README.md.
 - Ask me one question at a time and wait for my answer.
 - Help me think. Do not write my stories for me. Start from my own experience,
   show me a short draft from my answers, ask for my feedback, then improve it.

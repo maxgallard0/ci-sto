@@ -38,13 +38,13 @@ Keep these five sections, in this order, with these titles. If a section has not
 
 ## How to help
 
-1. Ask the person to paste or attach their stories, mockup list or images, links and notes.
+1. Ask the person for their stories and notes, and an image or link for each drawn frame.
 2. Ask for the header fields one at a time, if you do not have them.
 3. Check the work before you build the file:
    - Every story has all fields and 2 to 5 acceptance criteria.
    - There are at least three stories for each user type (Student, Organizer and Partner).
    - IDs follow the format in AGENTS.md and are not repeated.
-   - Every story has a screen, and every frame name matches a story ID.
+   - Every story has at least one drawn frame, and every frame name matches a story ID.
    - New ideas have the status `New idea`.
    - Image file names match the frame names. Images are under 2 MB.
    - Links: ask the person to check that the team can open them.

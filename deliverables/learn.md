@@ -230,7 +230,7 @@ so that I do not waste time on plans I cannot pay for.
 - **User:** Organizer
 - **Status:** Defined
 - **Priority:** Must
-- **Screen:** `ORG-ELE-01-A`, `ORG-ELE-01-B`
+- **Screen:** `ORG-ELE-01-A`, `ORG-ELE-01-B`, `ORG-ELE-01-C`
 
 **Story**
 As an Organizer,
@@ -247,7 +247,7 @@ so that I can decide with confidence who comes.
 - Can the Organizer write a reason when they decline?
 ```
 
-**Frames:** `ORG-ELE-01-A` list of requests, `ORG-ELE-01-B` one request with the person's profile.
+**Frames:** `ORG-ELE-01-A` list of requests with spots left. In the "After Decline" state, the request is gone. `ORG-ELE-01-B` request with the person's name, interests and friends in common. It has "Accept" and "Decline" buttons. In the "Trip full" state, it shows "Trip full" and the "Accept" button is disabled. `ORG-ELE-01-C` list of people who joined. After you tap "Accept", the person is on the list and there is one fewer spot left.
 
 ### Partner
 
@@ -275,7 +275,7 @@ so that I fill my free places on weekdays.
 - Does Ci sto check a Partner before their first offer goes live?
 ```
 
-**Frames:** `PAR-ELE-01-A` form to create the offer, `PAR-ELE-01-B` preview, `PAR-ELE-01-C` list of active offers.
+**Frames:** `PAR-ELE-01-A` offer form with a "Missing dates" state. If you tap "Publish" without dates, the form shows "Add the dates of your offer". The offer stays unpublished. `PAR-ELE-01-B` preview as students will see it. `PAR-ELE-01-C` list of active offers with the new offer after you tap "Publish".
 
 ## 5. Words you will see
 
