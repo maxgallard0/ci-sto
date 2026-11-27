@@ -1,6 +1,6 @@
 <!--
 How to use this template:
-1. Copy this whole file to deliverables/<firstname>/deliverable.md on your branch team/<firstname>.
+1. Copy this whole file to deliverables/<name>/deliverable.md on your branch team/<name>. Use your first name in lowercase for <name>. If a teammate already uses that first name, add a hyphen and the first letter of your last name in lowercase. For example, use elena-b. If that name is also in use, ask Max which name to use.
 2. Replace everything in < >. Delete these instructions and the example lines you do not use.
 3. Keep the five sections, in this order. If a section is empty, write "None yet."
 4. The rules are in AGENTS.md and deliverables/README.md. The story format is in skills/user-stories/SKILL.md.

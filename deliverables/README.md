@@ -71,32 +71,34 @@ so that I can decide to join even if I do not know the Organizer.
 
 **Acceptance criteria**
 1. Given a friend in my Cerchia went on this trip, when I open the trip, then I see their name and their recommendation.
-2. Given I decide to join, when I tap "Ci sto", then the Organizer gets my request and I see that it was sent.
+2. Given I decide to join, when I tap "Ci sto", then I see "Request sent".
 3. Given nobody in my Cerchia knows this trip, when I open it, then I see recommendations from locals, if there are any.
 
 **Notes and questions**
 - Do we show the price before the Student joins?
 ```
 
-`ELE` are the first three letters of the author's first name (Elena). Use your own three letters. The full rules are in [skills/user-stories/SKILL.md](../skills/user-stories/SKILL.md). [learn.md](learn.md) shows how to write stories like this one, step by step.
+Check that the Organizer sees the request in an Organizer story. See `ORG-ELE-01` in [learn.md](learn.md#organizer).
+
+`ELE` comes from the first three letters of Elena's first name, in capitals. If a teammate already uses your three letters, add the first letter of your last name in capitals. If that code is also in use, ask Max which letters to use. The full ID rules are in [AGENTS.md](../AGENTS.md#story-ids). [learn.md](learn.md) shows how to write stories like this one, step by step.
 
 ## 6. Mockup rules
 
 - App only. One phone frame is **390 × 844 px**.
-- Name each frame with the ID of its story, for example `STU-ELE-01`. If a story needs more than one screen, add a letter: `STU-ELE-01-A`, `STU-ELE-01-B`.
-- Use the colours, fonts and components in [docs/design-system.md](../docs/design-system.md).
-- Paper sketches, Figma and AI-generated screens are all fine. A clear photo of a paper sketch is OK.
+- Show one story per frame. Name each frame with its story ID, for example `STU-ELE-01`. If a story needs more than one screen, add a letter: `STU-ELE-01-A`, `STU-ELE-01-B`.
+- You can deliver a sketch or wireframe as a draft frame. A clear photo of a paper sketch is OK in a 390 × 844 px frame.
+- You can deliver a mockup as a final frame. Use only the colours, fonts and components in [docs/design-system.md](../docs/design-system.md).
 - Small images go in your folder: PNG or JPG, under 2 MB each, named like the frame, for example `STU-ELE-01-A.png`.
 - Videos, renders, PDFs and Figma files go on a shared drive or in Figma. Add the link to your file. Check that the team can open it.
 
 ## 7. Your steps
 
 1. **Get access.** Make a GitHub account if you do not have one. Send your GitHub username to Max. Accept the invitation email from GitHub.
-2. **Create your branch** `team/<firstname>`, for example `team/elena`. See section 10, step A.
+2. **Create your branch.** Use the branch name rules in section 10 and follow step A.
 3. **Learn the basics.** If user stories, acceptance criteria or mockups are new to you, read [learn.md](learn.md). It takes about 20 minutes. Your AI can also teach it to you in step 5.
 4. **Think on your own first.** Spend 20 minutes with the questions in section 8. Write short notes in any language.
 5. **Talk with your AI.** Send it the coach prompt in section 9. Write your stories for all three users together. For each story, write its acceptance criteria and set its priority and status before you start the next story.
-6. **Draw your mockups.** Use [the mockup brief skill](../skills/mockup-brief/SKILL.md) to write a brief for each story. Draw at least one frame for each story. Check each frame against its brief, the acceptance criteria and the design system. Collect your images or links.
+6. **Draw your mockups.** Use [the mockup brief skill](../skills/mockup-brief/SKILL.md) to write a brief for each story. Draw at least one frame for each story. Check each frame against its brief and the acceptance criteria. For final mockups, also check the design system. Collect your images or links.
 7. **Build your file.** Ask your AI to build your deliverable with [skills/deliverable/SKILL.md](../skills/deliverable/SKILL.md), or fill in [the template](_template.md) yourself.
 8. **Upload and open a pull request** before Wednesday 2 December 2026. See section 10, steps B to D. Use the checklist in section 11.
 
@@ -174,7 +176,8 @@ skills/mockup-brief/SKILL.md, skills/deliverable/SKILL.md and docs/design-system
 Before we start:
 1. Read all the files. If a file is missing, tell me and wait until I attach it.
 2. Tell me in 5 short bullets what I must deliver and the most important rules.
-3. Ask me what I already know about user stories, acceptance criteria and mockups.
+3. Ask me what I know about user stories. Wait for my answer. Then ask about
+   acceptance criteria. Wait for my answer before you ask about mockups.
 
 How to coach me:
 - Teach before we write. When a concept is new to me, explain it in a few lines
@@ -187,7 +190,8 @@ How to coach me:
      user (Student, Organizer and Partner).
   3. Write a mockup brief for each story.
   4. Help me draw the frames on paper, in Figma or with an AI tool. Check each
-     frame against its brief, the acceptance criteria and the design system.
+     frame against its brief and the acceptance criteria. For final mockups,
+     also check the design system.
   5. Collect my images or links.
   6. Build my deliverable file from the template.
   7. Go through the checklist in section 11 of deliverables/README.md.
@@ -197,8 +201,15 @@ How to coach me:
 - Do not invent facts, users, numbers, partners, prices or decisions.
   If we do not know something, write it as an open question.
 - After each story, show my progress, for example: Student 2/3, Organizer 0/3, Partner 0/3.
-- My story IDs use these letters: <ABC> (the first three letters of my first name,
-  or the letters Max gave me).
+- Use <ABC> in my story IDs. Use the first three letters of my first name in
+  capitals. If a teammate already uses those letters, add the first letter of my
+  last name in capitals, for example ELEB. If that code is also in use, ask Max
+  which letters to use. Use the letters Max gave me if I already have a code from him.
+- Use team/<name> for my branch and deliverables/<name>/ for my folder. Use my
+  first name in lowercase for <name>. If a teammate already uses that first name,
+  add a hyphen and the first letter of my last name in lowercase, for example
+  team/elena-b and deliverables/elena-b/. If that name is also in use, ask Max
+  which name to use.
 - If two files say different things, tell me and follow deliverables/README.md.
 - I may write to you in <language>. Answer me in my language,
   but write the final stories, criteria, briefs and file in English.
@@ -217,7 +228,9 @@ If your AI can open this repository by itself (for example Claude Code, Codex or
 
 **Why branches?** Think of `main` as the team's shared binder. A **branch** is your own copy of the binder. You add your pages there without touching the shared binder. A **pull request** asks Max to add your pages to the shared binder. Max checks it and merges it. Nobody else writes in `main`.
 
-You can do everything on the GitHub website. The repository is https://github.com/maxgallard0/ci-sto. In the steps below, change `elena` to your first name, in lowercase.
+You can do everything on the GitHub website. The repository is https://github.com/maxgallard0/ci-sto.
+
+Use `team/<name>` for your branch and `deliverables/<name>/` for your folder. Use your first name in lowercase for `<name>`. If a teammate already uses that first name, add a hyphen and the first letter of your last name in lowercase. For example, use `team/elena-b` and `deliverables/elena-b/`. If that name is also in use, ask Max which name to use. Replace `elena` with your `<name>` in the website and command line steps below.
 
 ### A. Create your branch (once)
 
@@ -261,7 +274,7 @@ If Max already merged your pull request, open a new pull request from your branc
 
 - **I committed to `main` by mistake.** Tell Max right away. Do not try to fix it yourself.
 - **I do not see "Create branch".** You do not have access yet. Send your GitHub username to Max and accept the invitation email.
-- **I do not see my file.** Check the branch menu. Your work is on `team/<firstname>`, not on `main`, until Max merges it.
+- **I do not see my file.** Check the branch menu. Your work is on your team branch until Max merges it.
 
 ### Optional: the command line
 
@@ -291,7 +304,7 @@ Then open the pull request on GitHub, as in step D.
 
 ## 11. Before you deliver
 
-- [ ] My file is `deliverables/<firstname>/deliverable.md`, on my branch `team/<firstname>`.
+- [ ] My file is `deliverables/<name>/deliverable.md`, on my branch `team/<name>`. I used the name rules in section 10.
 - [ ] The header has my name, role, date and type.
 - [ ] The file has all five sections.
 - [ ] I have at least three stories each for Student, Organizer and Partner.

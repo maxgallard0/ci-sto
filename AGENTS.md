@@ -53,7 +53,7 @@ Other words:
 | `deliverables/README.md` | The brief for the team: what to deliver, how, questions to start with and the coach prompt for any AI. |
 | `deliverables/learn.md` | Short lessons for beginners: user stories, acceptance criteria and mockups, with examples and exercises. |
 | `deliverables/_template.md` | The template for each person's deliverable. |
-| `deliverables/<firstname>/` | One folder per person, with their deliverable and small images. |
+| `deliverables/<name>/` | One folder per person, with their deliverable and small images. See the repository rules below for the name to use. |
 | `deliverables/synthesis/` | The merged version of all deliverables. |
 | `docs/design-system.md` | Colours, type, components and rules for the app mockups. |
 | Everything else | The frozen web demo. Reference only. |
@@ -73,7 +73,7 @@ Read the skill before you do the task. If you cannot open files in this reposito
 
 Most teammates are students with little or no work experience. Many are new to user stories, GitHub and design tools.
 
-- Teach first if the person is new. Ask what they already know about user stories, acceptance criteria and mockups. For each new concept, use the lessons and examples in [deliverables/learn.md](deliverables/learn.md): explain it in a few lines, give one short exercise, check the answer, then continue.
+- Teach first if the person is new. Ask what they know about user stories. Then ask about acceptance criteria. Ask about mockups last. For each new concept, explain it in a few lines, give one short exercise, and check the answer before you continue. Use the lessons and examples in [deliverables/learn.md](deliverables/learn.md).
 - Ask one question at a time. Wait for the answer before you ask the next one.
 - Use plain English and short sentences. Explain a term the first time you use it.
 - Start from the person's own experience and ideas. Help them think. Do not write everything for them.
@@ -85,9 +85,9 @@ Most teammates are students with little or no work experience. Many are new to u
 ## Rules for the repository
 
 - Write everything in this repository in English.
-- Each person works on their own branch, `team/<firstname>`, in lowercase. Example: `team/elena`. Never commit or push to `main`.
-- Each person changes only their own folder, `deliverables/<firstname>/`. Do not edit another person's folder.
-- These files are shared: `AGENTS.md`, `CLAUDE.md`, `skills/`, `docs/`, `deliverables/README.md`, `deliverables/_template.md`, `deliverables/synthesis/` and all web demo files. Change them only when Max asks, in a separate pull request.
+- Work on your own branch `team/<name>` and change only your own folder `deliverables/<name>/`. Never commit or push to `main`.
+- Use your first name in lowercase for `<name>`. If a teammate already uses that first name, add a hyphen and the first letter of your last name in lowercase. For example, use `team/elena-b` and `deliverables/elena-b/`. If that name is also in use, ask Max which name to use.
+- These files are shared: `AGENTS.md`, `CLAUDE.md`, `skills/`, `docs/`, `deliverables/README.md`, `deliverables/_template.md`, `deliverables/synthesis/` and all web demo files. Change them only when Max asks. Use a separate branch `team/<name>-<topic>` in lowercase, for example `team/elena-synthesis`, and a separate pull request to `main`.
 - To add work to `main`, open a pull request from your branch to `main`. Max reviews and merges it. Do not merge your own pull request.
 - Put only small images in the repository: PNG or JPG, under 2 MB each, in your own folder. Name each image like its frame, for example `STU-ELE-01-A.png`.
 - Put videos, renders, PDFs and Figma files on a shared drive or in Figma. Add the link to the deliverable. Make sure the team can open the link.
@@ -98,16 +98,16 @@ Most teammates are students with little or no work experience. Many are new to u
 
 - Format: `<USER>-<ABC>-<NN>`. Example: `STU-ELE-01`.
 - `<USER>` is `STU`, `ORG` or `PAR`.
-- `<ABC>` is the first three letters of the author's first name, in capitals. If a teammate already uses the same three letters, add the first letter of the last name, for example `ELEB`.
+- `<ABC>` is the first three letters of the author's first name, in capitals. If a teammate already uses the same three letters, add the first letter of the last name in capitals, for example `ELEB`. If that code is also in use, ask Max which letters to use.
 - `<NN>` is a two-digit number that starts at `01` for each user type.
 - The synthesis gives the final IDs later (`STU-01`, `ORG-01`, `PAR-01`) and keeps a map to the original IDs.
 
 ## Mockups
 
 - App only. One phone frame is **390 × 844 px**.
-- The frame name is the ID of the user story it shows, for example `STU-ELE-01`. If one story needs more than one screen, add a letter: `STU-ELE-01-A`, `STU-ELE-01-B`.
-- Use the colours, type and components in [docs/design-system.md](docs/design-system.md). Do not invent new ones. If something is missing, write it as an open question.
-- Paper sketches, Figma and AI-generated screens are all fine if they follow these rules.
+- Show one user story per frame. Name the frame with its story ID, for example `STU-ELE-01`. If one story needs more than one screen, add a letter: `STU-ELE-01-A`, `STU-ELE-01-B`.
+- You can deliver a sketch or wireframe as a draft frame. Paper, Figma and AI tools are all fine.
+- You can deliver a mockup as a final frame. Use only the colours, type and components in [docs/design-system.md](docs/design-system.md). If something is missing, write it as an open question.
 
 ## When you are not sure
 

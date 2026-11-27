@@ -7,7 +7,7 @@ description: Describe Ci sto app screens and flows in text (mobile frame 390 x 8
 
 ## Goal
 
-Turn user stories into a clear text description of each app screen. With the brief, the person can draw the screens in Figma or on paper, or give the brief to another AI that draws them.
+Turn user stories into a clear text description of each app screen. The brief describes a final mockup. The person can also use it to plan a sketch or wireframe.
 
 Read [AGENTS.md](../../AGENTS.md) and [docs/design-system.md](../../docs/design-system.md) first.
 
@@ -15,9 +15,9 @@ Read [AGENTS.md](../../AGENTS.md) and [docs/design-system.md](../../docs/design-
 
 - App only. No website and no desktop screens.
 - Every frame is **390 × 844 px**.
-- The frame name is the story ID, for example `STU-ELE-01`. If one story needs more than one screen, add a letter: `STU-ELE-01-A`, `STU-ELE-01-B`.
+- Show one story per frame. The frame name is the story ID, for example `STU-ELE-01`. If one story needs more than one screen, add a letter: `STU-ELE-01-A`, `STU-ELE-01-B`.
 - Use only the colours, type and components in the design system, by their names. If something is missing, write it as an open question. Do not invent a new colour or component.
-- One main action per screen, with the main button in ci-sto-red.
+- Up to one main action per screen. If there is a main button, use ci-sto-red.
 - Use real example text, not "lorem ipsum". Write it in English, with the brand words "Ci sto" and "Cerchia". Use invented names for people.
 - Every acceptance criterion of the story must be visible in at least one frame.
 - Do not decide product questions. Write them as open questions.
@@ -44,14 +44,31 @@ Write one brief for each flow. A flow is a group of screens that the user goes t
   2. Back button (44 px circle, white) and the title "Amsterdam, 5–8 Dec" (screen title).
   3. Photo of the city, large card, radius 22 px.
   4. "Recommended by your Cerchia": avatar stack with 2 friends, text "Giulia and Marco went in 2025".
-  5. Info rows: dates, price per person, spots left.
+  5. Info rows for dates and spots left.
   6. Bottom action bar with the main button "Ci sto".
 - **Main action:** "Ci sto" (main button). Leads to `STU-ELE-01-B`.
 - **Other actions:** tap the avatar stack to read the recommendations; back button returns to the feed.
 - **States:** no recommendations from the Cerchia: show recommendations from locals, or hide the block if there are none.
 - **Design system:** cream background, large card, avatar stack, info rows, bottom action bar, main button.
-- **Accessibility:** touch targets at least 44 × 44 px, aria-label on the back button.
+- **Accessibility:** touch targets at least 44 × 44 px, including the avatar stack. Add a screen reader label to the back button.
 - **Open questions:** do we show the price before the Student joins?
+
+### Frame `STU-ELE-01-B` · Request sent
+
+- **Frame:** 390 × 844 px, mobile app.
+- **Story:** STU-ELE-01
+- **Goal of the screen:** the Student sees that the request was sent.
+- **Comes from:** tapping "Ci sto" on `STU-ELE-01-A`.
+- **Layout, top to bottom:**
+  1. Same status bar area, back button and screen title as `STU-ELE-01-A`.
+  2. Same photo, recommendations and info rows as `STU-ELE-01-A`.
+  3. Notice with the text "Request sent" in place of the bottom action bar.
+- **Main action:** None.
+- **Other actions:** same as `STU-ELE-01-A`.
+- **States:** same recommendation states as `STU-ELE-01-A`.
+- **Design system:** same as `STU-ELE-01-A`, with a notice in place of the bottom action bar and main button.
+- **Accessibility:** same as `STU-ELE-01-A`.
+- **Open questions:** None.
 ```
 
 Keep every field. Write "None" if a field does not apply.
@@ -63,7 +80,7 @@ Keep every field. Write "None" if a field does not apply.
 3. Ask the person to describe the screen, or to share a photo of a paper sketch.
 4. Ask one question at a time, for example:
    - What is the first thing the user must see on this screen?
-   - What is the one main action?
+   - What is the main action, if there is one?
    - What happens after the user taps it?
    - What does the screen show when there is no content yet, or when something goes wrong?
 5. Write the brief in the format above. Show it and ask for changes.

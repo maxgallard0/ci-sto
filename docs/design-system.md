@@ -4,7 +4,7 @@ Use this page for every app mockup. One phone frame is **390 × 844 px**. The te
 
 ## Where the values come from
 
-- The values on this page are the same as in `styles/tokens.css`, the tokens file of the frozen web demo.
+- The colour, font and radius tokens come from `styles/tokens.css` in the frozen web demo. Follow the component sizes on this page for mobile mockups.
 - In Figma, create these colours and text styles once and reuse them. Use the token names on this page.
 - Only Max changes this page or the tokens. If you need a value that is missing, write it as an open question in your deliverable.
 
@@ -25,7 +25,7 @@ Use this page for every app mockup. One phone frame is **390 × 844 px**. The te
 | lime | `--lime` | `#CBEF4A` | Accent badges, ice-breaker card, active tab icon, logo on dark |
 | lime-tint | `--lime-tint` | `#EEF9C8` | Soft badges, with text in lime-ink |
 | lime-ink | `--lime-ink` | `#3F5200` | Text on lime-tint |
-| ci-sto-red | `--ci-sto-red` | `#D63A24` | Only the one main action per screen, such as the "Ci sto" button |
+| ci-sto-red | `--ci-sto-red` | `#D63A24` | The main action only, such as the "Ci sto" button |
 | ink | `--ink` | `#16131D` | Main text, dark cards, selected chips |
 | cream | `--cream` | `#FFF7F0` | Screen background |
 | white | `--white` | `#FFFFFF` | Cards, tab bar, bottom bars |
@@ -67,10 +67,12 @@ Both fonts are free on Google Fonts.
 
 ## Components
 
-- **Main button ("Ci sto"):** 56px high, pill, ci-sto-red, white text 17px/800, check icon. One per screen.
+Use a touch target of at least 44 × 44 px for every control. Icons and avatars can be smaller within that area.
+
+- **Main button ("Ci sto"):** 56px high, pill, ci-sto-red, white text 17px/800, check icon. Up to one per screen.
 - **Secondary button:** 48px high, pill, blue, white text 15px/800.
-- **Text button:** transparent, blue text 15px/700.
-- **Filter chip:** at least 40px high, pill, 1.5px field-border, white. Selected: ink fill, white text.
+- **Text button:** touch target at least 44 × 44 px, transparent, blue text 15px/700.
+- **Filter chip:** at least 44 × 44 px, pill, 1.5px field-border, white. Selected: ink fill, white text.
 - **Badge:** 13px/700, padding 6 × 10px, pill. Colour pairs: ink/white, lime/ink, blue-tint/blue-dark, lime-tint/lime-ink.
 - **Card:** white, radius 18–22px, optional 1.5px line border. Highlighted card: 1.5px blue border.
 - **Dark card:** ink background, white text, secondary text in line.
@@ -79,8 +81,8 @@ Both fonts are free on Google Fonts.
 - **Back button:** 44px circle, white on cream, surface-2 on white.
 - **Text input:** 48–52px high, 1.5px field-border, 16px text.
 - **Chat bubble:** radius 18px, max width 260px. Other people's messages are white. Mine are blue with white text. Avatars 32px.
-- **Avatar stack:** 40px circles with initials (800), overlap −10px, 2px cream border.
-- **Tab bar:** 84px, white, top line border, up to five tabs. Icons 24px, label 11px. Active tab: ink text and lime icon fill. The old mockup used Plans, Chats, Host, Cerchia and Profile. The final tabs are not decided: propose yours in your deliverable.
+- **Avatar stack:** 40px circles with initials (800), overlap −10px, 2px cream border. If users can tap the stack, give it a touch target of at least 44 × 44 px.
+- **Tab bar:** 84px, white, top line border, up to five tabs. Each tab has a touch target of at least 44 × 44 px. Icons 24px, label 11px. Active tab: ink text and lime icon fill. The old mockup used Plans, Chats, Host, Cerchia and Profile. The final tabs are not decided: propose yours in your deliverable.
 - **Bottom action bar:** 100px, white, top line border, holds the main button.
 - **Icons:** line icons, 24px, stroke 2, round caps and joins.
 
@@ -94,7 +96,7 @@ Motion is optional in mockups. If you show it in a prototype or a video:
 
 ## Accessibility
 
-- Touch targets at least 44 × 44px.
+- Touch targets at least 44 × 44 px.
 - Text needs a contrast of at least 4.5:1 with its background. The colour pairs in the components above meet this. If you combine colours in a new way, check the contrast.
 - Icon-only buttons need a label for screen readers. Write it in your mockup brief.
 - Focus ring for keyboard users: 3px blue outline, 2px offset.
@@ -111,5 +113,5 @@ If your work needs one of these, propose an option in your deliverable as an ope
 
 - Use only the values on this page. Do not invent new colours, fonts or sizes.
 - If something you need is missing, write it as an open question instead of inventing it.
-- Use ci-sto-red for one main action per screen, never for anything else.
+- Use ci-sto-red only for the main action.
 - Use these components before you design a new one. If you design a new one, say so in your deliverable.
