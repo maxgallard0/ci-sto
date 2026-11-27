@@ -81,7 +81,7 @@ Push and Pull move people to change. Anxiety and Habit hold them back. Ci sto mu
 - **Observed:** you lived it or you saw it happen.
 - **Assumption:** you think it is true, but you did not see it.
 
-Assumptions are fine. Mark them honestly. The team checks them later in the [12-week plan](../docs/12-week-plan.md): partner interviews in week 3, the first trip with the app in week 6 and the student survey in week 8.
+Assumptions are fine. Mark them honestly. The team checks them later in the [12-week plan](../docs/12-week-plan.md): the first trip with the app in week 1 (Amsterdam), partner interviews in week 3, the ski trip in week 6 and the student survey in week 8.
 
 Example frictions for the Student:
 
