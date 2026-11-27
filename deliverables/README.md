@@ -14,6 +14,10 @@ The website is frozen. We now design the **mobile app** only. You can see the ol
 
 Every person delivers **one file** with their work, plus their mockup images, by **Wednesday 2 December 2026**. The team presents on **Thursday 3 December 2026**.
 
+Base your work on our **Amsterdam trip (5–8 December, tentative)**. It is the first trip that we plan and make with the app. Imagine it in Ci sto: the Students who join it, the Organizer who plans it and the Partners it could use, for example a hostel or a venue.
+
+Work on your own branch, with your name: `team/<name>`. Open your pull request early and commit your progress until Wednesday. Max follows your progress there. See section 10.
+
 Your file has:
 
 - **Problem definition** for all three users, before the stories: the context, a short profile, the job, 3 to 5 frictions, a point of view and 1 to 3 "How might we" questions. Mark each friction `Observed` or `Assumption`. Keep it short: about one page for all three users.
@@ -96,14 +100,16 @@ Check that the Organizer sees the request in an Organizer story. See `ORG-ELE-01
 ## 7. Your steps
 
 1. **Get access.** Make a GitHub account if you do not have one. Send your GitHub username to Max. Accept the invitation email from GitHub.
-2. **Create your branch.** Use the branch name rules in section 10 and follow step A.
+2. **Create your branch and open your pull request.** Do this on the first day. Your branch has your name, for example `team/elena`. Follow section 10, steps A, B and D.
 3. **Learn the basics.** If problem definitions, user stories, acceptance criteria or mockups are new to you, read [learn.md](learn.md). It takes about 30 minutes. Your AI can also teach it to you in step 5.
 4. **Think on your own first.** Spend 20 minutes with the questions in section 8. Write short notes in any language.
 5. **Define the problem with your AI.** Send it the coach prompt in section 9. Define the problem for all three users: context, profile, job, 3 to 5 frictions, point of view and "How might we". Mark each friction `Observed` or `Assumption`. The rules are in [the problem definition skill](../skills/problem-definition/SKILL.md).
 6. **Write your stories.** Continue with your AI. Write your stories for all three users. Link each story to a friction of the same user. For each story, write its acceptance criteria and set its priority and status before you start the next story.
 7. **Draw your mockups.** Use [the mockup brief skill](../skills/mockup-brief/SKILL.md) to write a brief for each story. Draw at least one frame for each story. Check each frame against its brief and the acceptance criteria. For final mockups, also check the design system. Collect your images or links.
 8. **Build your file.** Ask your AI to build your deliverable with [skills/deliverable/SKILL.md](../skills/deliverable/SKILL.md), or fill in [the template](_template.md) yourself.
-9. **Upload and open a pull request** before Wednesday 2 December 2026. See section 10, steps B to D. Use the checklist in section 11.
+9. **Finish your pull request** before Wednesday 2 December 2026. Commit your final file and images to your branch (section 10, steps C and E). Use the checklist in section 11.
+
+Commit your progress to your branch as you go, at least after steps 5, 6 and 7 (section 10, step E). Your open pull request shows Max how you are doing.
 
 ## 8. Questions to start with
 
@@ -140,8 +146,8 @@ Pick the questions that speak to you. You do not need to answer all of them. You
 
 **Our trips**
 
-- Imagine our Amsterdam trip (5–8 December, tentative) planned in Ci sto. What happens first? What happens last?
-- What must the app have so that the ski trip (8–10 January) can happen with it?
+- Our Amsterdam trip (5–8 December, tentative) is the first trip with the app. Imagine it planned in Ci sto. What happens first? What happens last?
+- What must the app have so that the Amsterdam trip can happen with it?
 - During a trip we make short videos and photos for Instagram. How can the app help?
 
 **New ideas**
@@ -191,6 +197,7 @@ How to coach me:
   check my answer, and continue only when I understand.
 - Guide me in this order.
   1. Start with my notes from the questions in section 8 of deliverables/README.md.
+     Base my work on our Amsterdam trip (5–8 December), the first trip with the app.
   2. Define the problem for each user (Student, Organizer and Partner): context,
      profile, job, 3 to 5 frictions, point of view and "How might we". Mark each
      friction Observed or Assumption.
@@ -267,17 +274,19 @@ Use `team/<name>` for your branch and `deliverables/<name>/` for your folder. Us
 
 ### D. Open a pull request
 
+Open it early, right after your first commit in step B. Do not wait until your work is finished.
+
 1. Click **Pull requests**, then **New pull request**.
 2. Set **base** to `main` and **compare** to `team/elena`.
 3. Click **Create pull request**. Title: `Deliverable: Elena`. In the description, write one line about what is inside.
 4. Click **Create pull request** again.
 5. Do not merge it yourself. Max merges it.
 
-While your pull request is open, it updates by itself when you add or change files on your branch.
+While your pull request is open, it updates by itself when you add or change files on your branch. Keep committing your progress until Wednesday 2 December 2026.
 
-### E. Change your file later
+### E. Commit your progress
 
-Switch to your branch in the branch menu. Open your file, click the pencil icon, make your changes and commit directly to your branch.
+Switch to your branch in the branch menu. Open your file, click the pencil icon, make your changes and commit directly to your branch. Do this after each step, so that Max sees your progress.
 
 If Max already merged your pull request, open a new pull request from your branch. Follow step D again.
 
@@ -326,7 +335,7 @@ Then open the pull request on GitHub, as in step D.
 - [ ] My new ideas have the status `New idea`.
 - [ ] No personal data of real people.
 - [ ] Everything is in English.
-- [ ] My pull request to `main` is open.
+- [ ] My pull request to `main` is open, and my latest work is committed to my branch.
 
 ## 12. Help
 

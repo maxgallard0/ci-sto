@@ -15,6 +15,8 @@ The team is about 12 Strategic Design master's students at POLI.design, Milan. M
 - The team designs the **mobile app** only. Each person defines the problem for each user, writes user stories and draws app mockups.
 - The **website is frozen.** The web demo stays in this repository as a reference. It is live at https://ci-sto-sigma.vercel.app. Do not change it, and do not write new app or web code, unless Max asks for it.
 - Every person delivers on **Wednesday 2 December 2026**. The team presents on **Thursday 3 December 2026**.
+- The deliverables start from the team's **Amsterdam trip (5–8 December, tentative)**, the first trip with the app.
+- Each person works on their own branch with their name, `team/<name>`. They open their pull request early and commit their progress until Wednesday.
 
 ## Users
 

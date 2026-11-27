@@ -56,7 +56,7 @@ Keep these six sections, in this order, with these titles. If a section has noth
 4. Tell the person what is missing or wrong. Let them decide how to fix it. Do not invent missing content.
 5. Build the file from the template. Give it as one Markdown block, ready to paste.
 6. Remind the person of the last steps:
-   - Save it in their own folder on their team branch. Use the name rules above.
+   - Save it in their own folder on their own branch `team/<name>`. Use the name rules above.
    - Upload the images to the same folder.
-   - Open a pull request to `main` before Wednesday 2 December 2026.
+   - If their pull request to `main` is not open yet, open it now. Keep committing progress to the branch until Wednesday 2 December 2026.
    - The steps are in [deliverables/README.md](../../deliverables/README.md).
