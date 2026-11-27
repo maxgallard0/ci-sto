@@ -53,7 +53,7 @@ If the app is not ready for the ski trip, the pilot cannot start in February. Th
 | 3–5 | 14 Dec – 3 Jan | Build the prototype, first partner talks |
 | 6–7 | 4 – 17 Jan | First trip with the app, learn from it |
 | 8–9 | 18 – 31 Jan | Validate with students, fix the app, prepare the first plans |
-| 10–12 | Set in week 7 from the Welcome Week date | Get the pilot ready. Launch and measure if the Welcome Week starts by 21 Feb. |
+| 10–12 | Set in week 7 from the Welcome Week date | Get the pilot ready. Launch if the Welcome Week starts by 21 Feb. Review by 21 Feb. Carry later pilot work into the next plan. |
 
 ## Week by week
 
@@ -157,12 +157,12 @@ If the app is not ready for the ski trip, the pilot cannot start in February. Th
 
 ### Week 12 · Pilot and review
 
-- After the launch, run the first plans. Answer students' questions quickly.
-- After the launch, measure the pilot against the targets.
-- Review the 12 weeks by 21 February. Write down what we learned and what changes.
-- Write the next plan: the Dolomites trip (20–28 March) and the next intake.
+- Run any pilot plans scheduled from launch through 21 February. Answer students' questions quickly.
+- Measure the pilot against the targets from launch through 21 February.
+- Review the 12 weeks by 21 February. Use only pilot data collected by then. If the pilot has yet to launch, record that in the review. In that case, use the pre-launch checks. Write down what we learned and what changes.
+- Write the next plan. Include the Dolomites trip (20–28 March) and the next intake. Cover all pilot work after 21 February, including plans and measurements.
 
-**Done when:** the pilot has started (or is ready for its date) and the next plan exists.
+**Done when:** the pilot has started or is ready for its date. The review is complete by 21 February. The next plan covers any pilot work after that date.
 
 ## What we measure in the pilot
 
