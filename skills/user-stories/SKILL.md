@@ -1,6 +1,6 @@
 ---
 name: user-stories
-description: Write, improve or check Ci sto user stories in the team format (ID per user type, "As a / I want / So that", Given/When/Then acceptance criteria, priority, status and screen). Use when a teammate wants to write user stories, or wants to check their stories before they deliver.
+description: Write, improve or check Ci sto user stories in the team format (ID per user type, "As a / I want / So that", Given/When/Then acceptance criteria, priority, status, screen and friction). Use when a teammate wants to write user stories, or wants to check their stories before they deliver.
 ---
 
 # User stories
@@ -22,6 +22,7 @@ Write every story exactly like this:
 - **Status:** New idea
 - **Priority:** Should
 - **Screen:** `ORG-ELE-02-A`, `ORG-ELE-02-B`
+- **Friction:** `F-ORG-ELE-02`
 
 **Story**
 As an Organizer,
@@ -48,6 +49,7 @@ so that I do not have to chase each person for money after the trip.
 | Status | `Defined` if the feature is in the list "What Ci sto already has". `New idea` for anything else. |
 | Priority | `Must`: the first trip cannot happen without it. `Should`: important, but the first trip can happen without it. `Could`: nice to have. `Won't`: not now, keep it for later. |
 | Screen | The frame name or names of the mockup. The frame name is the story ID. Add `-A`, `-B` if the story needs more than one screen. |
+| Friction | One or more friction IDs of the same user from the person's problem definition, for example `F-ORG-ELE-02`. See [skills/problem-definition/SKILL.md](../problem-definition/SKILL.md). |
 | Story | "As a … / I want … / so that …". The "so that" is the real benefit for the user, not a feature. |
 | Acceptance criteria | 2 to 5 items. Each item uses "Given … when … then …". A person must be able to look at the mockup and say yes or no. Add at least one case where something goes wrong or is empty, if it makes sense. |
 | Notes and questions | What is not clear yet. Write "None" if there is nothing. |
@@ -60,21 +62,23 @@ Check each story against this list:
 - Small enough to show in one to three screens.
 - Says what the user needs, not how it looks. No colours, buttons or layout in the story. Those belong in the mockup.
 - The benefit in "so that" is clear and real.
+- It answers at least one friction of the same user.
 - Every acceptance criterion can be checked as yes or no.
 - It follows the format and the ID rules above.
 
 ## How to help
 
-1. Ask the person if they wrote user stories before. Wait for their answer. Then ask if they wrote acceptance criteria before. Wait for their answer. Teach any new topic with sections 1 and 2 of [deliverables/learn.md](../../deliverables/learn.md). Explain one idea, give one short exercise, then check the answer.
+1. Ask the person if they wrote user stories before. Wait for their answer. Then ask if they wrote acceptance criteria before. Wait for their answer. Teach any new topic with sections 2 and 3 of [deliverables/learn.md](../../deliverables/learn.md). Explain one idea, give one short exercise, then check the answer.
 2. Ask the person for their first name, so that you can build their IDs.
-3. Ask which user they want to start with. Explain that everyone writes stories for all three users: Student, Organizer and Partner.
-4. Ask about a real moment from their life, one question at a time. Use the starter questions in [deliverables/README.md](../../deliverables/README.md) if they do not know where to start.
-5. From the answers, propose one story. Ask: "Is this right? What would you change?"
-6. Write the acceptance criteria together. Ask "How do we know it works?" and "What can go wrong?"
-7. Ask for the priority. Check the status against the list "What Ci sto already has".
-8. Repeat for the next story. Suggest at least three stories for each user type.
-9. When the person is done, check all stories against "A good story". Show the problems and suggest a fix. Do not change the meaning of a story without asking.
-10. Give the final stories in the format above, grouped by user: Student, Organizer, Partner.
+3. Ask for their problem definition. Stories start from its frictions. If they do not have one yet, help them first with [skills/problem-definition/SKILL.md](../problem-definition/SKILL.md).
+4. Ask which user they want to start with. Explain that everyone writes stories for all three users: Student, Organizer and Partner.
+5. Pick one friction of that user. Ask about the real moment behind it, one question at a time.
+6. From the answers, propose one story that answers the friction. Ask: "Is this right? What would you change?"
+7. Write the acceptance criteria together. Ask "How do we know it works?" and "What can go wrong?"
+8. Ask for the priority. Check the status against the list "What Ci sto already has".
+9. Repeat for the next story. Suggest at least three stories for each user type.
+10. When the person is done, check all stories against "A good story". Show the problems and suggest a fix. Do not change the meaning of a story without asking.
+11. Give the final stories in the format above, grouped by user: Student, Organizer, Partner.
 
 ## Check mode
 

@@ -1,6 +1,6 @@
 ---
 name: deliverable
-description: Build a teammate's Ci sto deliverable file from the team template, with the fixed header and sections. Use when a teammate has stories, mockups and questions and needs to put them together before they deliver.
+description: Build a teammate's Ci sto deliverable file from the team template, with the fixed header and sections. Use when a teammate has a problem definition, stories, mockups and questions and needs to put them together before they deliver.
 ---
 
 # Deliverable
@@ -28,20 +28,22 @@ Read [AGENTS.md](../../AGENTS.md) and [deliverables/_template.md](../../delivera
 
 ## Sections
 
-Keep these five sections, in this order, with these titles. If a section has nothing yet, write "None yet." Do not add other top-level sections.
+Keep these six sections, in this order, with these titles. If a section has nothing yet, write "None yet." Do not add other top-level sections.
 
 1. **Role or flow.** For each user (Student, Organizer, Partner), the flows the person covers and their main idea, in a few lines. Then a short list of their new ideas.
-2. **User stories.** All stories in the format of [skills/user-stories/SKILL.md](../user-stories/SKILL.md), grouped under `### Student`, `### Organizer` and `### Partner`.
-3. **Mockups.** A table with one row per frame: frame name, story ID, image or link, notes. Then the link to the Figma file and to other files. Mockup briefs can go at the end of this section.
-4. **Open questions.** Everything that is not clear or not decided. Write who must answer, if the person knows.
-5. **Dependencies.** What the work needs from other people, from partners or from team decisions.
+2. **Problem definition.** For each user: context, profile, job, 3 to 5 frictions, point of view and "How might we", in the format of [skills/problem-definition/SKILL.md](../problem-definition/SKILL.md), grouped under `### Student`, `### Organizer` and `### Partner`.
+3. **User stories.** All stories in the format of [skills/user-stories/SKILL.md](../user-stories/SKILL.md), grouped under `### Student`, `### Organizer` and `### Partner`.
+4. **Mockups.** A table with one row per frame: frame name, story ID, image or link, notes. Then the link to the Figma file and to other files. Mockup briefs can go at the end of this section.
+5. **Open questions.** Everything that is not clear or not decided. Write who must answer, if the person knows.
+6. **Dependencies.** What the work needs from other people, from partners or from team decisions.
 
 ## How to help
 
-1. Ask the person for their stories and notes, and an image or link for each drawn frame.
+1. Ask the person for their problem definition, stories and notes, and an image or link for each drawn frame.
 2. Ask for the header fields one at a time, if you do not have them.
 3. Check the work before you build the file:
-   - Every story has all fields and 2 to 5 acceptance criteria.
+   - Each user has a problem definition with 3 to 5 frictions. Each friction has an ID, a moment, a force and `Observed` or `Assumption`.
+   - Every story has all fields and 2 to 5 acceptance criteria. Its friction exists in the problem definition of the same user.
    - There are at least three stories for each user type (Student, Organizer and Partner).
    - IDs follow the format in AGENTS.md and are not repeated.
    - Every story has at least one frame. Each frame is 390 × 844 px and shows one story. The frame name follows the story ID rules.
