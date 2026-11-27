@@ -147,33 +147,33 @@ A mockup is a picture of one app screen. It shows what the user sees: text, imag
 |---|---|---|---|
 | Sketch | Pen on paper: boxes, words and arrows | Paper and your phone camera | First ideas. Fast and cheap. |
 | Wireframe | Grey boxes and real text, no colours | Figma, or paper with a ruler | Agreeing on what is on each screen. |
-| Mockup | The colours, fonts and components of the design system | Figma, or an AI tool with a mockup brief | The final images. |
+| Mockup | The colours, fonts and components of the design system | Figma, or an AI tool with a mockup brief | Final frames. |
 
-All three levels are OK for your deliverable if the frames are clear and follow the rules. A clear sketch is better than a beautiful screen that misses the story.
+You can deliver a sketch or wireframe as a draft frame. You can deliver a mockup as a final frame. Each frame is 390 × 844 px and shows one story. Name each frame with its story ID. Only final mockups must use the design system colours, fonts and components.
 
 ### From a story to frames
 
 1. **Read the story and its acceptance criteria.**
-2. **List the frames.** What does the user go through? Put one main action on each frame. Most stories need one to three frames.
+2. **List the frames.** What does the user go through? Use up to one main action per frame. Most stories need one to three frames.
 3. **Plan each frame from top to bottom.** Start with the most important thing. Write the real text, in English.
 4. **Name each frame** with the story ID. Add a letter if there is more than one frame: `STU-ELE-01-A`, `STU-ELE-01-B`.
 5. **Check the criteria.** Every acceptance criterion must show in at least one frame. If a criterion is a problem case, draw that state too, for example an empty list.
-6. **Draw.** Use the colours and components in [docs/design-system.md](../docs/design-system.md). Then compare the frames with the criteria again.
+6. **Draw.** For a final mockup, use only the colours, fonts and components in [docs/design-system.md](../docs/design-system.md). Compare every frame with the criteria again.
 
 Your AI can do steps 2 to 5 with you and write a mockup brief: a text description of each frame. See [the mockup brief skill](../skills/mockup-brief/SKILL.md).
 
 ### Tools
 
-- **Paper.** Draw a phone rectangle about 6 cm wide and 13 cm tall. Use a dark pen. Take the photo from above, in good light.
-- **Figma** (free account). Draw a frame and set its width to 390 and its height to 844 in the panel on the right. Use the colours and components in the design system.
+- **Paper.** Draw a phone rectangle about 6 cm wide and 13 cm tall. Use a dark pen. Take the photo from above, in good light. Put the photo in a 390 × 844 px frame.
+- **Figma** (free account). Draw a frame and set its width to 390 and its height to 844 in the panel on the right. For a final mockup, use the colours, fonts and components in the design system.
 - **An AI that makes images or screens.** Give it your mockup brief, the design system and the prompt in the mockup brief skill. AI tools often add things that are not in the brief. Check the result and remove them.
 
 ### Common mistakes
 
 - A website or desktop layout. We design the mobile app only.
-- Many main actions on one frame. Keep one main action, with the main button in ci-sto-red.
+- Many main actions on one frame. Use up to one main action per frame. In a final mockup, use ci-sto-red for the main button if there is one.
 - "Lorem ipsum" text. Use real example text in English.
-- New colours, fonts or components that are not in the design system.
+- Colours, fonts or components in a final mockup that are missing from the design system.
 - An acceptance criterion that no frame shows.
 - A frame name that does not match the story ID.
 - Photos or names of real people who did not agree. Use invented names.
@@ -181,10 +181,11 @@ Your AI can do steps 2 to 5 with you and write a mockup brief: a text descriptio
 ### Checklist for each frame
 
 - [ ] 390 × 844 px, mobile app.
+- [ ] The frame shows one story.
 - [ ] The name is the story ID, plus a letter if the story has more than one frame.
-- [ ] One main action. The main button is ci-sto-red.
+- [ ] Up to one main action. In a final mockup, the main button is ci-sto-red if there is one.
 - [ ] Real example text in English.
-- [ ] Only colours, fonts and components from the design system.
+- [ ] If this is a final mockup, it uses only colours, fonts and components from the design system.
 - [ ] It shows the acceptance criteria it is for.
 - [ ] The image is PNG or JPG, under 2 MB, named like the frame.
 

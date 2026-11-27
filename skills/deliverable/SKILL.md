@@ -1,6 +1,6 @@
 ---
 name: deliverable
-description: Build a teammate's Ci sto deliverable file (deliverables/<firstname>/deliverable.md) from the team template, with the fixed header and sections. Use when a teammate has stories, mockups and questions and needs to put them together before they deliver.
+description: Build a teammate's Ci sto deliverable file from the team template, with the fixed header and sections. Use when a teammate has stories, mockups and questions and needs to put them together before they deliver.
 ---
 
 # Deliverable
@@ -13,7 +13,7 @@ Read [AGENTS.md](../../AGENTS.md) and [deliverables/_template.md](../../delivera
 
 ## The file
 
-- Path: `deliverables/<firstname>/deliverable.md`, with the first name in lowercase. Example: `deliverables/elena/deliverable.md`.
+- Save `deliverables/<name>/deliverable.md` on `team/<name>`. Use the person's first name in lowercase for `<name>`. If a teammate already uses that first name, add a hyphen and the first letter of the person's last name in lowercase. For example, use `team/elena-b` and `deliverables/elena-b/`. If that name is also in use, ask Max which name to use.
 - Images go in the same folder, named like their frame. Example: `deliverables/elena/STU-ELE-01-A.png`.
 - Videos, renders, PDFs and Figma files are links, not files.
 
@@ -44,7 +44,8 @@ Keep these five sections, in this order, with these titles. If a section has not
    - Every story has all fields and 2 to 5 acceptance criteria.
    - There are at least three stories for each user type (Student, Organizer and Partner).
    - IDs follow the format in AGENTS.md and are not repeated.
-   - Every story has at least one drawn frame, and every frame name matches a story ID.
+   - Every story has at least one frame. Each frame is 390 × 844 px and shows one story. The frame name follows the story ID rules.
+   - Sketches and wireframes can be draft frames. Final mockups use the colours, fonts and components from [docs/design-system.md](../../docs/design-system.md).
    - New ideas have the status `New idea`.
    - Image file names match the frame names. Images are under 2 MB.
    - Links: ask the person to check that the team can open them.
@@ -53,7 +54,7 @@ Keep these five sections, in this order, with these titles. If a section has not
 4. Tell the person what is missing or wrong. Let them decide how to fix it. Do not invent missing content.
 5. Build the file from the template. Give it as one Markdown block, ready to paste.
 6. Remind the person of the last steps:
-   - Save it as `deliverables/<firstname>/deliverable.md` on their branch `team/<firstname>`.
+   - Save it in their own folder on their team branch. Use the name rules above.
    - Upload the images to the same folder.
    - Open a pull request to `main` before Wednesday 2 December 2026.
    - The steps are in [deliverables/README.md](../../deliverables/README.md).

@@ -65,7 +65,7 @@ Check each story against this list:
 
 ## How to help
 
-1. Ask the person if they wrote user stories or acceptance criteria before. If not, teach the basics first with sections 1 and 2 of [deliverables/learn.md](../../deliverables/learn.md): one idea at a time, one short exercise, then check the answer.
+1. Ask the person if they wrote user stories before. Wait for their answer. Then ask if they wrote acceptance criteria before. Wait for their answer. Teach any new topic with sections 1 and 2 of [deliverables/learn.md](../../deliverables/learn.md). Explain one idea, give one short exercise, then check the answer.
 2. Ask the person for their first name, so that you can build their IDs.
 3. Ask which user they want to start with. Explain that everyone writes stories for all three users: Student, Organizer and Partner.
 4. Ask about a real moment from their life, one question at a time. Use the starter questions in [deliverables/README.md](../../deliverables/README.md) if they do not know where to start.
