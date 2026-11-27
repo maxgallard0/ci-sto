@@ -34,7 +34,7 @@ Read [AGENTS.md](../../AGENTS.md), [skills/problem-definition/SKILL.md](../probl
    - Dependencies that nobody owns.
 8. **New ideas.** List every story with the status `New idea`: what it is, who proposed it and how many people did. Do not change them to `Defined`. The team decides.
 9. **Open questions.** Merge all open questions. Remove repeats. Keep the authors.
-10. **First trip.** List the stories with an agreed `Must` priority. This shows what the app needs for the first trip (Amsterdam, 5–8 December, tentative).
+10. **First trip.** List the stories with an agreed `Must` priority. This shows what the app needs for the first trip with the app: the ski trip, 8–10 January.
 11. Show the draft to Max before you open the pull request.
 
 ## Output format
