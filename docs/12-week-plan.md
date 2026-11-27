@@ -6,6 +6,8 @@ This plan shows what the team does in the next 12 weeks: from user stories and m
 
 Max coordinates the plan and updates it each week. Dates marked *to confirm* are not decided yet. The open questions are at the end.
 
+The slides for this plan are online: https://claude.ai/artifact/P4m8fA3gFumBNn2XBU9q2R
+
 ## Where we want to be on 21 February
 
 1. The team used a working app prototype on at least one of its own trips.

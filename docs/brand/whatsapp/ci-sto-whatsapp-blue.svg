@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-149.0 -2.5 1347 1347" width="1080" height="1080" role="img" aria-label="Ci sto">
+<title>Ci sto</title>
+<rect x="-149.0" y="-2.5" width="1347" height="1347" fill="#2347FF"/>
+<g fill="#FFFFFF" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+<path stroke="none" d="M137 600 L265 600 L268 950 Q268 978 242 978 L160 978 Q132 978 134 950 Z"/>
+<path stroke="none" d="M140 612 L188 574 L205 545 L258 512 L300 515 L262 650 Z"/>
+<line stroke-width="54" x1="161" y1="468" x2="161" y2="640"/>
+<line stroke-width="56" x1="243" y1="392" x2="232" y2="600"/>
+<line stroke-width="48" x1="344" y1="414" x2="282" y2="520"/>
+<path fill="none" stroke-width="62" d="M430 510 A146 146 0 1 0 438 800"/>
+</g>
+<g fill="#FFFFFF" stroke="#FFFFFF" stroke-linecap="round">
+<circle cx="513" cy="543" r="27" stroke="none"/>
+<line stroke-width="32" x1="504" y1="614" x2="496" y2="732"/>
+</g>
+<g fill="none" stroke="#FFFFFF" stroke-width="32" stroke-linecap="round" stroke-linejoin="round">
+<path d="M645 604 C612 616 604 644 628 660 C660 680 676 694 660 722 C642 744 606 738 597 714"/>
+<line x1="704" y1="613" x2="776" y2="613"/>
+<line x1="738" y1="616" x2="733" y2="722"/>
+<ellipse cx="859" cy="664" rx="42" ry="58"/>
+</g>
+</svg>

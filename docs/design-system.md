@@ -11,7 +11,7 @@ Use this page for every app mockup. One phone frame is **390 × 844 px**. The te
 ## Brand
 
 - **Name:** Ci sto. The main button says "Ci sto".
-- **Logo:** a wordmark. A hand makes the "C" with an OK gesture, followed by "i STO". It is blue on light backgrounds and lime on dark backgrounds. There is no logo file for Figma yet: take it from the live demo at https://ci-sto-sigma.vercel.app or ask Max.
+- **Logo:** a wordmark. A hand makes the "C" with an OK gesture, followed by "i STO". It is blue on light backgrounds and lime on dark backgrounds. The logo files are in [docs/brand/](brand/README.md): SVG for Figma, PNG for slides and chats.
 - **Interface language:** English, with the Italian brand words "Ci sto" and "Cerchia".
 - **Tone:** friendly and direct, student to student. Short sentences.
 
@@ -105,7 +105,6 @@ Motion is optional in mockups. If you show it in a prototype or a video:
 
 - Dark mode.
 - The final tabs of the tab bar.
-- A logo file for Figma.
 
 If your work needs one of these, propose an option in your deliverable as an open question.
 
