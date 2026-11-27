@@ -52,8 +52,8 @@ If the app is not ready for the ski trip, the pilot cannot start in February. Th
 | 1–2 | 30 Nov – 13 Dec | Deliver, present and merge the work |
 | 3–5 | 14 Dec – 3 Jan | Build the prototype, first partner talks |
 | 6–7 | 4 – 17 Jan | First trip with the app, learn from it |
-| 8–10 | 18 Jan – 7 Feb | Validate with students, fix the app, prepare the pilot |
-| 11–12 | 8 – 21 Feb | Pilot at the Welcome Week |
+| 8–9 | 18 – 31 Jan | Validate with students, fix the app, prepare the first plans |
+| 10–12 | Set in week 7 from the Welcome Week date | Get the pilot ready. Launch and measure if the Welcome Week starts by 21 Feb. |
 
 ## Week by week
 
@@ -111,9 +111,12 @@ If the app is not ready for the ski trip, the pilot cannot start in February. Th
 - Make one list of fixes for the pilot, with a priority for each fix.
 - Content: publish the ski trip videos.
 - Decide the pilot: the date of the Welcome Week and the scope (Bovisa only, or all of Polimi).
+- Use the confirmed Welcome Week date to reschedule weeks 10–12. Finish the week 10 checks before the Welcome Week. Launch at the Welcome Week. Start measuring after the launch.
+- If the Welcome Week starts before week 11 (8–14 Feb), bring the week 10 checks forward. Move any prep those checks depend on. Share the QR code only after the checks pass.
+- If the Welcome Week starts after 21 February, end the plan with the pilot ready.
 - Check the exam calendar and plan the team's time around it.
 
-**Done when:** the pilot date and scope are decided and the fix list is ready.
+**Done when:** the pilot date and scope are decided. Weeks 10–12 follow the confirmed date. The fix list is ready.
 
 ### Week 8 · 18 – 24 Jan · Survey and fixes
 
@@ -134,42 +137,43 @@ If the app is not ready for the ski trip, the pilot cannot start in February. Th
 
 **Done when:** the plans for the first month are written and the survey results are summarised.
 
-### Week 10 · 1 – 7 Feb · Pilot ready
+### Week 10 · Before the Welcome Week · Pilot ready
 
 - App: freeze the pilot version. After this, only fixes.
 - Check the community rules before students who do not know each other meet (team report, "Competition and risks").
 - Send a test report from the frozen pilot version. Check that it reaches the team. On the same version, check that a blocked person cannot see or contact the person who blocked them.
 - Put the first plans and the partner offers in the app.
 - Prepare the Welcome Week material: a QR code to the app and the survey, and short videos from the trips.
-- Have a person outside the team install the app from the QR code. Confirm they installed the frozen pilot version. If a fix changes that version after any check, repeat the report, block and install checks. Share the QR code only after these checks pass on the version students will install.
+- Before the first student joins, the Pilot workstream checks the data sources. Check that each app measure records test data on the frozen pilot version. Check that the attendance tally is ready and can record test attendance. Keep all test data out of the pilot numbers.
+- Have a person outside the team install the app from the QR code. Confirm they installed the frozen pilot version. If a fix changes that version after any check, repeat the report, block, install and data checks. Share the QR code only after these checks pass on the version students will install.
 
-**Done when:** the team has frozen the pilot version. The first plans are in the app. The test report, block and QR install checks have passed on the version students will install from the QR code.
+**Done when:** the team has frozen the pilot version. The first plans are in the app. The test report, block, QR install and app data checks have passed on the version students will install. The attendance tally is ready and has recorded test attendance. The pilot counts exclude all test data.
 
-### Week 11 · 8 – 14 Feb · Welcome Week launch
+### Week 11 · At the Welcome Week · Launch the pilot
 
-- Launch the pilot at the Welcome Week, if it takes place this week or the next. Otherwise, use this week to test the launch inside the team.
-- Be at the Welcome Week with the QR code.
-- Help the first students and the first Organizers.
+- Launch the pilot at the Welcome Week if it starts by 21 February. If it starts later, test the launch inside the team by 21 February.
+- At the launch, share the QR code.
+- At the launch, help the first students and the first Organizers.
 
-### Week 12 · 15 – 21 Feb · Pilot and review
+### Week 12 · Pilot and review
 
-- Run the first plans. Answer students' questions quickly.
-- Measure the pilot against the targets.
-- Review the 12 weeks: what we learned and what changes.
+- After the launch, run the first plans. Answer students' questions quickly.
+- After the launch, measure the pilot against the targets.
+- Review the 12 weeks by 21 February. Write down what we learned and what changes.
 - Write the next plan: the Dolomites trip (20–28 March) and the next intake.
 
 **Done when:** the pilot has started (or is ready for its date) and the next plan exists.
 
 ## What we measure in the pilot
 
-We set the numbers in week 8. The measures come from the shared analytics events in the team report:
+We set the targets in week 8. The Pilot workstream is responsible for collecting the data. Counts start at launch. The team report lists the shared analytics events.
 
-- Sign-ups
-- "Ci sto" taps (requests to join a plan)
-- Approved requests
-- Confirmed places
-- People who came to the plan
-- New Cerchia connections
+- Sign-ups (shared analytics events)
+- "Ci sto" taps, which are requests to join a plan (shared analytics events)
+- Approved requests (shared analytics events)
+- Confirmed places (shared analytics events)
+- People who came to the plan (attendance tally). The Organizer or the team counts who came at each plan.
+- New Cerchia connections (shared analytics events)
 
 ## Risks
 
