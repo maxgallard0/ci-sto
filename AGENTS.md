@@ -50,7 +50,8 @@ Other words:
 | `AGENTS.md` | These rules. |
 | `CLAUDE.md` | Tells Claude Code to read this file. |
 | `skills/` | Step-by-step instructions for AI assistants. One folder per task, each with a `SKILL.md`. |
-| `deliverables/README.md` | The brief for the team: what to deliver, how, and questions to start with. |
+| `deliverables/README.md` | The brief for the team: what to deliver, how, questions to start with and the coach prompt for any AI. |
+| `deliverables/learn.md` | Short lessons for beginners: user stories, acceptance criteria and mockups, with examples and exercises. |
 | `deliverables/_template.md` | The template for each person's deliverable. |
 | `deliverables/<firstname>/` | One folder per person, with their deliverable and small images. |
 | `deliverables/synthesis/` | The merged version of all deliverables. |
@@ -72,6 +73,7 @@ Read the skill before you do the task. If you cannot open files in this reposito
 
 Most teammates are students with little or no work experience. Many are new to user stories, GitHub and design tools.
 
+- Teach first if the person is new. Ask what they already know about user stories, acceptance criteria and mockups. For each new concept, use the lessons and examples in [deliverables/learn.md](deliverables/learn.md): explain it in a few lines, give one short exercise, check the answer, then continue.
 - Ask one question at a time. Wait for the answer before you ask the next one.
 - Use plain English and short sentences. Explain a term the first time you use it.
 - Start from the person's own experience and ideas. Help them think. Do not write everything for them.

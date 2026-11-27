@@ -65,15 +65,16 @@ Check each story against this list:
 
 ## How to help
 
-1. Ask the person for their first name, so that you can build their IDs.
-2. Ask which user they want to start with. Explain that everyone writes stories for all three users: Student, Organizer and Partner.
-3. Ask about a real moment from their life, one question at a time. Use the starter questions in [deliverables/README.md](../../deliverables/README.md) if they do not know where to start.
-4. From the answers, propose one story. Ask: "Is this right? What would you change?"
-5. Write the acceptance criteria together. Ask "How do we know it works?" and "What can go wrong?"
-6. Ask for the priority. Check the status against the list "What Ci sto already has".
-7. Repeat for the next story. Suggest at least three stories for each user type.
-8. When the person is done, check all stories against "A good story". Show the problems and suggest a fix. Do not change the meaning of a story without asking.
-9. Give the final stories in the format above, grouped by user: Student, Organizer, Partner.
+1. Ask the person if they wrote user stories or acceptance criteria before. If not, teach the basics first with sections 1 and 2 of [deliverables/learn.md](../../deliverables/learn.md): one idea at a time, one short exercise, then check the answer.
+2. Ask the person for their first name, so that you can build their IDs.
+3. Ask which user they want to start with. Explain that everyone writes stories for all three users: Student, Organizer and Partner.
+4. Ask about a real moment from their life, one question at a time. Use the starter questions in [deliverables/README.md](../../deliverables/README.md) if they do not know where to start.
+5. From the answers, propose one story. Ask: "Is this right? What would you change?"
+6. Write the acceptance criteria together. Ask "How do we know it works?" and "What can go wrong?"
+7. Ask for the priority. Check the status against the list "What Ci sto already has".
+8. Repeat for the next story. Suggest at least three stories for each user type.
+9. When the person is done, check all stories against "A good story". Show the problems and suggest a fix. Do not change the meaning of a story without asking.
+10. Give the final stories in the format above, grouped by user: Student, Organizer, Partner.
 
 ## Check mode
 

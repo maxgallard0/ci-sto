@@ -1,6 +1,6 @@
 # Start here: your Ci sto deliverable
 
-This page explains what you deliver, how to start, and how to upload your work. Read it from top to bottom once. It takes about 15 minutes.
+This page explains what you deliver, how to start, and how to upload your work. Read it from top to bottom once. It takes about 15 minutes. If user stories, acceptance criteria or mockups are new to you, also read [learn.md](learn.md).
 
 You do not need work experience, design software or coding skills. You need your own experience as a student, a pen, and an AI assistant (ChatGPT, Claude, Gemini or another one).
 
@@ -78,7 +78,7 @@ so that I can decide to join even if I do not know the Organizer.
 - Do we show the price before the Student joins?
 ```
 
-`ELE` are the first three letters of the author's first name (Elena). Use your own three letters. The full rules are in [skills/user-stories/SKILL.md](../skills/user-stories/SKILL.md).
+`ELE` are the first three letters of the author's first name (Elena). Use your own three letters. The full rules are in [skills/user-stories/SKILL.md](../skills/user-stories/SKILL.md). [learn.md](learn.md) shows how to write stories like this one, step by step.
 
 ## 6. Mockup rules
 
@@ -93,11 +93,12 @@ so that I can decide to join even if I do not know the Organizer.
 
 1. **Get access.** Make a GitHub account if you do not have one. Send your GitHub username to Max. Accept the invitation email from GitHub.
 2. **Create your branch** `team/<firstname>`, for example `team/elena`. See section 10, step A.
-3. **Think on your own first.** Spend 20 minutes with the questions in section 8. Write short notes in any language.
-4. **Talk with your AI.** Copy the prompt in section 9. Write your stories for all three users together with the AI.
-5. **Draw your mockups.** One frame or more for each story. Your AI can help you describe each screen first, with [skills/mockup-brief/SKILL.md](../skills/mockup-brief/SKILL.md).
-6. **Build your file.** Ask your AI to build your deliverable with [skills/deliverable/SKILL.md](../skills/deliverable/SKILL.md), or fill in [the template](_template.md) yourself.
-7. **Upload and open a pull request** before Wednesday 2 December 2026. See section 10, steps B to D.
+3. **Learn the basics.** If user stories, acceptance criteria or mockups are new to you, read [learn.md](learn.md). It takes about 20 minutes. Your AI can also teach it to you in step 5.
+4. **Think on your own first.** Spend 20 minutes with the questions in section 8. Write short notes in any language.
+5. **Talk with your AI.** Send it the coach prompt in section 9. Write your stories for all three users together with the AI.
+6. **Draw your mockups.** One frame or more for each story. Your AI can help you describe each screen first, with [skills/mockup-brief/SKILL.md](../skills/mockup-brief/SKILL.md).
+7. **Build your file.** Ask your AI to build your deliverable with [skills/deliverable/SKILL.md](../skills/deliverable/SKILL.md), or fill in [the template](_template.md) yourself.
+8. **Upload and open a pull request** before Wednesday 2 December 2026. See section 10, steps B to D.
 
 ## 8. Questions to start with
 
@@ -144,33 +145,66 @@ Pick the questions that speak to you. You do not need to answer all of them. You
 - What annoys you most in group chats when you plan something?
 - If you could add one feature to Ci sto, what would it be, and why?
 
-## 9. A prompt to start with your AI
+## 9. The coach prompt for your AI
 
-1. Download these files from the repository: [AGENTS.md](../AGENTS.md), this page, [_template.md](_template.md), the three skills ([user-stories](../skills/user-stories/SKILL.md), [mockup-brief](../skills/mockup-brief/SKILL.md), [deliverable](../skills/deliverable/SKILL.md)) and [docs/design-system.md](../docs/design-system.md). On each file page, use the download button ("Download raw file") at the top right of the file.
-2. Open a new chat with your AI and attach the files.
-3. Copy the prompt below, change the parts in `< >`, and send it.
+With this prompt, your AI becomes your coach. It reads our files, teaches you what is new to you and guides you step by step until your file is ready. It does not write your work for you.
+
+1. **Get the files.** On https://github.com/maxgallard0/ci-sto, click the green **Code** button, then **Download ZIP**, and unzip it. You need these eight files from the folder:
+   - `AGENTS.md`
+   - `deliverables/README.md` (this page)
+   - `deliverables/learn.md`
+   - `deliverables/_template.md`
+   - `skills/user-stories/SKILL.md`
+   - `skills/mockup-brief/SKILL.md`
+   - `skills/deliverable/SKILL.md`
+   - `docs/design-system.md`
+
+   You can also download one file at a time: open the file on GitHub and click **Download raw file** at the top right.
+2. **Open a new chat** with your AI and attach the eight files. If your AI has projects (for example ChatGPT or Claude), make a "Ci sto" project and add the files there once.
+3. **Copy the prompt below**, change the parts in `< >`, and send it.
 
 ```text
 Hi. I am <first name>, a Strategic Design student on the Ci sto team.
-I attached our project files: AGENTS.md, deliverables/README.md, deliverables/_template.md,
-the skills user-stories, mockup-brief and deliverable, and docs/design-system.md.
-Read them first and follow them.
+Please be my coach for my Ci sto deliverable. It is due on Wednesday 2 December 2026.
 
-Help me write my deliverable for Wednesday 2 December 2026:
-- Ask me one question at a time. Use the questions in section 8 of deliverables/README.md.
-- Do not invent facts. Write what we do not know as open questions.
-- I write stories for all three users: Student, Organizer and Partner.
-  Let's start with the <Student / Organizer / Partner>.
-- My story IDs use the first three letters of my first name: <ABC>.
-- Show me each story as a draft and wait for my OK before the next one.
-- When my stories are ready, help me describe my mockups with the mockup brief.
-- At the end, build my deliverable file from the template, in English.
+I attached these project files: AGENTS.md, deliverables/README.md,
+deliverables/learn.md, deliverables/_template.md, skills/user-stories/SKILL.md,
+skills/mockup-brief/SKILL.md, skills/deliverable/SKILL.md and docs/design-system.md.
 
-I may write to you in <language>. Answer me in my language,
-but write the final stories, briefs and file in English.
+Before we start:
+1. Read all the files. If a file is missing, tell me and wait until I attach it.
+2. Tell me in 5 short bullets what I must deliver and the most important rules.
+3. Ask me what I already know about user stories, acceptance criteria and mockups.
+
+How to coach me:
+- Teach before we write. When a concept is new to me, explain it in a few lines
+  with an example from deliverables/learn.md. Then give me one short exercise,
+  check my answer, and continue only when I understand.
+- Guide me in this order: my notes from the questions in section 8 of
+  deliverables/README.md, my stories (at least 3 for each user: Student, Organizer
+  and Partner), the acceptance criteria of each story, a mockup brief for each story,
+  my deliverable file from the template, and the checklist in section 11.
+- Ask me one question at a time and wait for my answer.
+- Help me think. Do not write my stories for me. Start from my own experience,
+  show me a short draft from my answers, ask for my feedback, then improve it.
+- Do not invent facts, users, numbers, partners, prices or decisions.
+  If we do not know something, write it as an open question.
+- After each story, show my progress, for example: Student 2/3, Organizer 0/3, Partner 0/3.
+- My story IDs use these letters: <ABC> (the first three letters of my first name,
+  or the letters Max gave me).
+- If two files say different things, tell me and follow deliverables/README.md.
+- I may write to you in <language>. Answer me in my language,
+  but write the final stories, criteria, briefs and file in English.
+
+If I come back in a new chat, I will attach my current draft.
+Read it, tell me where we are, and continue from there.
+
+Let's start.
 ```
 
-If your AI can open this repository by itself (for example Claude Code, Codex or Cursor), you do not need to attach the files. It reads `AGENTS.md` on its own.
+4. **To continue another day,** open a new chat, attach the eight files and your current draft, and send the prompt again. If you use a project, open a new chat in it and attach only your draft.
+
+If your AI can open this repository by itself (for example Claude Code, Codex or Cursor), you do not need to attach the files. It reads `AGENTS.md` on its own. Send it the prompt anyway.
 
 ## 10. Branches and pull requests
 

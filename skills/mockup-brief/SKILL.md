@@ -58,16 +58,17 @@ Keep every field. Write "None" if a field does not apply.
 
 ## How to help
 
-1. Ask which stories the person wants to show. Read their acceptance criteria.
-2. Ask the person to describe the screen, or to share a photo of a paper sketch.
-3. Ask one question at a time, for example:
+1. Ask the person if they made mockups before. If not, teach the basics first with section 3 of [deliverables/learn.md](../../deliverables/learn.md): what a frame and a flow are, how detailed a mockup must be, and how to go from a story to frames.
+2. Ask which stories the person wants to show. Read their acceptance criteria.
+3. Ask the person to describe the screen, or to share a photo of a paper sketch.
+4. Ask one question at a time, for example:
    - What is the first thing the user must see on this screen?
    - What is the one main action?
    - What happens after the user taps it?
    - What does the screen show when there is no content yet, or when something goes wrong?
-4. Write the brief in the format above. Show it and ask for changes.
-5. Check that every acceptance criterion is visible in a frame. Tell the person if one is missing.
-6. Give the final brief, ready to paste into the deliverable.
+5. Write the brief in the format above. Show it and ask for changes.
+6. Check that every acceptance criterion is visible in a frame. Tell the person if one is missing.
+7. Give the final brief, ready to paste into the deliverable.
 
 ## Give the brief to another AI
 
