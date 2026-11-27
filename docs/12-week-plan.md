@@ -121,7 +121,7 @@ If the app is not ready for the ski trip, the pilot cannot start in February. Th
 - App: fix the most important problems from the list.
 - Partners: offer a pilot deal to the venues that showed interest.
 - Set the targets for the pilot (see "What we measure").
-- Decide how students install the app for the pilot. Store review takes time, so decide this week.
+- Decide how students install the app for the pilot. Allow time for store review. If the app goes through the App Store or Google Play, submit it by the end of week 9.
 
 **Done when:** the survey is live, the targets are set and the install method is decided.
 
@@ -129,18 +129,21 @@ If the app is not ready for the ski trip, the pilot cannot start in February. Th
 
 - Read the survey results. Change the pilot plan if needed.
 - Prepare the plans for the first month of the pilot, with student associations and partner venues. The team report names ESN, PoliHub and venues as options; none is confirmed.
-- App: continue the fixes.
+- App: continue the fixes. Build report and block.
+- Submit the app for store review or set up the test version, as decided in week 8.
 
 **Done when:** the plans for the first month are written and the survey results are summarised.
 
 ### Week 10 · 1 – 7 Feb · Pilot ready
 
 - App: freeze the pilot version. After this, only fixes.
-- Check the safety basics before students who do not know each other meet: community rules, report and block (team report, "Competition and risks").
+- Check the community rules before students who do not know each other meet (team report, "Competition and risks").
+- Send a test report and check that it reaches the team. Check that a blocked person cannot see or contact the person who blocked them.
 - Put the first plans and the partner offers in the app.
 - Prepare the Welcome Week material: a QR code to the app and the survey, and short videos from the trips.
+- Have a person outside the team install the app from the QR code. Share the QR code only after the install check passes.
 
-**Done when:** the pilot version is frozen and the first plans are in the app.
+**Done when:** the team has frozen the pilot version. The first plans are in the app. A person outside the team has installed the app from the QR code. The team has received a test report. A blocked person cannot see or contact the person who blocked them.
 
 ### Week 11 · 8 – 14 Feb · Welcome Week launch
 
@@ -175,7 +178,7 @@ We set the numbers in week 8. The measures come from the shared analytics events
 | The app is not ready for the ski trip, so the pilot cannot start in February. | Keep the prototype small: only the `Must` stories. Check progress at the end of weeks 3 and 5. |
 | Christmas, New Year and exams leave less time. | Plan light work in weeks 4 and 5. Check the exam calendar in week 7. |
 | No partner is confirmed. | Start talks in week 3. The team can seed the first plans itself, as the team report proposes. |
-| Students cannot install the app in time. | Decide the install method in week 8. |
+| Students cannot install the app in time. | Decide the install method in week 8. Submit the app for store review or set up the test version in week 9. In week 10, have a person outside the team install the app from the QR code. Share the code only after the check passes. |
 | Amsterdam does not happen. | Nothing in the plan depends on it. Use another moment to observe how the team organises a trip. |
 
 ## Open questions
