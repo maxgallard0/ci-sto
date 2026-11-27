@@ -176,7 +176,7 @@ If your AI can open this repository by itself (for example Claude Code, Codex or
 
 **Why branches?** Think of `main` as the team's shared binder. A **branch** is your own copy of the binder. You add your pages there without touching the shared binder. A **pull request** asks Max to add your pages to the shared binder. Max checks it and merges it. Nobody else writes in `main`.
 
-You can do everything on the GitHub website. The repository is https://github.com/melisabaci5-ui/ci-sto. In the steps below, change `elena` to your first name, in lowercase.
+You can do everything on the GitHub website. The repository is https://github.com/maxgallard0/ci-sto. In the steps below, change `elena` to your first name, in lowercase.
 
 ### A. Create your branch (once)
 
@@ -231,7 +231,7 @@ git --version
 If you see an error, use the website steps above. Otherwise:
 
 ```bash
-git clone https://github.com/melisabaci5-ui/ci-sto.git
+git clone https://github.com/maxgallard0/ci-sto.git
 cd ci-sto
 git switch -c team/elena
 ```
