@@ -138,12 +138,12 @@ If the app is not ready for the ski trip, the pilot cannot start in February. Th
 
 - App: freeze the pilot version. After this, only fixes.
 - Check the community rules before students who do not know each other meet (team report, "Competition and risks").
-- Send a test report and check that it reaches the team. Check that a blocked person cannot see or contact the person who blocked them.
+- Send a test report from the frozen pilot version. Check that it reaches the team. On the same version, check that a blocked person cannot see or contact the person who blocked them.
 - Put the first plans and the partner offers in the app.
 - Prepare the Welcome Week material: a QR code to the app and the survey, and short videos from the trips.
-- Have a person outside the team install the app from the QR code. Share the QR code only after the install check passes.
+- Have a person outside the team install the app from the QR code. Confirm they installed the frozen pilot version. If a fix changes that version after any check, repeat the report, block and install checks. Share the QR code only after these checks pass on the version students will install.
 
-**Done when:** the team has frozen the pilot version. The first plans are in the app. A person outside the team has installed the app from the QR code. The team has received a test report. A blocked person cannot see or contact the person who blocked them.
+**Done when:** the team has frozen the pilot version. The first plans are in the app. The test report, block and QR install checks have passed on the version students will install from the QR code.
 
 ### Week 11 · 8 – 14 Feb · Welcome Week launch
 
@@ -178,7 +178,7 @@ We set the numbers in week 8. The measures come from the shared analytics events
 | The app is not ready for the ski trip, so the pilot cannot start in February. | Keep the prototype small: only the `Must` stories. Check progress at the end of weeks 3 and 5. |
 | Christmas, New Year and exams leave less time. | Plan light work in weeks 4 and 5. Check the exam calendar in week 7. |
 | No partner is confirmed. | Start talks in week 3. The team can seed the first plans itself, as the team report proposes. |
-| Students cannot install the app in time. | Decide the install method in week 8. Submit the app for store review or set up the test version in week 9. In week 10, have a person outside the team install the app from the QR code. Share the code only after the check passes. |
+| Students cannot install the app in time. | Decide the install method in week 8. Submit the app for store review or set up the test version in week 9. In week 10, have a person outside the team install the app from the QR code. Share the code only after the week 10 checks pass on the version students will install. |
 | Amsterdam does not happen. | Nothing in the plan depends on it. Use another moment to observe how the team organises a trip. |
 
 ## Open questions
