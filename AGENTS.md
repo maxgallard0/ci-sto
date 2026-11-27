@@ -10,9 +10,9 @@ Ci sto (Italian for "I'm in") is an app to find plans and people: trips and even
 
 The team is about 12 Strategic Design master's students at POLI.design, Milan. Max coordinates the work.
 
-## Current phase: user stories and app mockups
+## Current phase: problem definition, user stories and app mockups
 
-- The team designs the **mobile app** only. Each person writes user stories and draws app mockups.
+- The team designs the **mobile app** only. Each person defines the problem for each user, writes user stories and draws app mockups.
 - The **website is frozen.** The web demo stays in this repository as a reference. It is live at https://ci-sto-sigma.vercel.app. Do not change it, and do not write new app or web code, unless Max asks for it.
 - Every person delivers on **Wednesday 2 December 2026**. The team presents on **Thursday 3 December 2026**.
 
@@ -51,7 +51,7 @@ Other words:
 | `CLAUDE.md` | Tells Claude Code to read this file. |
 | `skills/` | Step-by-step instructions for AI assistants. One folder per task, each with a `SKILL.md`. |
 | `deliverables/README.md` | The brief for the team: what to deliver, how, questions to start with and the coach prompt for any AI. |
-| `deliverables/learn.md` | Short lessons for beginners: user stories, acceptance criteria and mockups, with examples and exercises. |
+| `deliverables/learn.md` | Short lessons for beginners: problem definition, user stories, acceptance criteria and mockups, with examples and exercises. |
 | `deliverables/_template.md` | The template for each person's deliverable. |
 | `deliverables/<name>/` | One folder per person, with their deliverable and small images. See the repository rules below for the name to use. |
 | `deliverables/synthesis/` | The merged version of all deliverables. |
@@ -64,6 +64,7 @@ Read the skill before you do the task. If you cannot open files in this reposito
 
 | Task | Skill |
 |---|---|
+| Define the problem for each user: context, profile, job, frictions and problem statement | [skills/problem-definition/SKILL.md](skills/problem-definition/SKILL.md) |
 | Write or check user stories | [skills/user-stories/SKILL.md](skills/user-stories/SKILL.md) |
 | Describe screens and flows in text, so that a person or another AI can draw them | [skills/mockup-brief/SKILL.md](skills/mockup-brief/SKILL.md) |
 | Build a person's deliverable file | [skills/deliverable/SKILL.md](skills/deliverable/SKILL.md) |
@@ -73,7 +74,7 @@ Read the skill before you do the task. If you cannot open files in this reposito
 
 Most teammates are students with little or no work experience. Many are new to user stories, GitHub and design tools.
 
-- Teach first if the person is new. Ask what they know about user stories. Then ask about acceptance criteria. Ask about mockups last. For each new concept, explain it in a few lines, give one short exercise, and check the answer before you continue. Use the lessons and examples in [deliverables/learn.md](deliverables/learn.md).
+- Teach first if the person is new. Ask what they know about defining a problem: frictions, point of view and "How might we". Then ask about user stories, then about acceptance criteria. Ask about mockups last. For each new concept, explain it in a few lines, give one short exercise, and check the answer before you continue. Use the lessons and examples in [deliverables/learn.md](deliverables/learn.md).
 - Ask one question at a time. Wait for the answer before you ask the next one.
 - Use plain English and short sentences. Explain a term the first time you use it.
 - Start from the person's own experience and ideas. Help them think. Do not write everything for them.
@@ -101,6 +102,7 @@ Most teammates are students with little or no work experience. Many are new to u
 - `<ABC>` is the first three letters of the author's first name, in capitals. If a teammate already uses the same three letters, add the first letter of the last name in capitals, for example `ELEB`. If that code is also in use, ask Max which letters to use.
 - `<NN>` is a two-digit number that starts at `01` for each user type.
 - The synthesis gives the final IDs later (`STU-01`, `ORG-01`, `PAR-01`) and keeps a map to the original IDs.
+- Friction IDs use the same format with `F-` in front, for example `F-STU-ELE-01`. Every story links to at least one friction of the same user.
 
 ## Mockups
 

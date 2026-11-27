@@ -1,16 +1,138 @@
-# Learn the basics: user stories, acceptance criteria and mockups
+# Learn the basics: problem, user stories, acceptance criteria and mockups
 
-Your deliverable has three new things in it: user stories, acceptance criteria and mockups. This page teaches them from zero. You do not need work experience.
+Your deliverable has four new things in it: a problem definition, user stories, acceptance criteria and mockups. This page teaches them from zero. You do not need work experience.
 
-Read it once before you start. It takes about 20 minutes. Your AI can also teach you this page step by step: see the prompt in section 9 of [the brief](README.md).
+Read it once before you start. It takes about 30 minutes. Your AI can also teach you this page step by step: see the prompt in section 9 of [the brief](README.md).
 
-1. [User stories](#1-user-stories)
-2. [Acceptance criteria](#2-acceptance-criteria)
-3. [Mockups](#3-mockups)
-4. [Three full examples](#4-three-full-examples)
-5. [Words you will see](#5-words-you-will-see)
+1. [Define the problem](#1-define-the-problem)
+2. [User stories](#2-user-stories)
+3. [Acceptance criteria](#3-acceptance-criteria)
+4. [Mockups](#4-mockups)
+5. [Three full examples](#5-three-full-examples)
+6. [Words you will see](#6-words-you-will-see)
 
-## 1. User stories
+## 1. Define the problem
+
+### Why we start here
+
+Designers often use a method called the **Double Diamond**. It has four steps: Discover, Define, Develop and Deliver. In the Define step, the team agrees on the problem before anybody designs a solution. If you skip it, you can design a good screen for the wrong problem.
+
+You define the problem for each user: Student, Organizer and Partner. Keep it short: about one page for all three users. The examples on this page use Elena (`ELE`), an invented author.
+
+### The four parts
+
+| Part | Question it answers |
+|---|---|
+| Context and profile | Where and when does the problem happen? Who is the user? |
+| Job | What does the user want to get done? |
+| Frictions | What stops or slows the user today? |
+| Problem statement | Which need do we design for? |
+
+### Context and profile
+
+The **context** says where and when the problem happens. Write one or two lines: the place, the time and the situation.
+
+The **profile** describes one typical user. Designers call it a **proto-persona**: a persona built from what you know and what you think, before research checks it. Write who the user is, what they use today and what they want. Do not describe a real person. Do not add numbers that you do not have.
+
+Example for the Student:
+
+- **Context:** Milan, the first months of a master's degree. Free weekends and short trips. Plans start in WhatsApp groups and on Instagram.
+- **Profile:** A master's student who moved to Milan this year. Knows few people outside class. Finds plans in WhatsApp groups and on Instagram. Wants to travel and meet people on a small budget.
+
+### Job
+
+The **job statement** comes from a method called **Jobs to be Done**. People "hire" a product to get a job done. Today the Student hires other things for this job: WhatsApp, Instagram or a friend.
+
+```text
+When <situation>,
+I want to <what the user wants to get done>,
+so I can <the result they want>.
+```
+
+Example: "When a free weekend comes, I want to join a trip with people I can trust, so I can see new places and meet people without risk."
+
+The job does not name Ci sto or a feature. It is true even if Ci sto does not exist.
+
+### Frictions
+
+A **friction** is something that stops or slows the user today. Look for frictions in each moment of the experience: **Before** the plan (find, decide, join), **During** the plan and **After** the plan.
+
+For each friction, write five things:
+
+- **ID:** `F-<USER>-<ABC>-<NN>`, for example `F-STU-ELE-01`. Use the same letters as in your story IDs. Numbers start at `01` for each user.
+- **Moment:** Before, During or After.
+- **Friction:** one sentence in the user's words. Say what happens, not the solution.
+- **Force:** Push, Pull, Anxiety or Habit.
+- **Evidence:** Observed or Assumption.
+
+**Forces** also come from Jobs to be Done. They explain why people change how they do something, or why they do not change.
+
+| Force | Meaning | Question to ask |
+|---|---|---|
+| Push | A pain in how they do it today. | What is bad about how you do it now? |
+| Pull | Something they want and cannot find or get today. | What do you wish you had? |
+| Anxiety | A fear that stops them from trying something new. | What worries you about a new way? |
+| Habit | An old way that keeps them from changing. | What do you always do, even if it is not the best way? |
+
+Push and Pull move people to change. Anxiety and Habit hold them back. Ci sto must make Push and Pull stronger than Anxiety and Habit.
+
+**Evidence** says how you know:
+
+- **Observed:** you lived it or you saw it happen.
+- **Assumption:** you think it is true, but you did not see it.
+
+Assumptions are fine. Mark them honestly. The team checks them later in the [12-week plan](../docs/12-week-plan.md): partner interviews in week 3, the first trip with the app in week 6 and the student survey in week 8.
+
+Example frictions for the Student:
+
+| ID | Moment | Friction | Force | Evidence |
+|---|---|---|---|---|
+| `F-STU-ELE-01` | Before | I knew nobody in the ski group, so I stayed at home. | Anxiety | Observed |
+| `F-STU-ELE-02` | Before | I scroll through many events that I cannot pay for. | Push | Observed |
+| `F-STU-ELE-03` | After | After a trip we go back to the class WhatsApp group, and I lose contact with the new people. | Habit | Assumption |
+| `F-STU-ELE-04` | Before | I want to try skiing, but I find no group trip at a student price. | Pull | Assumption |
+
+Write 3 to 5 frictions for each user. Try to use more than one force and more than one moment.
+
+### Problem statement
+
+The problem statement closes the Define step. It has two parts.
+
+**Point of view (POV).** One sentence:
+
+```text
+<User> needs <need> because <insight>.
+```
+
+The need is a verb, not a feature. The insight is what you learned from the frictions.
+
+Example: "A Student who is new in Milan needs a safe way to join plans with people they do not know yet, because the fear of a group of strangers is stronger than the wish to travel."
+
+**How might we (HMW).** Turn the POV into 1 to 3 questions that start with "How might we…?". A good question opens many ideas. It does not name a solution.
+
+| | Example |
+|---|---|
+| Too wide | How might we make students happy? |
+| Too narrow | How might we add a list of friends to the trip page? |
+| Good | How might we help a Student trust a group before they join it? |
+
+### From frictions to stories
+
+Every story answers at least one friction of the same user. Write the friction ID in the story, in the field **Friction**. If a story answers no friction, ask: "Which problem does it solve?" Then add that friction, or drop the story.
+
+A friction can have more than one story. Not every friction needs a story now.
+
+Example: `F-STU-ELE-01` (Anxiety) leads to the story in section 2: "As a Student, I want to see which friends know a trip or its Organizer, so that I can join a group even if I do not know anybody in it."
+
+### Exercise
+
+Moment: "I organised a weekend trip for eight people. I paid for the whole house and waited two weeks for the money."
+
+Write the friction for the Organizer: ID, moment, friction, force and evidence.
+
+One possible answer: `F-ORG-ELE-02` · After · I paid for the whole house and waited two weeks for the money. · Push · Observed.
+
+## 2. User stories
 
 ### What a user story is
 
@@ -24,9 +146,9 @@ Think of each story as a card:
 | User | Who has the need: Student, Organizer or Partner | Student |
 | Priority | How important it is: Must, Should, Could or Won't | Must |
 | Story | "As a … I want … so that …" | See below |
-| Acceptance criteria | How we know that the story works | See section 2 |
+| Acceptance criteria | How we know that the story works | See section 3 |
 
-Our format also has an ID, a status and a screen. [The user stories skill](../skills/user-stories/SKILL.md) explains them.
+Our format also has an ID, a status, a screen and a friction. [The user stories skill](../skills/user-stories/SKILL.md) explains them.
 
 ### The three parts of the sentence
 
@@ -42,7 +164,7 @@ The "so that" is the most important part. It is the real reason. To find it, ask
 
 1. **Remember a real moment.** "Last winter I wanted to go on a ski trip. I knew nobody in the group, so I stayed at home."
 2. **Find the user.** I was a Student.
-3. **Find the problem.** I did not trust a group of strangers.
+3. **Find the friction.** I did not trust a group of strangers. This is friction `F-STU-ELE-01` in section 1 (Anxiety, Observed).
 4. **Find what would help.** To see that someone I trust knows the trip or the Organizer.
 5. **Write the story.**
 
@@ -77,7 +199,7 @@ Hints: Who is the user? Why do they want a map?
 
 One possible answer: "As a Student, I want to see this week's events on a map, so that I can choose plans near where I live."
 
-## 2. Acceptance criteria
+## 3. Acceptance criteria
 
 ### What they are
 
@@ -132,7 +254,7 @@ One possible answer:
 1. Given I see a plan in the feed, when I tap "Save", then the plan shows in my saved plans.
 2. Given I have not saved any plan yet, when I open my saved plans, then I see a short message that explains how to save a plan.
 
-## 3. Mockups
+## 4. Mockups
 
 ### What a mockup is
 
@@ -189,13 +311,15 @@ Your AI can do steps 2 to 5 with you and write a mockup brief: a text descriptio
 - [ ] It shows the acceptance criteria it is for.
 - [ ] The image is PNG or JPG, under 2 MB, named like the frame.
 
-## 4. Three full examples
+## 5. Three full examples
 
-Each example goes from a real moment to a story, its criteria and its frames. Elena (`ELE`) is an invented author.
+Each example goes from a real moment to a friction, a story, its criteria and its frames. Elena (`ELE`) is an invented author.
 
 ### Student
 
 **Moment:** "At the end of the month I have little money. I scroll through many events that I cannot pay for."
+
+**Friction:** `F-STU-ELE-02` · Before · I scroll through many events that I cannot pay for. · Push · Observed.
 
 ```markdown
 #### STU-ELE-02 · Find plans that fit my budget
@@ -204,6 +328,7 @@ Each example goes from a real moment to a story, its criteria and its frames. El
 - **Status:** Defined
 - **Priority:** Should
 - **Screen:** `STU-ELE-02-A`, `STU-ELE-02-B`, `STU-ELE-02-C`
+- **Friction:** `F-STU-ELE-02`
 
 **Story**
 As a Student,
@@ -225,6 +350,8 @@ so that I do not waste time on plans I cannot pay for.
 
 **Moment:** "I organised a weekend at Lake Como. Two people I did not know asked to come. I knew nothing about them."
 
+**Friction:** `F-ORG-ELE-01` · Before · Two people I did not know asked to join my trip, and I knew nothing about them. · Anxiety · Observed.
+
 ```markdown
 #### ORG-ELE-01 · Decide who can join my trip
 
@@ -232,6 +359,7 @@ so that I do not waste time on plans I cannot pay for.
 - **Status:** Defined
 - **Priority:** Must
 - **Screen:** `ORG-ELE-01-A`, `ORG-ELE-01-B`, `ORG-ELE-01-C`
+- **Friction:** `F-ORG-ELE-01`
 
 **Story**
 As an Organizer,
@@ -254,6 +382,8 @@ so that I can decide with confidence who comes.
 
 **Moment:** Imagine a small ski school near Bormio. In January it has free places on weekdays.
 
+**Friction:** `F-PAR-ELE-01` · Before · In January our places stay empty on weekdays. · Push · Assumption. It is an assumption because Elena imagined it. The team must check it with real Partners.
+
 ```markdown
 #### PAR-ELE-01 · Publish an offer for student groups
 
@@ -261,6 +391,7 @@ so that I can decide with confidence who comes.
 - **Status:** Defined
 - **Priority:** Should
 - **Screen:** `PAR-ELE-01-A`, `PAR-ELE-01-B`, `PAR-ELE-01-C`
+- **Friction:** `F-PAR-ELE-01`
 
 **Story**
 As a Partner,
@@ -278,20 +409,30 @@ so that I fill my free places on weekdays.
 
 **Frames:** `PAR-ELE-01-A` offer form with a "Missing dates" state. If you tap "Publish" without dates, the form shows "Add the dates of your offer". The offer stays unpublished. `PAR-ELE-01-B` preview as students will see it. `PAR-ELE-01-C` list of active offers with the new offer after you tap "Publish".
 
-## 5. Words you will see
+## 6. Words you will see
 
 | Word | Meaning |
 |---|---|
 | Acceptance criteria | The yes-or-no checks that say when a story works. One is an acceptance criterion. |
+| Assumption | Something you think is true but did not see. The team checks it later. |
 | Component | A piece of a screen that you use again and again, for example a button or a card. Ours are in the design system. |
 | Design system | Our colours, fonts, components and rules: [docs/design-system.md](../docs/design-system.md). |
+| Double Diamond | A design method with four steps: Discover, Define, Develop and Deliver. The problem definition is the Define step. |
 | Empty state | What a screen shows when there is no content yet, for example no saved plans. |
 | Flow | A group of frames in the order the user sees them. |
+| Forces | Push, Pull, Anxiety and Habit: why people change how they do something, or why they do not. |
 | Frame | One phone screen in a mockup: 390 × 844 px. |
+| Friction | Something that stops or slows the user today. Its ID looks like `F-STU-ELE-01`. |
 | Happy path | The normal case, when everything works. |
+| How might we | A question that turns the problem into a design challenge, for example "How might we help a Student trust a group before they join it?" |
+| Job statement | "When … I want to … so I can …": what the user wants to get done. It comes from the method Jobs to be Done. |
 | Mockup | A picture of an app screen. Not a working app. |
 | Mockup brief | A text description of each frame, so that you or another AI can draw it. |
+| Observed | Something you lived or saw happen. |
+| Point of view | "<User> needs <need> because <insight>." One sentence that says which need we design for. |
 | Priority | Must, Should, Could or Won't. Some teams call this "MoSCoW". |
+| Problem statement | The point of view and the "How might we" questions together. |
+| Proto-persona | A short profile of one typical user, built before research checks it. |
 | Sketch | A quick drawing on paper. |
 | Status | `Defined` if the feature is in the list in section 4 of the brief. `New idea` for anything else. |
 | Story ID | The name of a story, for example `STU-ELE-01`. The rules are in [AGENTS.md](../AGENTS.md). |

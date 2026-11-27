@@ -75,7 +75,7 @@ Keep every field. Write "None" if a field does not apply.
 
 ## How to help
 
-1. Ask the person if they made mockups before. If not, teach the basics first with section 3 of [deliverables/learn.md](../../deliverables/learn.md): what a frame and a flow are, how detailed a mockup must be, and how to go from a story to frames.
+1. Ask the person if they made mockups before. If not, teach the basics first with section 4 of [deliverables/learn.md](../../deliverables/learn.md): what a frame and a flow are, how detailed a mockup must be, and how to go from a story to frames.
 2. Ask which stories the person wants to show. Read their acceptance criteria.
 3. Ask the person to describe the screen, or to share a photo of a paper sketch.
 4. Ask one question at a time, for example:

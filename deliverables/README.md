@@ -1,6 +1,6 @@
 # Start here: your Ci sto deliverable
 
-This page explains what you deliver, how to start, and how to upload your work. Read it from top to bottom once. It takes about 15 minutes. If user stories, acceptance criteria or mockups are new to you, also read [learn.md](learn.md).
+This page explains what you deliver, how to start, and how to upload your work. Read it from top to bottom once. It takes about 15 minutes. If problem definitions, user stories, acceptance criteria or mockups are new to you, also read [learn.md](learn.md).
 
 You do not need work experience, design software or coding skills. You need your own experience as a student, a pen, and an AI assistant (ChatGPT, Claude, Gemini or another one).
 
@@ -16,7 +16,8 @@ Every person delivers **one file** with their work, plus their mockup images, by
 
 Your file has:
 
-- **User stories** for all three users: Student, Organizer and Partner. Write at least three stories for each user. Everyone does all three users for now.
+- **Problem definition** for all three users, before the stories: the context, a short profile, the job, 3 to 5 frictions, a point of view and 1 to 3 "How might we" questions. Mark each friction `Observed` or `Assumption`. Keep it short: about one page for all three users.
+- **User stories** for all three users: Student, Organizer and Partner. Write at least three stories for each user. Link each story to a friction of the same user. Everyone does all three users for now.
 - **App mockups** for your stories: one phone screen or more for each story.
 - **Open questions:** what is not clear or not decided yet.
 - **Dependencies:** what your work needs from other people, from partners or from team decisions.
@@ -63,6 +64,7 @@ You can write new stories about these features too. For example, how the chat wo
 - **Status:** Defined
 - **Priority:** Must
 - **Screen:** `STU-ELE-01-A`, `STU-ELE-01-B`
+- **Friction:** `F-STU-ELE-01`
 
 **Story**
 As a Student,
@@ -80,7 +82,7 @@ so that I can decide to join even if I do not know the Organizer.
 
 Check that the Organizer sees the request in an Organizer story. See `ORG-ELE-01` in [learn.md](learn.md#organizer).
 
-`ELE` comes from the first three letters of Elena's first name, in capitals. If a teammate already uses your three letters, add the first letter of your last name in capitals. If that code is also in use, ask Max which letters to use. The full ID rules are in [AGENTS.md](../AGENTS.md#story-ids). [learn.md](learn.md) shows how to write stories like this one, step by step.
+`ELE` comes from the first three letters of Elena's first name, in capitals. If a teammate already uses your three letters, add the first letter of your last name in capitals. If that code is also in use, ask Max which letters to use. The full ID rules are in [AGENTS.md](../AGENTS.md#story-ids). [learn.md](learn.md) shows how to write stories like this one, step by step. The friction `F-STU-ELE-01` comes from the problem definition in [section 1 of learn.md](learn.md#1-define-the-problem).
 
 ## 6. Mockup rules
 
@@ -95,16 +97,17 @@ Check that the Organizer sees the request in an Organizer story. See `ORG-ELE-01
 
 1. **Get access.** Make a GitHub account if you do not have one. Send your GitHub username to Max. Accept the invitation email from GitHub.
 2. **Create your branch.** Use the branch name rules in section 10 and follow step A.
-3. **Learn the basics.** If user stories, acceptance criteria or mockups are new to you, read [learn.md](learn.md). It takes about 20 minutes. Your AI can also teach it to you in step 5.
+3. **Learn the basics.** If problem definitions, user stories, acceptance criteria or mockups are new to you, read [learn.md](learn.md). It takes about 30 minutes. Your AI can also teach it to you in step 5.
 4. **Think on your own first.** Spend 20 minutes with the questions in section 8. Write short notes in any language.
-5. **Talk with your AI.** Send it the coach prompt in section 9. Write your stories for all three users together. For each story, write its acceptance criteria and set its priority and status before you start the next story.
-6. **Draw your mockups.** Use [the mockup brief skill](../skills/mockup-brief/SKILL.md) to write a brief for each story. Draw at least one frame for each story. Check each frame against its brief and the acceptance criteria. For final mockups, also check the design system. Collect your images or links.
-7. **Build your file.** Ask your AI to build your deliverable with [skills/deliverable/SKILL.md](../skills/deliverable/SKILL.md), or fill in [the template](_template.md) yourself.
-8. **Upload and open a pull request** before Wednesday 2 December 2026. See section 10, steps B to D. Use the checklist in section 11.
+5. **Define the problem with your AI.** Send it the coach prompt in section 9. Define the problem for all three users: context, profile, job, 3 to 5 frictions, point of view and "How might we". Mark each friction `Observed` or `Assumption`. The rules are in [the problem definition skill](../skills/problem-definition/SKILL.md).
+6. **Write your stories.** Continue with your AI. Write your stories for all three users. Link each story to a friction of the same user. For each story, write its acceptance criteria and set its priority and status before you start the next story.
+7. **Draw your mockups.** Use [the mockup brief skill](../skills/mockup-brief/SKILL.md) to write a brief for each story. Draw at least one frame for each story. Check each frame against its brief and the acceptance criteria. For final mockups, also check the design system. Collect your images or links.
+8. **Build your file.** Ask your AI to build your deliverable with [skills/deliverable/SKILL.md](../skills/deliverable/SKILL.md), or fill in [the template](_template.md) yourself.
+9. **Upload and open a pull request** before Wednesday 2 December 2026. See section 10, steps B to D. Use the checklist in section 11.
 
 ## 8. Questions to start with
 
-Pick the questions that speak to you. You do not need to answer all of them. Your answers are the raw material for your stories.
+Pick the questions that speak to you. You do not need to answer all of them. Your answers are the raw material for your problem definition: the context, the profile and the frictions. Your stories come from those frictions.
 
 **Warm-up**
 
@@ -151,18 +154,19 @@ Pick the questions that speak to you. You do not need to answer all of them. You
 
 With this prompt, your AI becomes your coach. It reads our files, teaches you what is new to you and guides you step by step until your file is ready. It does not write your work for you.
 
-1. **Get the files.** On https://github.com/maxgallard0/ci-sto, click the green **Code** button, then **Download ZIP**, and unzip it. You need these eight files from the folder:
+1. **Get the files.** On https://github.com/maxgallard0/ci-sto, click the green **Code** button, then **Download ZIP**, and unzip it. You need these nine files from the folder:
    - `AGENTS.md`
    - `deliverables/README.md` (this page)
    - `deliverables/learn.md`
    - `deliverables/_template.md`
+   - `skills/problem-definition/SKILL.md`
    - `skills/user-stories/SKILL.md`
    - `skills/mockup-brief/SKILL.md`
    - `skills/deliverable/SKILL.md`
    - `docs/design-system.md`
 
    You can also download one file at a time: open the file on GitHub and click **Download raw file** at the top right.
-2. **Open a new chat** with your AI and attach the eight files. If your AI has projects (for example ChatGPT or Claude), make a "Ci sto" project and add the files there once.
+2. **Open a new chat** with your AI and attach the nine files. If your AI has projects (for example ChatGPT or Claude), make a "Ci sto" project and add the files there once.
 3. **Copy the prompt below**, change the parts in `< >`, and send it.
 
 ```text
@@ -170,14 +174,16 @@ Hi. I am <first name>, a Strategic Design student on the Ci sto team.
 Please be my coach for my Ci sto deliverable. It is due on Wednesday 2 December 2026.
 
 I attached these project files: AGENTS.md, deliverables/README.md,
-deliverables/learn.md, deliverables/_template.md, skills/user-stories/SKILL.md,
+deliverables/learn.md, deliverables/_template.md,
+skills/problem-definition/SKILL.md, skills/user-stories/SKILL.md,
 skills/mockup-brief/SKILL.md, skills/deliverable/SKILL.md and docs/design-system.md.
 
 Before we start:
 1. Read all the files. If a file is missing, tell me and wait until I attach it.
 2. Tell me in 5 short bullets what I must deliver and the most important rules.
-3. Ask me what I know about user stories. Wait for my answer. Then ask about
-   acceptance criteria. Wait for my answer before you ask about mockups.
+3. Ask me what I know about defining a problem: frictions, point of view and
+   "How might we". Wait for my answer. Then ask the same about user stories,
+   acceptance criteria and mockups, one topic at a time.
 
 How to coach me:
 - Teach before we write. When a concept is new to me, explain it in a few lines
@@ -185,22 +191,26 @@ How to coach me:
   check my answer, and continue only when I understand.
 - Guide me in this order.
   1. Start with my notes from the questions in section 8 of deliverables/README.md.
-  2. Write one story at a time. Write its acceptance criteria and set its priority
-     and status before we start the next story. Write at least 3 stories for each
-     user (Student, Organizer and Partner).
-  3. Write a mockup brief for each story.
-  4. Help me draw the frames on paper, in Figma or with an AI tool. Check each
+  2. Define the problem for each user (Student, Organizer and Partner): context,
+     profile, job, 3 to 5 frictions, point of view and "How might we". Mark each
+     friction Observed or Assumption.
+  3. Write one story at a time. Link it to a friction of the same user. Write its
+     acceptance criteria and set its priority and status before we start the next
+     story. Write at least 3 stories for each user.
+  4. Write a mockup brief for each story.
+  5. Help me draw the frames on paper, in Figma or with an AI tool. Check each
      frame against its brief and the acceptance criteria. For final mockups,
      also check the design system.
-  5. Collect my images or links.
-  6. Build my deliverable file from the template.
-  7. Go through the checklist in section 11 of deliverables/README.md.
+  6. Collect my images or links.
+  7. Build my deliverable file from the template.
+  8. Go through the checklist in section 11 of deliverables/README.md.
 - Ask me one question at a time and wait for my answer.
 - Help me think. Do not write my stories for me. Start from my own experience,
   show me a short draft from my answers, ask for my feedback, then improve it.
 - Do not invent facts, users, numbers, partners, prices or decisions.
   If we do not know something, write it as an open question.
-- After each story, show my progress, for example: Student 2/3, Organizer 0/3, Partner 0/3.
+- After each step, show my progress, for example: Problem definition 3/3 users.
+  Stories: Student 2/3, Organizer 0/3, Partner 0/3.
 - Use <ABC> in my story IDs. Use the first three letters of my first name in
   capitals. If a teammate already uses those letters, add the first letter of my
   last name in capitals, for example ELEB. If that code is also in use, ask Max
@@ -212,7 +222,8 @@ How to coach me:
   which name to use.
 - If two files say different things, tell me and follow deliverables/README.md.
 - I may write to you in <language>. Answer me in my language,
-  but write the final stories, criteria, briefs and file in English.
+  but write the final problem definition, stories, criteria, briefs and file
+  in English.
 
 If I come back in a new chat, I will attach my current draft.
 Read it, tell me where we are, and continue from there.
@@ -220,7 +231,7 @@ Read it, tell me where we are, and continue from there.
 Let's start.
 ```
 
-4. **To continue another day,** open a new chat, attach the eight files and your current draft, and send the prompt again. If you use a project, open a new chat in it and attach only your draft.
+4. **To continue another day,** open a new chat, attach the nine files and your current draft, and send the prompt again. If you use a project, open a new chat in it and attach only your draft.
 
 If your AI can open this repository by itself (for example Claude Code, Codex or Cursor), you do not need to attach the files. It reads `AGENTS.md` on its own. Send it the prompt anyway.
 
@@ -306,9 +317,10 @@ Then open the pull request on GitHub, as in step D.
 
 - [ ] My file is `deliverables/<name>/deliverable.md`, on my branch `team/<name>`. I used the name rules in section 10.
 - [ ] The header has my name, role, date and type.
-- [ ] The file has all five sections.
+- [ ] The file has all six sections.
+- [ ] Each user has a problem definition with 3 to 5 frictions. Each friction is marked `Observed` or `Assumption`.
 - [ ] I have at least three stories each for Student, Organizer and Partner.
-- [ ] Every story has an ID, user, status, priority, screen, the story and 2 to 5 acceptance criteria.
+- [ ] Every story has an ID, user, status, priority, screen, friction, the story and 2 to 5 acceptance criteria. The friction belongs to the same user.
 - [ ] Every story has at least one frame, and every frame is named like its story.
 - [ ] My images are under 2 MB and named like their frames. Big files are links that the team can open.
 - [ ] My new ideas have the status `New idea`.
