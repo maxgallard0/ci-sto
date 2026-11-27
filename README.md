@@ -1,5 +1,7 @@
 # Ci Sto
 
+> **Team: start here.** The website is frozen. We now design the mobile app only. Read [AGENTS.md](AGENTS.md) for the project rules and [deliverables/README.md](deliverables/README.md) for what to deliver by Wednesday 2 December 2026. The rest of this README describes the frozen web demo.
+
 **Make a plan. Or just say Ci sto.**
 
 Ci Sto (Italian for "I'm in") is an activity-first app for students who moved to Milan. You don't swipe on people: you swipe on activities. Swipe right on a plan, join its group chat, meet in real life.
