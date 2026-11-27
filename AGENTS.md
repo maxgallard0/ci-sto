@@ -17,6 +17,7 @@ The team is about 12 Strategic Design master's students at POLI.design, Milan. M
 - Every person delivers on **Wednesday 2 December 2026**. The team presents on **Thursday 3 December 2026**.
 - The deliverables start from the team's **Amsterdam trip (5–8 December, tentative)**, the first trip with the app.
 - Each person works on their own branch with their name, `team/<name>`. They open their pull request early and commit their progress until Wednesday.
+- Each person makes progress every week and joins the weekly team meeting. See [docs/team-agreements.md](docs/team-agreements.md).
 
 ## Users
 
@@ -58,7 +59,13 @@ Other words:
 | `deliverables/<name>/` | One folder per person, with their deliverable and small images. See the repository rules below for the name to use. |
 | `deliverables/synthesis/` | The merged version of all deliverables. |
 | `docs/design-system.md` | Colours, type, components and rules for the app mockups. |
+| `docs/brand/` | The logo as files: SVG for Figma, PNG for slides and chats, and a square icon for the WhatsApp group. |
+| `docs/12-week-plan.md` | The plan from 30 November 2026 to 21 February 2027. |
+| `docs/team-agreements.md` | What Max expects from each person, and the weekly team meeting. |
+| `docs/team-messages.md` | Copies of the messages for the team group chat. |
 | Everything else | The frozen web demo. Reference only. |
+
+The slides for the 12-week plan are online: https://claude.ai/artifact/P4m8fA3gFumBNn2XBU9q2R
 
 ## Skills
 
